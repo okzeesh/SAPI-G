@@ -97,3 +97,43 @@ app.use(async (req, res, next) => {
 app.get('/secure-data', authenticateJWT, (req, res) => {
     res.json({ message: "Secure Data Accessed!", user: req.user });
 });
+
+// ✅ Register a New User
+app.post('/api/register', async (req, res) => {
+    try {
+      const { email, password, role } = req.body;
+  
+      // Check if email or password is missing
+      if (!email || !password) {
+        return res.status(400).json({ message: "Email and password required" });
+      }
+  
+      // Check if the email already exists
+      const existingUser = await User.findOne({ email });
+      if (existingUser) {
+        return res.status(400).json({ message: "Email already taken" });
+      }
+  
+      // Hash the password before saving it
+      const hashedPassword = await bcrypt.hash(password, 10);
+      console.log("Hashed password during registration:", hashedPassword); // Log the hashed password
+      
+
+
+      // Create the new user
+      const newUser = new User({
+        email,
+        password: hashedPassword, // Store the hashed password
+        role: role || "user"
+      });
+
+      console.log("User to be saved:", newUser);
+  
+      // Save the new user to the database
+      await newUser.save();
+      res.status(201).json({ message: "User registered successfully" });
+    } catch (error) {
+      console.error("Error registering user:", error);
+      res.status(500).json({ message: "Error registering user" });
+    }
+  });
