@@ -171,3 +171,16 @@ app.post('/api/register', async (req, res) => {
       res.status(500).json({ message: 'Server error' });
     }
   });
+
+  // ✅ Log Threats
+app.post('/api/threats', authenticateJWT, async (req, res) => {
+    try {
+        const { ip, threatType } = req.body;
+        const newThreat = new Threat({ ip, threatType });
+        await newThreat.save();
+        res.status(201).json({ message: "Threat logged successfully" });
+    } catch (error) {
+        console.error("Error logging threat:", error);
+        res.status(500).json({ message: "Error logging threat" });
+    }
+});
