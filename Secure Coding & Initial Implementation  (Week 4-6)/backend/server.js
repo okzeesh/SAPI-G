@@ -73,3 +73,22 @@ const authorizeRole = (role) => (req, res, next) => {
     }
     next();
 };
+
+// ✅ Request Logging Middleware (Logs After Response is Sent)
+app.use(async (req, res, next) => {
+    res.on('finish', async () => {
+        try {
+            const log = new RequestLog({
+                ip: req.ip,
+                endpoint: req.originalUrl,
+                method: req.method,
+                statusCode: res.statusCode
+            });
+            await log.save();
+            console.log("Request logged:", req.originalUrl);
+        } catch (error) {
+            console.error("Error logging request:", error);
+        }
+    });
+    next();
+});
