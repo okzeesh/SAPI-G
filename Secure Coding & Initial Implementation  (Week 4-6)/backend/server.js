@@ -31,3 +31,17 @@ const limiter = rateLimit({
 });
 app.use(limiter);
 
+// ✅ IP Blacklist Middleware
+app.use(async (req, res, next) => {
+    try {
+        const blacklistedIp = await BlacklistedIp.findOne({ ip: req.ip });
+        if (blacklistedIp) {
+            return res.status(403).json({ message: "Your IP is blacklisted", reason: blacklistedIp.reason });
+        }
+        next();
+    } catch (error) {
+        console.error("Error checking blacklisted IP:", error);
+        res.status(500).json({ message: "Internal server error" });
+    }
+});
+
