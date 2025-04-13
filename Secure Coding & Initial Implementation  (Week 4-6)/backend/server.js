@@ -45,3 +45,23 @@ app.use(async (req, res, next) => {
     }
 });
 
+// ✅ JWT Authentication Middleware
+const authenticateJWT = (req, res, next) => {
+    const authHeader = req.header('Authorization');
+
+    if (!authHeader) {
+        return res.status(401).json({ message: "Access Denied - No Token Provided" });
+    }
+
+    const token = authHeader.split(" ")[1]; // Extract token after "Bearer"
+    if (!token) return res.status(401).json({ message: "Invalid token format" });
+
+    try {
+        const verified = jwt.verify(token, process.env.JWT_SECRET);
+        req.user = verified;
+        next();
+    } catch (error) {
+        console.error("Token Verification Failed:", error.message);
+        return res.status(401).json({ message: "Invalid or expired token" });
+    }
+};
