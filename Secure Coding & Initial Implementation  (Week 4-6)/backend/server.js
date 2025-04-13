@@ -202,3 +202,7 @@ mongoose.connect(process.env.MONGO_URI, {
     useUnifiedTopology: true
 }).then(() => console.log("MongoDB Connected"))
   .catch(err => console.log("MongoDB Connection Error:", err));
+
+  // ✅ Start Server
+const PORT = process.env.PORT || 5001;
+app.listen(PORT, () => console.log(`API Gateway running on port ${PORT}`));
