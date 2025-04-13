@@ -184,3 +184,14 @@ app.post('/api/threats', authenticateJWT, async (req, res) => {
         res.status(500).json({ message: "Error logging threat" });
     }
 });
+
+// ✅ Get Request Logs (Only Admins)
+app.get('/api/logs', authenticateJWT, authorizeRole("admin"), async (req, res) => {
+    try {
+        const logs = await RequestLog.find().sort({ timestamp: -1 }).limit(50);
+        res.json(logs);
+    } catch (error) {
+        console.error("Error retrieving logs:", error);
+        res.status(500).json({ message: "Error retrieving logs" });
+    }
+});
