@@ -65,3 +65,11 @@ const authenticateJWT = (req, res, next) => {
         return res.status(401).json({ message: "Invalid or expired token" });
     }
 };
+
+// ✅ Role-Based Access Control (Only Admins can access certain routes)
+const authorizeRole = (role) => (req, res, next) => {
+    if (req.user.role !== role) {
+        return res.status(403).json({ message: "Access Denied - Insufficient Permissions" });
+    }
+    next();
+};
