@@ -92,3 +92,8 @@ app.use(async (req, res, next) => {
     });
     next();
 });
+
+// ✅ Secure API Endpoint
+app.get('/secure-data', authenticateJWT, (req, res) => {
+    res.json({ message: "Secure Data Accessed!", user: req.user });
+});
