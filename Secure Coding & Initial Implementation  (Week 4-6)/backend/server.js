@@ -137,3 +137,37 @@ app.post('/api/register', async (req, res) => {
       res.status(500).json({ message: "Error registering user" });
     }
   });
+
+  // ✅ Login User & Generate JWT Token
+  app.post('/api/login', async (req, res) => {
+    console.log("Login payload:", req.body);
+  
+    const { email, password } = req.body;
+  
+    try {
+      // Find the user based on the email
+      const user = await User.findOne({ email });
+      if (!user) {
+        return res.status(400).json({ message: 'Invalid Email' });
+      }
+  
+      console.log("Stored hash:", user.password); // Log the stored hash from the DB
+      console.log("Password to compare:", password); // Log the plaintext password for comparison
+      
+      // Compare the entered password with the hashed password stored in the database
+      const isMatch = await bcrypt.compare(password, user.password);
+      console.log("Password match:", isMatch); // Log whether the password comparison is successful
+  
+      // If the passwords do not match, return an error
+      if (!isMatch) {
+        return res.status(400).json({ message: 'Invalid password' });
+      }
+  
+      // Generate a JWT token for the user
+      const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+      res.json({ token });
+    } catch (err) {
+      console.error(err);
+      res.status(500).json({ message: 'Server error' });
+    }
+  });
