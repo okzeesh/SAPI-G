@@ -325,3 +325,14 @@ td {
   max-height: 200px;
   overflow-y: auto;
 }
+
+.ip-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  background: rgba(30, 41, 59, 0.3);
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
