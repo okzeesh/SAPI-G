@@ -370,3 +370,13 @@ td {
 .tab.active {
   color: #00f2c3;
 }
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #00f2c3;
+}
