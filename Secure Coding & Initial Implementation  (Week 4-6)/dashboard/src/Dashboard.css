@@ -353,3 +353,9 @@ td {
 .ip-item-btn:hover {
   color: #ff467e;
 }
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #334155;
+  margin-bottom: 1rem;
+}
