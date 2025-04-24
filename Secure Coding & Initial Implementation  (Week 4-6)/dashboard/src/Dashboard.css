@@ -304,3 +304,8 @@ td {
   border-radius: 5px;
   color: #fff;
 }
+
+.ip-input:focus {
+  outline: none;
+  border-color: #00f2c3;
+}
