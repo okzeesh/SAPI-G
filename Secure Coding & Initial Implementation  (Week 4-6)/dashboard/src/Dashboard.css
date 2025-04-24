@@ -59,3 +59,9 @@ header {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+.logo span {
+  color: #6c5ce7;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
