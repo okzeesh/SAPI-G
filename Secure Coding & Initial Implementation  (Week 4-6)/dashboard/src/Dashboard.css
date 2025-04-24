@@ -65,3 +65,8 @@ header {
   font-size: 0.8rem;
   font-weight: 300;
 }
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
