@@ -349,3 +349,7 @@ td {
   cursor: pointer; /* Added cursor */
   transition: color 0.2s;
 }
+
+.ip-item-btn:hover {
+  color: #ff467e;
+}
