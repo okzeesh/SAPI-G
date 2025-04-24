@@ -158,3 +158,10 @@ header {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   border-color: rgba(108, 92, 231, 0.5);
 }
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
