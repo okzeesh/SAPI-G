@@ -107,3 +107,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
+.dashboard-title h2 {
+  font-size: 1.8rem;
+  color: #00f2c3;
+}
