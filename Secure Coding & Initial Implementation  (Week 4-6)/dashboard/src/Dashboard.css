@@ -170,3 +170,10 @@ header {
   font-size: 1rem;
   color: #94a3b8;
 }
+
+.card-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
