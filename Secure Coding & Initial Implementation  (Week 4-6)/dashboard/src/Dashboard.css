@@ -185,3 +185,7 @@ header {
   align-items: center;
   gap: 5px;
 }
+
+.card-change.negative {
+  color: #ff467e;
+}
