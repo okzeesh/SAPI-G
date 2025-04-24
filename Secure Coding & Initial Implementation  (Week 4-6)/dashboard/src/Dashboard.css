@@ -112,3 +112,13 @@ header {
   font-size: 1.8rem;
   color: #00f2c3;
 }
+
+.dashboard-title .status {
+  background: rgba(0, 242, 195, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
