@@ -266,3 +266,9 @@ th {
   color: #94a3b8;
   font-weight: 500;
 }
+
+td {
+  padding: 0.8rem 1rem;
+  color: white;
+  border-bottom: 1px solid rgba(30, 41, 59, 0.5);
+}
