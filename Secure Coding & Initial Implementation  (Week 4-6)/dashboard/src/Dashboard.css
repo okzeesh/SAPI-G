@@ -100,3 +100,10 @@ header {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+.dashboard-title {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
