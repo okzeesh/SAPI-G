@@ -359,3 +359,10 @@ td {
   border-bottom: 1px solid #334155;
   margin-bottom: 1rem;
 }
+
+.tab {
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  color: #94a3b8;
+  position: relative;
+}
