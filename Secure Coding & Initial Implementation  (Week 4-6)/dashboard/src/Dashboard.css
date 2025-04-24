@@ -165,3 +165,8 @@ header {
   align-items: center;
   margin-bottom: 1rem;
 }
+
+.card-title {
+  font-size: 1rem;
+  color: #94a3b8;
+}
