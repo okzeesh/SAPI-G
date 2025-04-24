@@ -366,3 +366,7 @@ td {
   color: #94a3b8;
   position: relative;
 }
+
+.tab.active {
+  color: #00f2c3;
+}
