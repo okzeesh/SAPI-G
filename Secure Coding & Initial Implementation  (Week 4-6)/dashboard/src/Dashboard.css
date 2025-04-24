@@ -130,3 +130,10 @@ header {
   background: #00f2c3;
   animation: pulse 2s infinite;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
