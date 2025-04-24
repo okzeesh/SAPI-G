@@ -336,3 +336,8 @@ td {
   margin-bottom: 0.5rem;
   cursor: pointer;
 }
+
+.ip-item-actions {
+  display: flex;
+  gap: 0.5rem;
+}
