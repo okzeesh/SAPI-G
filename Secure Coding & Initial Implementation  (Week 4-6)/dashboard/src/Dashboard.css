@@ -319,3 +319,9 @@ td {
   font-weight: 500;
   cursor: pointer; /* Added cursor */
 }
+
+.ip-list {
+  margin-top: 1rem;
+  max-height: 200px;
+  overflow-y: auto;
+}
