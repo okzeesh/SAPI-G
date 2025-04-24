@@ -46,3 +46,16 @@ header {
   z-index: 1;
   cursor: pointer; /* Added cursor */
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo h1 {
+  color: #00f2c3;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
