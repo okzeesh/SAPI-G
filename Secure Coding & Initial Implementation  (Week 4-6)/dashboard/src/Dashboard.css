@@ -203,3 +203,10 @@ header {
   padding: 1.5rem;
   border: 1px solid rgba(108, 92, 231, 0.2);
 }
+
+.large-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
