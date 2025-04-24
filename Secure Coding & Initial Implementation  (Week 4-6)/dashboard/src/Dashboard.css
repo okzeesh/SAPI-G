@@ -309,3 +309,13 @@ td {
   outline: none;
   border-color: #00f2c3;
 }
+
+.ip-btn {
+  padding: 0 1.5rem;
+  background: linear-gradient(45deg, #6c5ce7, #00f2c3);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer; /* Added cursor */
+}
