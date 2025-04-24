@@ -39,4 +39,11 @@ const Login = ({ setIsLoggedIn }) => {
     }
   };
 
+  const handleRegister = async (e) => {
+    e.preventDefault();
+    if (registerData.password !== registerData.confirmPassword) {
+      setError('Passwords do not match');
+      return;
+    }
+
   
