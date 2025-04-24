@@ -83,3 +83,12 @@ header {
   gap: 5px;
   cursor: pointer; /* Added cursor */
 }
+
+.nav-link:hover {
+  color: #00f2c3;
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.nav-link i {
+  font-size: 1rem;
+}
