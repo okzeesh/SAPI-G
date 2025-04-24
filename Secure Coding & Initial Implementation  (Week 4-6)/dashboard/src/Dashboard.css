@@ -258,3 +258,11 @@ table {
   border-collapse: collapse;
   font-size: 0.9rem;
 }
+
+th {
+  text-align: left;
+  padding: 0.8rem 1rem;
+  background: rgba(108, 92, 231, 0.1);
+  color: #94a3b8;
+  font-weight: 500;
+}
