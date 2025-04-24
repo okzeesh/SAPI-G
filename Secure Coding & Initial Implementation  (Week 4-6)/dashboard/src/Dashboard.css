@@ -218,3 +218,13 @@ header {
   display: flex;
   gap: 5px;
 }
+
+.time-filter button {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  padding: 0.3rem 0.8rem;
+  border-radius: 3px;
+  cursor: pointer; /* Added cursor */
+  font-size: 0.8rem;
+}
