@@ -47,7 +47,8 @@ const Login = ({ setIsLoggedIn }) => {
     }
 
     try {
-            const res = await axios.post('http://localhost:5001/api/register', registerData);
+      const res = await axios.post('http://localhost:5001/api/register', registerData);
+      if (res.data.success) {
 
 
   
