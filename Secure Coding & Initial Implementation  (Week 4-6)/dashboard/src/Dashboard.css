@@ -210,3 +210,11 @@ header {
   align-items: center;
   margin-bottom: 1.5rem;
 }
+
+.time-filter {
+  background: rgba(30, 41, 59, 0.5);
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+}
