@@ -16,3 +16,21 @@ body {
   position: relative;
   overflow: auto;
 }
+
+.cyber-border {
+  position: fixed;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 15px,
+    #ff467e 15px,
+    #ff467e 30px
+  );
+  animation: scan 8s linear infinite;
+  pointer-events: none;
+  opacity: 0.05;
+  z-index: 0;
+}
