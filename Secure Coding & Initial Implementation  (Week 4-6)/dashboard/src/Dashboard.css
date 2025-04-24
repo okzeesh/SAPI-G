@@ -34,3 +34,15 @@ body {
   opacity: 0.05;
   z-index: 0;
 }
+
+header {
+  background: rgba(15, 23, 42, 0.8);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 242, 195, 0.2);
+  position: relative;
+  z-index: 1;
+  cursor: pointer; /* Added cursor */
+}
