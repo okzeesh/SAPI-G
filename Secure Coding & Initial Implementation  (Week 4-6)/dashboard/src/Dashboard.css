@@ -250,3 +250,11 @@ header {
   justify-content: center;
   color: #64748b;
 }
+
+/* Recent threat section */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
