@@ -279,3 +279,8 @@ td {
   font-size: 0.8rem;
   font-weight: 500;
 }
+
+.status-badge.blocked {
+  background: rgba(255, 70, 126, 0.1);
+  color: #ff467e;
+}
