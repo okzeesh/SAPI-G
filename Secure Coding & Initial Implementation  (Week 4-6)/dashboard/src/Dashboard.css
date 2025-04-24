@@ -122,3 +122,11 @@ header {
   align-items: center;
   gap: 8px;
 }
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #00f2c3;
+  animation: pulse 2s infinite;
+}
