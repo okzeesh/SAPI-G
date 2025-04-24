@@ -289,3 +289,9 @@ td {
   background: rgba(0, 242, 195, 0.1);
   color: #00f2c3;
 }
+
+.ip-controls {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
