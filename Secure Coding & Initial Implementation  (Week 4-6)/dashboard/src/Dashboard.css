@@ -228,3 +228,8 @@ header {
   cursor: pointer; /* Added cursor */
   font-size: 0.8rem;
 }
+
+.time-filter button.active {
+  background: rgba(108, 92, 231, 0.5);
+  color: #fff;
+}
