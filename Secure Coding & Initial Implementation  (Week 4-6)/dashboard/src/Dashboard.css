@@ -380,3 +380,12 @@ td {
   height: 2px;
   background: #00f2c3;
 }
+
+@keyframes scan {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
