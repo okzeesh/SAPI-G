@@ -45,7 +45,6 @@ const Login = ({ setIsLoggedIn }) => {
       setError('Passwords do not match');
       return;
     }
-
     try {
       const res = await axios.post('http://localhost:5001/api/register', registerData);
       if (res.data.success) {
@@ -53,6 +52,7 @@ const Login = ({ setIsLoggedIn }) => {
         setShowLogin(true);
       } else {
         setError('Registration failed');
+      }
         
 
 
