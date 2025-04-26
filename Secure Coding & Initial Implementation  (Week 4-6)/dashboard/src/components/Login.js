@@ -60,7 +60,9 @@ const Login = ({ setIsLoggedIn }) => {
 
   return (
     <div className="login-container">
-    <div className="cyber-border"></div>
+     <div className="cyber-border"></div>
+
+     {showLogin ? (
 
         
 
