@@ -52,6 +52,7 @@ const Login = ({ setIsLoggedIn }) => {
         alert('Registration successful!');
         setShowLogin(true);
       } else {
+        setError('Registration failed');
         
 
 
