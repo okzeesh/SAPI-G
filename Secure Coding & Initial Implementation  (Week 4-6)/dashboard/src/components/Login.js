@@ -65,6 +65,7 @@ const Login = ({ setIsLoggedIn }) => {
      {showLogin ? (
        <form onSubmit={handleLogin}>
        <div className="login-header">
+          <h1 className="login-title">SAPI-G</h1>
       
 
         
