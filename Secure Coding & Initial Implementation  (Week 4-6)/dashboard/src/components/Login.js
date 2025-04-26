@@ -53,6 +53,7 @@ const Login = ({ setIsLoggedIn }) => {
       } else {
         setError('Registration failed');
       }
+    } catch (err) {
         
 
 
