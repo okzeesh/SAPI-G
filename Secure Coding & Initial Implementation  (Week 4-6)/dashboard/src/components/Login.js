@@ -64,6 +64,7 @@ const Login = ({ setIsLoggedIn }) => {
 
      {showLogin ? (
        <form onSubmit={handleLogin}>
+       <div className="login-header">
 
         
 
