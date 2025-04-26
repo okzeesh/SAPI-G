@@ -67,6 +67,7 @@ const Login = ({ setIsLoggedIn }) => {
        <div className="login-header">
           <h1 className="login-title">SAPI-G</h1>
           <p className="login-subtitle">Admin Login</p>
+       </div>
           
       
 
