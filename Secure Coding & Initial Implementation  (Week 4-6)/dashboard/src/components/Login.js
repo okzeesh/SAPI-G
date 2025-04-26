@@ -56,6 +56,8 @@ const Login = ({ setIsLoggedIn }) => {
     } catch (err) {
       setError('Registration error. Try again.');
     }
+  };
+
         
 
 
