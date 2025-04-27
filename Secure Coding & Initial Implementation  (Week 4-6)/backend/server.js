@@ -219,6 +219,7 @@ app.get('/api/logs', authenticateJWT, authorizeRole("admin"), async (req, res) =
         const logs = await RequestLog.find().sort({ timestamp: -1 }).limit(50);
         res.json(logs);
     } catch (error) {
+        console.error("Error retrieving logs:", error);
 
 
 // ✅ MongoDB Connection
