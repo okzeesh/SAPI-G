@@ -1,0 +1,7 @@
+.dashboard-navbar {
+  background-color: rgba(15, 23, 42, 0.8);
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  gap: 3rem;
+}
