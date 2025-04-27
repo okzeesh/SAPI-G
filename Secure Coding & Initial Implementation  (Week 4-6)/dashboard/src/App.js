@@ -16,3 +16,7 @@ const App = () => {
         setIsLoggedIn(!!token); // If token exists, user is logged in
       }, []);
     
+      return (
+        <div>
+          {!hideNavbarRoutes.includes(location.pathname) && <Navbar />}
+    
