@@ -8,6 +8,9 @@ const rateLimit = require('express-rate-limit');
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const session = require("express-session");
+const passport = require("passport");
+require("./config/passport");
+
 
 const RequestLog = require('./models/requestLog');
 const User = require('./models/user');
