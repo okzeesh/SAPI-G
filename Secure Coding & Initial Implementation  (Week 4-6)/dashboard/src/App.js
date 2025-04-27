@@ -9,4 +9,10 @@ const App = () => {
     const location = useLocation();
     const hideNavbarRoutes = ['/'];
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-}
+  
+    useEffect(() => {
+        localStorage.removeItem('token');
+        const token = localStorage.getItem('token');
+        setIsLoggedIn(!!token); // If token exists, user is logged in
+      }, []);
+    
