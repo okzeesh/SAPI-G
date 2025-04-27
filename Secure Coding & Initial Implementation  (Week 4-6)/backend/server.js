@@ -144,8 +144,8 @@ app.post('/api/register', async (req, res) => {
     }
   });
 
-  // ✅ Login User & Generate JWT Token
-  app.post('/api/login', async (req, res) => {
+   // ✅ Login User & Generate JWT Token
+   app.post('/api/login', async (req, res) => {
     console.log("Login payload:", req.body);
   
     const { email, password } = req.body;
