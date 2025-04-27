@@ -5,3 +5,8 @@ import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 
+const App = () => {
+    const location = useLocation();
+    const hideNavbarRoutes = ['/'];
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+}
