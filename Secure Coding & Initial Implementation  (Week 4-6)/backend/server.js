@@ -220,6 +220,9 @@ app.get('/api/logs', authenticateJWT, authorizeRole("admin"), async (req, res) =
         res.json(logs);
     } catch (error) {
         console.error("Error retrieving logs:", error);
+        res.status(500).json({ message: "Error retrieving logs" });
+    }
+});
 
 
 // ✅ MongoDB Connection
