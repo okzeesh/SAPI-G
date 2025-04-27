@@ -178,7 +178,7 @@ app.post('/api/register', async (req, res) => {
     }
   });
 
-  // ✅ Log Threats
+// ✅ Log Threats
 app.post('/api/threats', authenticateJWT, async (req, res) => {
     try {
         const { ip, threatType } = req.body;
