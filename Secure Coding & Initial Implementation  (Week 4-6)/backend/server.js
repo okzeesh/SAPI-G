@@ -207,6 +207,7 @@ app.get('/api/threats', authenticateJWT, async (req, res) => {
     try {
         const threats = await Threat.find().sort({ detectedAt: -1 }).limit(50);
         res.status(200).json(threats);
+    }
 
 // ✅ MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, {
