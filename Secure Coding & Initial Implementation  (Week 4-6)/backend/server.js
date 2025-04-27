@@ -202,6 +202,9 @@ app.get('/api/logs', authenticateJWT, authorizeRole("admin"), async (req, res) =
     }
 });
 
+// ✅ Get Recent Threats (optional: protected)
+app.get('/api/threats', authenticateJWT, async (req, res) => {
+
 // ✅ MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
