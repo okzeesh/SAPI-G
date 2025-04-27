@@ -28,3 +28,14 @@ const App = () => {
               }
             />
             <Route
+              path="/Dashboard"
+              element={
+                isLoggedIn ? <Dashboard /> : <Navigate to="/" />
+              }
+            />
+          </Routes>
+        </div>
+      );
+    };
+    
+    export default App;
