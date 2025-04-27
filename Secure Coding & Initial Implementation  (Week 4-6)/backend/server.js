@@ -53,12 +53,13 @@ app.use(async (req, res, next) => {
 // ✅ JWT Authentication Middleware
 const authenticateJWT = (req, res, next) => {
     const authHeader = req.header('Authorization');
+    console.log("🔐 Incoming Authorization Header:", authHeader);  // ADD THIS
 
     if (!authHeader) {
         return res.status(401).json({ message: "Access Denied - No Token Provided" });
     }
 
-    const token = authHeader.split(" ")[1]; // Extract token after "Bearer"
+    const token = authHeader.split(" ")[1];
     if (!token) return res.status(401).json({ message: "Invalid token format" });
 
     try {
@@ -66,7 +67,7 @@ const authenticateJWT = (req, res, next) => {
         req.user = verified;
         next();
     } catch (error) {
-        console.error("Token Verification Failed:", error.message);
+        console.error("❌ Token Verification Failed:", error.message);
         return res.status(401).json({ message: "Invalid or expired token" });
     }
 };
