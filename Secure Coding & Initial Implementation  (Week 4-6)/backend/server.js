@@ -208,6 +208,11 @@ app.get('/api/threats', authenticateJWT, async (req, res) => {
         const threats = await Threat.find().sort({ detectedAt: -1 }).limit(50);
         res.status(200).json(threats);
     } catch (error) {
+        console.error("Error fetching threats:", error);
+        res.status(500).json({ message: "Error fetching threats" });
+    }
+});
+
 
 // ✅ MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, {
