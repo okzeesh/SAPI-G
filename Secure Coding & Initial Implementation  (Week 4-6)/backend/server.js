@@ -16,6 +16,7 @@ const RequestLog = require('./models/requestLog');
 const User = require('./models/user');
 const BlacklistedIp = require('./models/blacklistedIp');
 const Threat = require('./models/threat');
+const threatRoutes = require('./routes/threatRoute');
 
 console.log("Loaded JWT_SECRET:", process.env.JWT_SECRET);
 
