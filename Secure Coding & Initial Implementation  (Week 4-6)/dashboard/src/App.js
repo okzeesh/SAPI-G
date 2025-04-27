@@ -22,7 +22,7 @@ const App = () => {
     
           <Routes>
             <Route
-              path="\"
+              path="/"
               element={
                 isLoggedIn ? <Navigate to="/Dashboard" /> : <Login setIsLoggedIn={setIsLoggedIn} />
               }
