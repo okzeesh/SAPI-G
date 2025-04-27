@@ -20,3 +20,7 @@ const App = () => {
         <div>
           {!hideNavbarRoutes.includes(location.pathname) && <Navbar />}
     
+          <Routes>
+            <Route
+              path="\"
+              element={
