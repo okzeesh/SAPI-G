@@ -102,6 +102,8 @@ const Login = ({ setIsLoggedIn }) => {
 
           <button type="submit" className="login-btn">Login</button>
 
+          <div className="toggle-form-container">
+
 
       
           
