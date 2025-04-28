@@ -108,6 +108,9 @@ const Login = ({ setIsLoggedIn }) => {
             </button>
           </div>
 
+          <div className="security-tag">AI-Powered Threat Detection Active</div>
+        </form>
+
 
       
           
