@@ -98,6 +98,8 @@ const Login = ({ setIsLoggedIn }) => {
             </button>
           </div>
 
+          {error && <div style={{ color: 'red', marginBottom: '1rem' }}>{error}</div>}
+
 
       
           
