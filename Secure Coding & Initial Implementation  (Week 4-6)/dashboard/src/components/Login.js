@@ -82,6 +82,12 @@ const Login = ({ setIsLoggedIn }) => {
 
           <div className="form-group password-container">
             <input
+               type={showLoginPassword ? 'text' : 'password'}
+              className="form-input"
+              required
+              value={loginData.password}
+              onChange={(e) => setLoginData({ ...loginData, password: e.target.value })}
+            />
       
           
       
