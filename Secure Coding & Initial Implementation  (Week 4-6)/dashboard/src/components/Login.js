@@ -79,6 +79,9 @@ const Login = ({ setIsLoggedIn }) => {
             />
             <label className="input-label">Email</label>
           </div>
+
+          <div className="form-group password-container">
+            <input
       
           
       
