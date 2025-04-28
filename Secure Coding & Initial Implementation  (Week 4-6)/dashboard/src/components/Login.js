@@ -112,6 +112,10 @@ const Login = ({ setIsLoggedIn }) => {
         </form>
       ) : (
         <form onSubmit={handleRegister}>
+           <div className="login-header">
+            <h1 className="login-title">REGISTER</h1>
+            <p className="login-subtitle">Create new admin account</p>
+          </div>
 
           
 
