@@ -103,6 +103,10 @@ const Login = ({ setIsLoggedIn }) => {
           <button type="submit" className="login-btn">Login</button>
 
           <div className="toggle-form-container">
+            <button type="button" className="toggle-form-btn" onClick={toggleForm}>
+              Create new admin account
+            </button>
+          </div>
 
 
       
