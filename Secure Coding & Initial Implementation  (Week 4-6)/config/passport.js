@@ -12,3 +12,4 @@ passport.use(new GoogleStrategy({
         console.log('Google profile:', profile);
         // Check if user already exists
         let user = await User.findOne({ googleId: profile.id });
+        }
