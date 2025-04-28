@@ -68,6 +68,17 @@ const Login = ({ setIsLoggedIn }) => {
           <h1 className="login-title">SAPI-G</h1>
           <p className="login-subtitle">Admin Login</p>
        </div>
+
+       <div className="form-group">
+            <input
+              type="email"
+              className="form-input"
+              required
+              value={loginData.email}
+              onChange={(e) => setLoginData({ ...loginData, email: e.target.value })}
+            />
+            <label className="input-label">Email</label>
+          </div>
       
           
       
