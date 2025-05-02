@@ -73,3 +73,10 @@
     z-index: 1;
     border: 2px solid #00f2c3;
   }
+
+  /* Header styles */
+.register-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
