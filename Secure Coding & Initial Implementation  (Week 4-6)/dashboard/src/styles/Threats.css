@@ -27,3 +27,8 @@
 .logo h1 {
     font-size: 2.5rem;
     font-weight: 700;
+    background: linear-gradient(90deg, #6c5ce7 0%, #00f2c3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
