@@ -32,3 +32,6 @@ const Profile = () => {
 
   return (
     <div className="profile-page">
+<h2>Admin Profile</h2>
+      <div className="profile-avatar">
+        {user.email ? user.email[0].toUpperCase() : 'A'}
