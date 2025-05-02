@@ -109,3 +109,7 @@
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
 }
+
+.threats-card {
+    background: rgba(30, 41, 59, 0.92);
+    border-radius: 16px;
