@@ -6,6 +6,7 @@ const Navbar = () => {
     <nav className="top-nav">
       <a href="#" className="nav-link">About Us</a>
       <a href="#" className="nav-link">Contact</a>
+      <a href="#" className="nav-link">Sign Up</a>
 
 
 export default Navbar;
