@@ -83,3 +83,6 @@
 .status {
     display: flex;
     align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 242, 195, 0.1);
