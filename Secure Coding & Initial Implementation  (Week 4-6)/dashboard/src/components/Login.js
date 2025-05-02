@@ -141,6 +141,15 @@ const Login = ({ setIsLoggedIn }) => {
             </div>
           </div>
 
+          <div className="form-group">
+            <input
+              type="email"
+              className="form-input"
+              required
+              value={registerData.email}
+              onChange={(e) => setRegisterData({ ...registerData, email: e.target.value })}
+            />
+
           
 
       
