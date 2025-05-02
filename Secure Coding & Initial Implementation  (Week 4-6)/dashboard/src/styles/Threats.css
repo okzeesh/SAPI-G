@@ -95,3 +95,5 @@
     height: 8px;
     background: #00f2c3;
     border-radius: 50%;
+    animation: blink 2s infinite;
+}
