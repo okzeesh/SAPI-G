@@ -40,4 +40,6 @@ const Profile = () => {
         <p><strong>User ID:</strong> {user._id}</p>
         <p><strong>First Name:</strong> {user.firstName}</p>
         <p><strong>Last Name:</strong> {user.lastName}</p>
+        <p><strong>Email:</strong> {user.email}</p>
+        <p><strong>Role:</strong> {user.role}</p>
 
