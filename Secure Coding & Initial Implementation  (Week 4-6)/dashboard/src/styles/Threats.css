@@ -17,3 +17,9 @@
     align-items: center;
     margin-bottom: 2rem;
 }
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
