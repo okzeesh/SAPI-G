@@ -37,3 +37,7 @@ const Profile = () => {
         {user.email ? user.email[0].toUpperCase() : 'A'}
         </div>
         <div className="profile-info">
+        <p><strong>User ID:</strong> {user._id}</p>
+        <p><strong>First Name:</strong> {user.firstName}</p>
+        <p><strong>Last Name:</strong> {user.lastName}</p>
+
