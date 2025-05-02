@@ -95,3 +95,9 @@
     font-size: 0.9rem;
     font-weight: 300;
   }
+
+  /* Form inputs */
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
