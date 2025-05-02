@@ -23,5 +23,5 @@ const Profile = () => {
         return (
           <div className="profile-page">
             <h2>Profile</h2>
-        <p>No user is logged in.</p>
-        <button onClick={() => navigate('/login')}>Go to Login</button>
+            <p>No user is logged in.</p>
+            <button onClick={() => navigate('/login')}>Go to Login</button>
