@@ -138,3 +138,8 @@
     background: #0f172a;
     padding: 0 5px;
   }
+
+  .password-container {
+    position: relative;
+  }
+  
