@@ -117,6 +117,10 @@ const Login = ({ setIsLoggedIn }) => {
             <p className="login-subtitle">Create new admin account</p>
           </div>
 
+          <div className="name-group">
+            <div className="form-group">
+              <input
+
           
 
       
