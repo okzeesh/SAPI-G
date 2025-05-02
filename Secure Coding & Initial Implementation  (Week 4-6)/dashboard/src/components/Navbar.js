@@ -5,6 +5,7 @@ const Navbar = () => {
   return (
     <nav className="top-nav">
       <a href="#" className="nav-link">About Us</a>
+      <a href="#" className="nav-link">Contact</a>
 
 
 export default Navbar;
