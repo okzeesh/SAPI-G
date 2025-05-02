@@ -52,3 +52,6 @@
   position: absolute;
   width: 10px;
   height: 10px;
+  background: #6c5ce7;
+  border-radius: 50%;
+}
