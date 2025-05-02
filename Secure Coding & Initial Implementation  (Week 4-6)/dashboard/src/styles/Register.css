@@ -80,3 +80,12 @@
     margin-bottom: 2rem;
     position: relative;
   }
+
+  .register-title {
+    color: #00f2c3;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 15px rgba(0, 242, 195, 0.4);
+  }
