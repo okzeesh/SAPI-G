@@ -66,3 +66,7 @@
     50% { transform: scale(1.5); opacity: 0.5; }
     100% { transform: scale(1); opacity: 1; }
 }
+
+.threats-title {
+    display: flex;
+    justify-content: space-between;
