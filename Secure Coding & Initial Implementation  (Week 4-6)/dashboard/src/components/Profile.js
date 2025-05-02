@@ -15,4 +15,7 @@ const Profile = () => {
           }
           axios.get('http://localhost:5001/api/user/profile', {
             headers: { Authorization: `Bearer ${token}` }
-          })      
+          })
+          .then(res => setUser(res.data))
+          .catch(() => setUser(null));
+      }, []);
