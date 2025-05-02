@@ -97,3 +97,6 @@
     border-radius: 50%;
     animation: blink 2s infinite;
 }
+
+@keyframes blink {
+    0% { opacity: 1; }
