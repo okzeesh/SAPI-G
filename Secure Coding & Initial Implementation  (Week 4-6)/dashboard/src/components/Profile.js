@@ -9,3 +9,8 @@ const Profile = () => {
 
     useEffect(() => {
         const token = localStorage.getItem('token');
+        if (!token) {
+            setUser(null);
+            return;
+          }
+      
