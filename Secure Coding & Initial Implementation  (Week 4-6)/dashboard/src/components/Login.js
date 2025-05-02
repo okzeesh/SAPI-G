@@ -180,6 +180,12 @@ const Login = ({ setIsLoggedIn }) => {
               setRegisterData({ ...registerData, confirmPassword: e.target.value })
               }
             />
+            <label className="input-label">Confirm Password</label>
+            <button
+              type="button"
+              className="toggle-password"
+              onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+            >
 
           
 
