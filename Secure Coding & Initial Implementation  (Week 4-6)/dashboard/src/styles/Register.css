@@ -111,3 +111,14 @@
     pointer-events: none;
     transition: 0.3s;
   }
+
+  .form-input {
+    width: 100%;
+    padding: 1.2rem;
+    background: #1e293b;
+    border: 2px solid #334155;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
