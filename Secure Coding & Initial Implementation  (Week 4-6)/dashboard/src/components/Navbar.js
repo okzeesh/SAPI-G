@@ -8,7 +8,7 @@ const Navbar = () => {
       <a href="#" className="nav-link">Contact</a>
       <a href="#" className="nav-link">Sign Up</a>
   </nav>
-);
+ );
 };
 
 
