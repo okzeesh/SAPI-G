@@ -42,4 +42,6 @@ const Profile = () => {
         <p><strong>Last Name:</strong> {user.lastName}</p>
         <p><strong>Email:</strong> {user.email}</p>
         <p><strong>Role:</strong> {user.role}</p>
+        <p><strong>Created At:</strong> {user.createdAt ? new Date(user.createdAt).toLocaleString() : ''}</p>
+        <p><strong>Last Login:</strong> {user.lastLogin ? new Date(user.lastLogin).toLocaleString() : ''}</p>
 
