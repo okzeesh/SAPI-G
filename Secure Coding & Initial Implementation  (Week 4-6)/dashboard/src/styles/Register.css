@@ -89,3 +89,9 @@
     margin-bottom: 0.5rem;
     text-shadow: 0 0 15px rgba(0, 242, 195, 0.4);
   }
+
+  .register-subtitle {
+    color: #6c5ce7;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
