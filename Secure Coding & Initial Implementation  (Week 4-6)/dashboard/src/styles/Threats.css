@@ -10,3 +10,7 @@
     margin: 0 auto;
     padding: 2rem;
 }
+
+.threats-form header {
+    display: flex;
+    justify-content: space-between;
