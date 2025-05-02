@@ -166,6 +166,9 @@ const Login = ({ setIsLoggedIn }) => {
               className="toggle-password"
               onClick={() => setShowRegisterPassword(!showRegisterPassword)}
             >
+                 👁
+            </button>
+          </div>
 
           
 
