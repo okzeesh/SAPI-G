@@ -22,4 +22,8 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-  }
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
