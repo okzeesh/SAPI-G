@@ -29,3 +29,6 @@ const Profile = () => {
             </div>
     );
   }
+
+  return (
+    <div className="profile-page">
