@@ -152,6 +152,15 @@ const Login = ({ setIsLoggedIn }) => {
             <label className="input-label">Email</label>
           </div>
 
+          <div className="form-group password-container">
+            <input
+              type={showRegisterPassword ? 'text' : 'password'}
+              className="form-input"
+              required
+              value={loginData.password}
+              onChange={(e) => setLoginData({ ...loginData, password: e.target.value })}
+            />
+
           
 
       
