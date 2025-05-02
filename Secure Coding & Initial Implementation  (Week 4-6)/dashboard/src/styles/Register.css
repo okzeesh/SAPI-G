@@ -128,3 +128,5 @@
     border-color: #00f2c3;
     box-shadow: 0 0 15px rgba(0, 242, 195, 0.2);
   }
+
+  .form-input:focus + .input-label,
