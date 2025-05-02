@@ -129,6 +129,15 @@ const Login = ({ setIsLoggedIn }) => {
               <label className="input-label">First Name</label>
             </div>
 
+            <div className="form-group">
+              <input
+                type="text"
+                className="form-input"
+                required
+                value={registerData.lastName}
+                onChange={(e) => setRegisterData({ ...registerData, lastName: e.target.value })}
+              />
+
           
 
       
