@@ -130,3 +130,11 @@
   }
 
   .form-input:focus + .input-label,
+  .form-input:valid + .input-label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: #00f2c3;
+    background: #0f172a;
+    padding: 0 5px;
+  }
