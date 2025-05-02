@@ -200,6 +200,10 @@ const Login = ({ setIsLoggedIn }) => {
             </button>
           </div>
 
+          <div className="security-tag">All credentials are encrypted</div>
+        </form>
+      )}
+
           
 
       
