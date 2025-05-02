@@ -160,6 +160,12 @@ const Login = ({ setIsLoggedIn }) => {
               value={loginData.password}
               onChange={(e) => setLoginData({ ...loginData, password: e.target.value })}
             />
+            <label className="input-label">Password</label>
+            <button
+              type="button"
+              className="toggle-password"
+              onClick={() => setShowRegisterPassword(!showRegisterPassword)}
+            >
 
           
 
