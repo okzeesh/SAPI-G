@@ -36,4 +36,4 @@ const Profile = () => {
       <div className="profile-avatar">
         {user.email ? user.email[0].toUpperCase() : 'A'}
         </div>
-      <div className="profile-info">
+        <div className="profile-info">
