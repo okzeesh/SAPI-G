@@ -46,4 +46,6 @@ const Profile = () => {
         <p><strong>Last Login:</strong> {user.lastLogin ? new Date(user.lastLogin).toLocaleString() : ''}</p>
         <p><strong>Active:</strong> {user.isActive ? 'Yes' : 'No'}</p>
       </div>
+      <button onClick={() => navigate('/dashboard')}>Back to Dashboard</button>
+    </div>
 
