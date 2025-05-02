@@ -32,3 +32,7 @@
     -webkit-text-fill-color: transparent;
     letter-spacing: 1px;
 }
+
+.logo span {
+    font-size: 1rem;
+    color: #94a3b8;
