@@ -119,4 +119,5 @@
     transition: all 0.3s ease;
 }
 
-
+.threats-card:hover {
+    transform: translateY(-2px);
