@@ -55,3 +55,8 @@
   background: #6c5ce7;
   border-radius: 50%;
 }
+
+.cyber-border::before {
+    left: 0;
+    animation: pulse 2s infinite;
+  }
