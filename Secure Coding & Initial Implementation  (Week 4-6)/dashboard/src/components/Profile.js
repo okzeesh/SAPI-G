@@ -48,4 +48,6 @@ const Profile = () => {
       </div>
       <button onClick={() => navigate('/dashboard')}>Back to Dashboard</button>
     </div>
+    );
+};
 
