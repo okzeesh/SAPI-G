@@ -35,3 +35,9 @@
     padding: 8px 12px;
     border-radius: 5px;
   }
+
+  .nav-link:hover {
+    color: #00f2c3;
+    background: rgba(15, 23, 42, 0.3);
+    transform: translateY(-2px);
+  }
