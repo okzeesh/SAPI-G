@@ -192,6 +192,8 @@ const Login = ({ setIsLoggedIn }) => {
 
           {error && <div style={{ color: 'red', marginBottom: '1rem' }}>{error}</div>}
 
+          <button type="submit" className="login-btn">Register</button>
+
           
 
       
