@@ -35,3 +35,5 @@ const Profile = () => {
 <h2>Admin Profile</h2>
       <div className="profile-avatar">
         {user.email ? user.email[0].toUpperCase() : 'A'}
+        </div>
+      <div className="profile-info">
