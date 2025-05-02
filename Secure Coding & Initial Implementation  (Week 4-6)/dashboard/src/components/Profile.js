@@ -19,3 +19,6 @@ const Profile = () => {
           .then(res => setUser(res.data))
           .catch(() => setUser(null));
       }, []);
+      if (!user) {
+        return (
+          <div className="profile-page">
