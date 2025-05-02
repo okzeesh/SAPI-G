@@ -79,3 +79,7 @@
     font-weight: 600;
     color: #fff;
 }
+
+.status {
+    display: flex;
+    align-items: center;
