@@ -41,3 +41,7 @@
 
 .cyber-border {
     height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #6c5ce7 50%, transparent 100%);
+    margin: 2rem 0;
+    position: relative;
+}
