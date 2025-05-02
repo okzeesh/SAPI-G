@@ -5,4 +5,4 @@ import '../styles/Profile.css';
 
 const Profile = () => {
     const [user, setUser] = useState(null);
-  
+const navigate = useNavigate();
