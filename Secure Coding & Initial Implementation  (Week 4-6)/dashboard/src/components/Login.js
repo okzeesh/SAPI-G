@@ -149,6 +149,8 @@ const Login = ({ setIsLoggedIn }) => {
               value={registerData.email}
               onChange={(e) => setRegisterData({ ...registerData, email: e.target.value })}
             />
+            <label className="input-label">Email</label>
+          </div>
 
           
 
