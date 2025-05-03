@@ -12,5 +12,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    /* background removed to allow html, body, #root to control the gradient */
   }
      
