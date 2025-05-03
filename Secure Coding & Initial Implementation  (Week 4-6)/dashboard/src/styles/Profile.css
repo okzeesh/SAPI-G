@@ -35,6 +35,6 @@
     background: rgba(30, 41, 59, 0.85);
     border-radius: 12px;
     padding: 2rem 2.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-display: grid;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    display: grid;
   
