@@ -34,3 +34,5 @@ const Logs = () => {
             setLoading(false);
         });
     };
+
+    fetchLogs(); // Initial fetch
