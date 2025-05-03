@@ -9,3 +9,4 @@ const LOGS_PER_PAGE = 15;
 const Logs = () => {
     const [logs, setLogs] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
