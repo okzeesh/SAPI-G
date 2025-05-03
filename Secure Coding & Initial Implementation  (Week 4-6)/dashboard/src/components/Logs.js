@@ -41,3 +41,4 @@ const Logs = () => {
 }, []);
 
 const totalPages = Math.ceil(logs.length / LOGS_PER_PAGE);
+const startIdx = (page - 1) * LOGS_PER_PAGE;
