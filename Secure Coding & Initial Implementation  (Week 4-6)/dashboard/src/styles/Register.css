@@ -243,3 +243,6 @@
     justify-content: center;
     gap: 8px;
 }
+
+.security-tag::before,
+.security-tag::after {
