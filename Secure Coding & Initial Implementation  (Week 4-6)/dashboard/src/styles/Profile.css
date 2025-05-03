@@ -11,6 +11,7 @@
     overflow: hidden;
 
 }
+
 .profile-avatar {
     width: 90px;
     height: 90px;
@@ -29,4 +30,5 @@
     color: #00f2c3;
 }
 
+.profile-info {
 
