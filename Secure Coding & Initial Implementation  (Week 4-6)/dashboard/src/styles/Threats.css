@@ -162,3 +162,7 @@
 .export-btn:hover {
   background: rgba(0, 242, 195, 0.2);
 }
+
+.threats-card-content {
+    padding: 1.5rem;
+  }
