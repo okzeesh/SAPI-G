@@ -95,3 +95,7 @@ button:hover {
  
 .logs-table th,
 .logs-table td {
+ text-align: left;
+padding: 0.7rem 1rem;
+  min-width: 120px;
+  
