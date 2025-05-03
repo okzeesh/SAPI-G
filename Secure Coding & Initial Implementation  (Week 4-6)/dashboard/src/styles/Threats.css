@@ -172,3 +172,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
+
+.action-btn {
+    padding: 1rem;
+    border: none;
