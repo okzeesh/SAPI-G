@@ -48,3 +48,8 @@
     font-size: 1.08rem;
     letter-spacing: 0.01em;
 }
+
+.profile-info strong {
+  color: #00f2c3;
+font-weight: 600;
+  
