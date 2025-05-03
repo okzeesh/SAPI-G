@@ -38,3 +38,4 @@ const Logs = () => {
     fetchLogs(); // Initial fetch
     const interval = setInterval(fetchLogs, 5000); // Fetch every 5 seconds
     return () => clearInterval(interval); // Cleanup on unmount
+}, []);
