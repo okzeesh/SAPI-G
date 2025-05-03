@@ -142,4 +142,8 @@
   .password-container {
     position: relative;
   }
-  
+
+  .toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
