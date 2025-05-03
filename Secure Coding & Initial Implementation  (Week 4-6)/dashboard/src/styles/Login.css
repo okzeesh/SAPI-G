@@ -32,3 +32,7 @@ body {
     padding: 8px 12px;
     border-radius: 5px;
 }
+
+.nav-link:hover {
+color: #00f2c3;
+  
