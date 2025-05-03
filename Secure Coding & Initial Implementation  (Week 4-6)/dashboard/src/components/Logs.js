@@ -5,3 +5,6 @@ import "../styles/Profile.css";
 import { API_URL } from "../config";
 
 const LOGS_PER_PAGE = 15;
+
+const Logs = () => {
+    const [logs, setLogs] = useState([]);
