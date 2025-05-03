@@ -158,3 +158,9 @@
 .toggle-password:hover {
     color: #00f2c3;
 }
+
+.register-btn {
+    width: 100%;
+    padding: 1.2rem;
+    background: linear-gradient(45deg, #6c5ce7, #00f2c3);
+    border: none;
