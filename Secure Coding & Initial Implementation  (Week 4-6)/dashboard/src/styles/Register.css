@@ -164,3 +164,7 @@
     padding: 1.2rem;
     background: linear-gradient(45deg, #6c5ce7, #00f2c3);
     border: none;
+    border-radius: 8px;
+   color: white;
+   font-size: 1rem;
+   font-weight: 600;
