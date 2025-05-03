@@ -58,3 +58,4 @@ const exportAsPDF = () => {
 
   return (
     <div className="profile-page" style={{maxWidth: '1100px'}}>
+    <h2 style={{marginBottom: '2rem'}}>Request Logs</h2>
