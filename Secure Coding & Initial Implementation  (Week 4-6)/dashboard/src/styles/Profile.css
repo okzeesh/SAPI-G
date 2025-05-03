@@ -86,4 +86,6 @@ button:hover {
         max-width: 98vw;
         padding: 1.2rem 0.5rem;
     }
+    .profile-info {
+        grid-template-columns: 1fr;
     
