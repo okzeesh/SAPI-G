@@ -69,3 +69,4 @@ const exportAsPDF = () => {
           </tr>
         </thead>
         <tbody>
+          {logsToShow.map((log, idx) => (
