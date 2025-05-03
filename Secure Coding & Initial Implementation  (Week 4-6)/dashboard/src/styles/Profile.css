@@ -80,4 +80,5 @@ button:hover {
     background: #00f2c3;
     color: #1e293b;
 }   
-  
+
+@media (max-width: 700px) {
