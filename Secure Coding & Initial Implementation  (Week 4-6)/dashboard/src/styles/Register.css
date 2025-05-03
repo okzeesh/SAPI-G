@@ -226,3 +226,6 @@
     padding: 8px 12px;
     border-radius: 4px;
 }
+
+.toggle-form-btn:hover {
+    color: #6c5ce7;
