@@ -76,3 +76,5 @@ const exportAsPDF = () => {
             <td style={{padding: '0.6rem 0.5rem'}}>{log.endpoint}</td>
             <td style={{padding: '0.6rem 0.5rem'}}>{log.status || log.statusCode}</td>
             <td style={{padding: '0.6rem 0.5rem'}}>{log.userEmail || log.user || '-'}</td>
+          </tr>
+        ))}
