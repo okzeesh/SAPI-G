@@ -30,3 +30,4 @@ const Logs = () => {
             setLoading(false);
         })
         .catch(() => {
+            setError('Failed to fetch logs');
