@@ -23,3 +23,4 @@ const Logs = () => {
 
     const fetchLogs = () => {
         axios.get(`${API_URL}/api/logs`, {
+            headers: { Authorization: `Bearer ${token}` }
