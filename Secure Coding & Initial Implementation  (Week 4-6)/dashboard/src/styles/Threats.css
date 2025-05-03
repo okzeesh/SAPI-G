@@ -176,3 +176,7 @@
 .action-btn {
     padding: 1rem;
     border: none;
+    border-radius: 8px;
+    background: rgba(108, 92, 231, 0.1);
+    color: #6c5ce7;
+    
