@@ -71,3 +71,4 @@ const exportAsPDF = () => {
         <tbody>
           {logsToShow.map((log, idx) => (
             <tr key={log._id || idx} style={{background: idx % 2 === 0 ? 'rgba(36, 44, 62, 0.95)' : 'rgba(30,41,59,0.85)', borderBottom: '1px solid #334155'}}>
+            <td style={{padding: '0.6rem 0.5rem'}}>{log.timestamp ? new Date(log.timestamp).toLocaleString() : ''}</td>
