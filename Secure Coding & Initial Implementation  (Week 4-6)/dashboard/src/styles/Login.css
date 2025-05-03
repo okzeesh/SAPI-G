@@ -19,6 +19,6 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
-display: flex;
+    display: flex;
     gap: 1.5rem;
   
