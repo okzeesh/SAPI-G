@@ -48,3 +48,7 @@ const logsToShow = logs.slice(startIdx, endIdx);
 const exportAsPDF = () => {
     // Logic for exporting logs as PDF
   };
+  
+  const exportAsXLSX = () => {
+    // Logic for exporting logs as XLSX
+  };
