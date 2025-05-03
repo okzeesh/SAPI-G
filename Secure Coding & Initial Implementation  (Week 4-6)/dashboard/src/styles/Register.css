@@ -221,3 +221,6 @@
     color: #00f2c3;
     cursor: pointer;
     font-size: 0.9rem;
+    text-decoration: underline;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
