@@ -271,3 +271,6 @@
     position: relative;
     overflow: hidden;
 }
+
+.google-login-btn:hover {
+    background: #C53929;
