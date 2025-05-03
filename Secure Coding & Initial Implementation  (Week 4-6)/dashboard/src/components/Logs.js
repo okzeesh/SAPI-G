@@ -58,23 +58,25 @@ const exportAsPDF = () => {
 
   return (
     <div className="profile-page" style={{maxWidth: '1100px'}}>
-    <h2 style={{marginBottom: '2rem'}}>Request Logs</h2>
-        <thead>
-          <tr style={{background: 'rgba(0,242,195,0.08)'}}>
-            <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>Timestamp</th>
-            <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>Method</th>
-            <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>Endpoint</th>
-            <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>Status</th>
-            <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>User</th>
-          </tr>
-        </thead>
-        <tbody>
-          {logsToShow.map((log, idx) => (
-            <tr key={log._id || idx} style={{background: idx % 2 === 0 ? 'rgba(36, 44, 62, 0.95)' : 'rgba(30,41,59,0.85)', borderBottom: '1px solid #334155'}}>
-            <td style={{padding: '0.6rem 0.5rem'}}>{log.timestamp ? new Date(log.timestamp).toLocaleString() : ''}</td>
-            <td style={{padding: '0.6rem 0.5rem'}}>{log.method}</td>
-            <td style={{padding: '0.6rem 0.5rem'}}>{log.endpoint}</td>
-            <td style={{padding: '0.6rem 0.5rem'}}>{log.status || log.statusCode}</td>
-            <td style={{padding: '0.6rem 0.5rem'}}>{log.userEmail || log.user || '-'}</td>
-          </tr>
-        ))}
+      <h2 style={{marginBottom: '2rem'}}>Request Logs</h2>
+      <div className="logs-table-container" style={{overflowX: 'auto', background: 'rgba(30,41,59,0.92)', borderRadius: '16px', boxShadow: '0 2px 12px rgba(0,0,0,0.15)', padding: '2rem 1.5rem'}}>
+        <table className="logs-table" style={{width: '100%', color: '#fff', borderCollapse: 'collapse', fontSize: '1.05rem'}}>
+          <thead>
+            <tr style={{background: 'rgba(0,242,195,0.08)'}}>
+              <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>Timestamp</th>
+              <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>Method</th>
+              <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>Endpoint</th>
+              <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>Status</th>
+              <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>User</th>
+            </tr>
+          </thead>
+          <tbody>
+            {logsToShow.map((log, idx) => (
+              <tr key={log._id || idx} style={{background: idx % 2 === 0 ? 'rgba(36, 44, 62, 0.95)' : 'rgba(30,41,59,0.85)', borderBottom: '1px solid #334155'}}>
+                <td style={{padding: '0.6rem 0.5rem'}}>{log.timestamp ? new Date(log.timestamp).toLocaleString() : ''}</td>
+                <td style={{padding: '0.6rem 0.5rem'}}>{log.method}</td>
+                <td style={{padding: '0.6rem 0.5rem'}}>{log.endpoint}</td>
+                <td style={{padding: '0.6rem 0.5rem'}}>{log.status || log.statusCode}</td>
+                <td style={{padding: '0.6rem 0.5rem'}}>{log.userEmail || log.user || '-'}</td>
+              </tr>
+            ))}
