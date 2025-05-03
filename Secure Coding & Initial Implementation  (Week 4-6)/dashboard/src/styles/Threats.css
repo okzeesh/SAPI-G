@@ -186,3 +186,7 @@
     align-items: center;
     gap: 0.5rem;
 }
+
+.action-btn:hover {
+    background: rgba(108, 92, 231, 0.2);
+}
