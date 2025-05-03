@@ -46,3 +46,5 @@ const endIdx = startIdx + LOGS_PER_PAGE;
 const logsToShow = logs.slice(startIdx, endIdx);
 
 const exportAsPDF = () => {
+    // Logic for exporting logs as PDF
+  };
