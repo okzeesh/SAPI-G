@@ -18,3 +18,4 @@ const Logs = () => {
       if (!token) {
         setError('Not authenticated');
         setLoading(false);
+        return;
