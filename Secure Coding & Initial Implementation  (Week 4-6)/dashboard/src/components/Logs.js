@@ -52,3 +52,5 @@ const exportAsPDF = () => {
   const exportAsXLSX = () => {
     // Logic for exporting logs as XLSX
   };
+
+  if (loading) return <div className="profile-page"><h2>Logs</h2><p>Loading...</p></div>;
