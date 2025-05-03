@@ -200,5 +200,5 @@
 /* Register name fields */
 .name-group {
     display: flex;
-  gap: 1rem;
+    gap: 1rem;
 }
