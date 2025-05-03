@@ -55,3 +55,5 @@ const exportAsPDF = () => {
 
   if (loading) return <div className="profile-page"><h2>Logs</h2><p>Loading...</p></div>;
   if (error) return <div className="profile-page"><h2>Logs</h2><p>{error}</p></div>;
+
+  return (
