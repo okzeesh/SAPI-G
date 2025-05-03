@@ -57,3 +57,4 @@ const exportAsPDF = () => {
   if (error) return <div className="profile-page"><h2>Logs</h2><p>{error}</p></div>;
 
   return (
+    <div className="profile-page" style={{maxWidth: '1100px'}}>
