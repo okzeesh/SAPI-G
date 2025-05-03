@@ -19,3 +19,4 @@ const Logs = () => {
         setError('Not authenticated');
         setLoading(false);
         return;
+    }
