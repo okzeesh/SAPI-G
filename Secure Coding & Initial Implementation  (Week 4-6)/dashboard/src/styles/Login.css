@@ -53,5 +53,5 @@ body {
         #ff467e 30px
     );
     animation: scan 8s linear infinite;
-pointer-events: none;
+    pointer-events: none;
   
