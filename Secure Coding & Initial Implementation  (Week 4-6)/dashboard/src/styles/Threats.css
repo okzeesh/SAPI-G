@@ -149,3 +149,6 @@
   border: none;
   border-radius: 8px;
   background: rgba(0, 242, 195, 0.1);
+  color: #00f2c3;
+  font-size: 0.9rem;
+  cursor: pointer;
