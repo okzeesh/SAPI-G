@@ -20,3 +20,5 @@ const Logs = () => {
         setLoading(false);
         return;
     }
+
+    const fetchLogs = () => {
