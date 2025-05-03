@@ -25,3 +25,4 @@ const Logs = () => {
         axios.get(`${API_URL}/api/logs`, {
             headers: { Authorization: `Bearer ${token}` }
         })
+        .then(res => {
