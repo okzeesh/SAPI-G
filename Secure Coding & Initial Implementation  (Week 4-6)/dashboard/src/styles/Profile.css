@@ -37,6 +37,6 @@
     padding: 2rem 2.5rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
     display: grid;
-  grid-template-columns: 1fr 1fr;
-gap: 1.2rem 2.5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem 2.5rem;
   
