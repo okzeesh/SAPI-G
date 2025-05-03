@@ -2,4 +2,6 @@
     background: rgba(15, 23, 42, 0.95);
     color: #fff;
     border-radius: 24px;
-    
+   max-width: 900px;
+  margin: 3.5rem auto;
+      
