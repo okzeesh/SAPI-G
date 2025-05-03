@@ -222,5 +222,5 @@
     cursor: pointer;
     font-size: 0.9rem;
     text-decoration: underline;
-  transition: all 0.3s ease;
-  padding: 8px 12px;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
