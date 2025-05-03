@@ -146,3 +146,6 @@
 .refresh-btn,
 .export-btn {
   padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(0, 242, 195, 0.1);
