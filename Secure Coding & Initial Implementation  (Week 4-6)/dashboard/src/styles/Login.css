@@ -30,4 +30,5 @@ body {
     font-size: 0.9rem;
     transition: all 0.3s ease;
     padding: 8px 12px;
-    
+border-radius: 5px;
+}
