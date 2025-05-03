@@ -39,3 +39,5 @@ const Logs = () => {
     const interval = setInterval(fetchLogs, 5000); // Fetch every 5 seconds
     return () => clearInterval(interval); // Cleanup on unmount
 }, []);
+
+const totalPages = Math.ceil(logs.length / LOGS_PER_PAGE);
