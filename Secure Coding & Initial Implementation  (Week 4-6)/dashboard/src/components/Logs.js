@@ -26,3 +26,4 @@ const Logs = () => {
             headers: { Authorization: `Bearer ${token}` }
         })
         .then(res => {
+            setLogs(res.data);
