@@ -179,4 +179,6 @@
     border-radius: 8px;
     background: rgba(108, 92, 231, 0.1);
     color: #6c5ce7;
-    
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
