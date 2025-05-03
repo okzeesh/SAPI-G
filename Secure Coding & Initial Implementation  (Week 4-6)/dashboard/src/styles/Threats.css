@@ -165,4 +165,8 @@
 
 .threats-card-content {
     padding: 1.5rem;
-  }
+}
+
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
