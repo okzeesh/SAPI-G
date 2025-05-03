@@ -137,3 +137,9 @@
     font-weight: 600;
     color: #fff;
 }
+
+.threats-card-actions {
+    display: flex;
+    gap: 1rem;
+}
+
