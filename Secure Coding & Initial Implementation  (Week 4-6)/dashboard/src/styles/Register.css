@@ -150,3 +150,11 @@
     transform: translateY(-50%);
     background: none;
     border: none;
+    cursor: pointer;
+    color: #94a3b8;
+    transition: 0.3s;
+}
+
+.toggle-password:hover {
+    color: #00f2c3;
+}
