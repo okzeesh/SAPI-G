@@ -232,3 +232,6 @@
     text-shadow: 0 0 10px rgba(108, 92, 231, 0.5);
     background: rgba(15, 23, 42, 0.3);
 }
+
+.security-tag {
+    text-align: center;
