@@ -157,3 +157,8 @@
   align-items: center;
   gap: 0.5rem;
 }
+
+.refresh-btn:hover,
+.export-btn:hover {
+  background: rgba(0, 242, 195, 0.2);
+}
