@@ -92,4 +92,6 @@ button:hover {
         font-size: 1rem;
     }
 }   
-        
+ 
+.logs-table th,
+.logs-table td {
