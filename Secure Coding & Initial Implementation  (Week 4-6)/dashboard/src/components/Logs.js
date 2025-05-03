@@ -11,3 +11,4 @@ const Logs = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [page, setPage] = useState(1);
+    const navigate = useNavigate();
