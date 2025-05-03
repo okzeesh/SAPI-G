@@ -12,3 +12,6 @@ const Logs = () => {
     const [error, setError] = useState(null);
     const [page, setPage] = useState(1);
     const navigate = useNavigate();
+  
+    useEffect(() => {
+      const token = localStorage.getItem('token');
