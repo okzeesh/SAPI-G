@@ -33,4 +33,6 @@
 .profile-info {
     margin-bottom: 2.2rem;
     background: rgba(30, 41, 59, 0.85);
-
+border-radius: 12px;
+  padding: 2rem 2.5rem;
+  
