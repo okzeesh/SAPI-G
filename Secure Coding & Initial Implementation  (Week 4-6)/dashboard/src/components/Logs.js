@@ -27,3 +27,4 @@ const Logs = () => {
         })
         .then(res => {
             setLogs(res.data);
+            setLoading(false);
