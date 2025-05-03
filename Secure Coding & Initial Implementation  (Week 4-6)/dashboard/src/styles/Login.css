@@ -14,4 +14,7 @@ body {
     font-family: 'Poppins', sans-serif;
     /* background removed to allow html, body, #root to control the gradient */
   }
-     
+
+.top-nav {
+position: fixed;
+  
