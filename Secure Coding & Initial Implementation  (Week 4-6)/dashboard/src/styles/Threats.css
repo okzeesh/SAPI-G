@@ -143,3 +143,6 @@
     gap: 1rem;
 }
 
+.refresh-btn,
+.export-btn {
+  padding: 0.5rem 1rem;
