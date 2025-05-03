@@ -206,3 +206,7 @@
 .name-group .form-group {
     flex: 1;
 }
+
+/* Toggle buttons */
+.toggle-form-container {
+    display: flex;
