@@ -59,3 +59,6 @@ const exportAsPDF = () => {
   return (
     <div className="profile-page" style={{maxWidth: '1100px'}}>
     <h2 style={{marginBottom: '2rem'}}>Request Logs</h2>
+        <thead>
+          <tr style={{background: 'rgba(0,242,195,0.08)'}}>
+            <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>Timestamp</th>
