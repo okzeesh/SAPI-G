@@ -204,3 +204,5 @@
 }
 
 .name-group .form-group {
+    flex: 1;
+}
