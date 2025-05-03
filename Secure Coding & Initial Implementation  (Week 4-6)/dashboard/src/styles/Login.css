@@ -23,3 +23,7 @@ body {
     gap: 1.5rem;
     z-index: 2;
 }
+
+.nav-link {
+   color: rgba(255, 255, 255, 0.8);
+  
