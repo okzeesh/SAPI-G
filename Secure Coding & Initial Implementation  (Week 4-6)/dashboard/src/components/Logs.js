@@ -145,3 +145,5 @@ const exportAsPDF = () => {
           onClick={() => navigate("/dashboard")}
           style={{
             marginTop: "2.5rem",
+            padding: "0.7rem 1.5rem",
+            borderRadius: "8px",
