@@ -226,3 +226,8 @@
     color: #ff467e;
 }
 
+.activity-icon.warning {
+    background: rgba(249, 202, 36, 0.1);
+    color: #f9ca24;
+}
+
