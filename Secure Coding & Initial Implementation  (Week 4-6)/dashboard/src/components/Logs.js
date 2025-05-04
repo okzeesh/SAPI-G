@@ -158,3 +158,5 @@ const exportAsPDF = () => {
           >
             Back to Dashboard
           </button>
+        </div>
+      </div>
