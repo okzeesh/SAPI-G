@@ -80,3 +80,4 @@ const exportAsPDF = () => {
                 <td style={{padding: '0.6rem 0.5rem'}}>{log.userEmail || log.user || '-'}</td>
               </tr>
             ))}
+            </tbody>
