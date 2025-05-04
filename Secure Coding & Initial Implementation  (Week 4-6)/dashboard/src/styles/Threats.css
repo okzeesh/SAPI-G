@@ -209,4 +209,8 @@
 
 .activity-item:hover {
     background: rgba(30, 41, 59, 0.7);
-  }
+}
+
+.activity-icon {
+    width: 40px;
+    height: 40px;
