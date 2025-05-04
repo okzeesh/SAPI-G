@@ -116,3 +116,5 @@ const exportAsPDF = () => {
             Export as PDF
           </button>
           <button
+            onClick={exportAsXLSX}
+            style={{
