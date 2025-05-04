@@ -99,3 +99,5 @@ const exportAsPDF = () => {
               color: '#fff',
               border: 'none',
               fontWeight: 600,
+              fontSize: '1rem',
+              cursor: 'pointer',
