@@ -91,3 +91,5 @@ const exportAsPDF = () => {
         )}
         <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2rem' }}>
           <button
+            onClick={exportAsPDF}
+            style={{
