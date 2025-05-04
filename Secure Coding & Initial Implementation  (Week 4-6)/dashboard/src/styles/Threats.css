@@ -235,3 +235,7 @@
     background: rgba(0, 242, 195, 0.1);
     color: #00f2c3;
 }
+
+.activity-details {
+    display: flex;
+    flex-direction: column;
