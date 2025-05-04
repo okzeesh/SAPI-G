@@ -241,3 +241,7 @@
     flex-direction: column;
     gap: 0.25rem;
 }
+
+.activity-title {
+    font-size: 0.9rem;
+    font-weight: 500;
