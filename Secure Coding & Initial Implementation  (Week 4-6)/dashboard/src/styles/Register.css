@@ -265,6 +265,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
 
 .google-login-btn:hover {
     background: #C53929;
