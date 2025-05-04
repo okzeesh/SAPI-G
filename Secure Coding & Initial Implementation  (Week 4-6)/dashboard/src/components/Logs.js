@@ -111,3 +111,6 @@ const exportAsPDF = () => {
             onMouseLeave={(e) => {
               e.target.style.transform = "scale(1)";
               e.target.style.boxShadow = "0 4px 8px rgba(108, 92, 231, 0.3)";
+            }}
+          >
+            Export as PDF
