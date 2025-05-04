@@ -264,6 +264,7 @@
     font-weight: 600;
     cursor: pointer;
     display: flex;
+    align-items: center;
 
 .google-login-btn:hover {
     background: #C53929;
