@@ -231,3 +231,7 @@
     color: #f9ca24;
 }
 
+.activity-icon.success {
+    background: rgba(0, 242, 195, 0.1);
+    color: #00f2c3;
+}
