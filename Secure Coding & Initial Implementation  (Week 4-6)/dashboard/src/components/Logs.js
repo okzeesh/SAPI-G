@@ -88,3 +88,4 @@ const exportAsPDF = () => {
             <span style={{color: '#00f2c3', fontWeight: 600}}>Page {page} of {totalPages}</span>
             <button onClick={() => setPage(page + 1)} disabled={page === totalPages} style={{padding: '0.5rem 1.2rem', borderRadius: '6px', border: 'none', background: '#6c5ce7', color: '#fff', cursor: page === totalPages ? 'not-allowed' : 'pointer', opacity: page === totalPages ? 0.5 : 1}}>Next</button>
           </div>
+        )}
