@@ -201,3 +201,6 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    padding: 1rem;
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 8px;
