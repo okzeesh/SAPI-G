@@ -262,6 +262,7 @@
     color: white;
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
 
 .google-login-btn:hover {
     background: #C53929;
