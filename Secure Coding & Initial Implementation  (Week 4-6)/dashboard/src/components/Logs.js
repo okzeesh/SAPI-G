@@ -118,3 +118,5 @@ const exportAsPDF = () => {
           <button
             onClick={exportAsXLSX}
             style={{
+              padding: "0.7rem 1.5rem",
+              borderRadius: "8px",
