@@ -220,3 +220,9 @@
     justify-content: center;
     font-size: 1.2rem;
 }
+
+.activity-icon.threat {
+    background: rgba(255, 70, 126, 0.1);
+    color: #ff467e;
+}
+
