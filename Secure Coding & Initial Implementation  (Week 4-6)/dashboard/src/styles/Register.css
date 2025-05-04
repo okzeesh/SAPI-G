@@ -260,6 +260,7 @@
     border: none;
     border-radius: 8px;
     color: white;
+    font-size: 1rem;
 
 .google-login-btn:hover {
     background: #C53929;
