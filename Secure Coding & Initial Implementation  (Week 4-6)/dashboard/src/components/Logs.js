@@ -149,3 +149,5 @@ const exportAsPDF = () => {
             borderRadius: "8px",
             background: "linear-gradient(45deg, #6c5ce7, #00f2c3)",
             color: "#fff",
+            border: "none",
+            fontWeight: 500,
