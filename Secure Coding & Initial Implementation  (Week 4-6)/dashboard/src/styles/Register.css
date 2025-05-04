@@ -254,6 +254,7 @@
 }
 
 .google-login-btn {
+    width: 100%;
 
 .google-login-btn:hover {
     background: #C53929;
