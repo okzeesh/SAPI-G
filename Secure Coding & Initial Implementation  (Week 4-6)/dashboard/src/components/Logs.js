@@ -81,3 +81,5 @@ const exportAsPDF = () => {
               </tr>
             ))}
             </tbody>
+          </table>
+          {totalPages > 1 && (
