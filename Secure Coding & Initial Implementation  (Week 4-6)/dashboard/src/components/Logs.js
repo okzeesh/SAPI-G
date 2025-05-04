@@ -105,3 +105,4 @@ const exportAsPDF = () => {
               boxShadow: '0 4px 8px rgba(108, 92, 231, 0.3)',
             }}
             onMouseEnter={(e) => {
+              e.target.style.transform = "scale(1.05)";
