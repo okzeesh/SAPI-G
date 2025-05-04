@@ -313,3 +313,5 @@
     position: relative;
     z-index: 1;
 }
+
+html, body, #root {
