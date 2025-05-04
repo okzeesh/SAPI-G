@@ -142,3 +142,6 @@ const exportAsPDF = () => {
           </button>
         </div>
         <button
+          onClick={() => navigate("/dashboard")}
+          style={{
+            marginTop: "2.5rem",
