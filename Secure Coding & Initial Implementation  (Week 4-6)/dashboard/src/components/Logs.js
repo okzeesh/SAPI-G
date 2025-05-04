@@ -155,3 +155,6 @@ const exportAsPDF = () => {
             boxShadow: "0 2px 8px rgba(0,242,195,0.10)",
             cursor: "pointer",
           }}
+          >
+            Back to Dashboard
+          </button>
