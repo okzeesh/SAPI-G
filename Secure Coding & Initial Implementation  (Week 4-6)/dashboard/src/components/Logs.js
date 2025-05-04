@@ -83,3 +83,4 @@ const exportAsPDF = () => {
             </tbody>
           </table>
           {totalPages > 1 && (
+            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '1.5rem', gap: '1.2rem'}}>
