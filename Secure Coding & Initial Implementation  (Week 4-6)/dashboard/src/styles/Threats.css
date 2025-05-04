@@ -190,3 +190,7 @@
 .action-btn:hover {
     background: rgba(108, 92, 231, 0.2);
 }
+
+.activity-list {
+    display: flex;
+    flex-direction: column;
