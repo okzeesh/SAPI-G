@@ -433,3 +433,9 @@
     top: 100%;
     background: rgba(15, 23, 42, 0.95);
     border: 1px solid rgba(0, 242, 195, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 242, 195, 0.1);
+    z-index: 1000;
+    min-width: 180px;
+    backdrop-filter: blur(10px);
+}
