@@ -32,4 +32,7 @@
 .responsive-table table {
   min-width: 600px;
   width: 100%;
- 
+}
+  
+/* Responsive cards */
+.responsive-card {
