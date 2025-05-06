@@ -317,3 +317,8 @@
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0, 242, 195, 0.1);
 }
+
+.responsive-card {
+    background: rgba(15, 23, 42, 0.95);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 242, 195, 0.2);
