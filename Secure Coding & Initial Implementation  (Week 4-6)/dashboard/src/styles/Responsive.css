@@ -215,3 +215,10 @@
 .p-4 {
   padding: 2rem;
 }
+
+/* Flex utilities */
+.flex {
+  display: flex;
+}
+
+.flex-col {
