@@ -398,3 +398,11 @@
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0, 242, 195, 0.3);
 }
+
+.responsive-button:disabled {
+  background: #4a5568;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
