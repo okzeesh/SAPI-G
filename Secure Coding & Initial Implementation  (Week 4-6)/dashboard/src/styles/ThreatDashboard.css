@@ -271,3 +271,10 @@
     background: rgba(249, 202, 36, 0.1);
     color: #f9ca24;
 }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .threat-details {
+      grid-template-columns: 1fr;
+    }
+}
