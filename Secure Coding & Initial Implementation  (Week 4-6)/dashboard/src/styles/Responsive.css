@@ -24,3 +24,6 @@
   
 /* Responsive tables */
 .responsive-table {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
