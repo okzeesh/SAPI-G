@@ -327,3 +327,11 @@
     margin-top: 1rem;
     backdrop-filter: blur(10px);
 }
+
+.responsive-table {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+    background: rgba(30, 41, 59, 0.5);
+}
+  
