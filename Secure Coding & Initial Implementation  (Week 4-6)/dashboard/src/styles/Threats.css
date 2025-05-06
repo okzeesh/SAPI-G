@@ -342,3 +342,8 @@
     font-size: 1.05rem;
     color: #e2e8f0;
 }
+
+.logs-table th {
+    color: #00f2c3;
+    position: sticky;
+    top: 0;
