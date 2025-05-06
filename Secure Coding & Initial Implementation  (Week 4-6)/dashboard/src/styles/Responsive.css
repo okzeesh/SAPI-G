@@ -295,3 +295,8 @@
 .responsive-img {
   max-width: 100%;
   height: auto;
+}
+
+/* Responsive iframes */
+.responsive-iframe {
+  width: 100%;
