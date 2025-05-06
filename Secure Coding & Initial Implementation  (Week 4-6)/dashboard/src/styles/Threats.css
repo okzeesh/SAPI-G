@@ -286,3 +286,10 @@
     font-size: 0.9rem;
     color: #fff;
 }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .threats-grid {
+      grid-template-columns: 1fr;
+    }
+}
