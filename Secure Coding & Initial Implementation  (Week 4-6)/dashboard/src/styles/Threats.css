@@ -445,3 +445,9 @@
     text-align: left;
     padding: 0.75rem 1rem;
     background: none;
+    border: none;
+    color: #e2e8f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
