@@ -252,3 +252,10 @@
     font-size: 0.8rem;
     color: #94a3b8;
 }
+
+/* Chart Styles */
+.chart-container {
+    background: rgba(30, 41, 59, 0.92);
+    border-radius: 16px;
+    box-shadow: 0 6px 32px rgba(0, 242, 195, 0.08), 0 1.5px 8px rgba(108, 92, 231, 0.10);
+    padding: 1.5rem;
