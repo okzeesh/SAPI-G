@@ -151,7 +151,7 @@
   }
 
   .responsive-input {
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
   }
 }
 
@@ -175,3 +175,11 @@
 /* Utility classes */
 .text-center {
   text-align: center;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+.mt-2 {
+  margin-top: 1rem;
+}
