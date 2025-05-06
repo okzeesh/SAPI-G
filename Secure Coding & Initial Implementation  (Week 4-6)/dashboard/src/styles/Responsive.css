@@ -338,3 +338,7 @@
 
 @media screen and (max-width: 480px) {
   .responsive-dropdown-content {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
