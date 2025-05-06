@@ -451,3 +451,8 @@
     transition: all 0.3s ease;
     font-size: 0.9rem;
 }
+
+.responsive-dropdown-content button:hover {
+    background: rgba(0, 242, 195, 0.1);
+    color: #00f2c3;
+}
