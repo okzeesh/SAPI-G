@@ -88,3 +88,8 @@
     font-weight: 600;
     color: #fff;
 }
+
+.time-filter {
+    display: flex;
+    gap: 0.5rem;
+}
