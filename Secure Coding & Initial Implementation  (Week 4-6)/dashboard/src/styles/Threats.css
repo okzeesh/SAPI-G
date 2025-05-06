@@ -347,3 +347,8 @@
     color: #00f2c3;
     position: sticky;
     top: 0;
+    background: rgba(15, 23, 42, 0.95);
+    z-index: 2;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
