@@ -1,0 +1,8 @@
+/* Base responsive styles */
+:root {
+  --primary-color: #6c5ce7;
+  --secondary-color: #00f2c3;
+  --background-dark: rgba(30, 41, 59, 0.92);
+  --text-light: #fff;
+  --text-muted: #94a3b8;
+}
