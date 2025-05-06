@@ -106,3 +106,8 @@
   }
 
   .responsive-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .responsive-chart {
