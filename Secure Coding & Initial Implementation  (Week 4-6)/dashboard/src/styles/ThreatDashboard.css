@@ -266,3 +266,8 @@
     background: rgba(255, 70, 126, 0.1);
     color: #ff467e;
 }
+
+.status-badge.mitigated {
+    background: rgba(249, 202, 36, 0.1);
+    color: #f9ca24;
+}
