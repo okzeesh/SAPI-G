@@ -300,3 +300,8 @@
 /* Responsive iframes */
 .responsive-iframe {
   width: 100%;
+  aspect-ratio: 16/9;
+}
+
+/* Responsive modals */
+.responsive-modal {
