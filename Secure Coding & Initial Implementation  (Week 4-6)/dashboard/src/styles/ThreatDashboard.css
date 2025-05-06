@@ -223,3 +223,7 @@
     background: rgba(255, 70, 126, 0.1);
     color: #ff467e;
 }
+
+.threat-info {
+    flex: 1;
+}
