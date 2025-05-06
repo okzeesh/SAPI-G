@@ -46,3 +46,8 @@
     background: rgba(0, 242, 195, 0.1);
     color: #00f2c3;
 }
+
+.stat-card:nth-child(3) .stat-icon {
+    background: rgba(249, 202, 36, 0.1);
+    color: #f9ca24;
+}
