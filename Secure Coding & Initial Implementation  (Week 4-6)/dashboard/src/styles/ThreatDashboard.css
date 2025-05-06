@@ -108,3 +108,8 @@
 .time-filter button:hover {
     background: rgba(0, 242, 195, 0.2);
 }
+
+.time-filter button.active {
+    background: rgba(0, 242, 195, 0.2);
+    color: #fff;
+}
