@@ -184,3 +184,10 @@
     border-radius: 2px;
     overflow: hidden;
 }
+
+.type-progress {
+    height: 100%;
+    background: #00f2c3;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
