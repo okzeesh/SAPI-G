@@ -142,3 +142,8 @@
   .responsive-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .responsive-card {
