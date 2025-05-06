@@ -289,3 +289,9 @@
   .text-2xl { font-size: 1.25rem; }
   .text-xl { font-size: 1.125rem; }
   .text-lg { font-size: 1rem; }
+}
+
+/* Responsive images */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
