@@ -170,3 +170,8 @@
   .responsive-button {
     display: none;
   }
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
