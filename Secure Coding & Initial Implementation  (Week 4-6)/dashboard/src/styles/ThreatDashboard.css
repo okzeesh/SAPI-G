@@ -227,3 +227,8 @@
 .threat-info {
     flex: 1;
 }
+
+.threat-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
