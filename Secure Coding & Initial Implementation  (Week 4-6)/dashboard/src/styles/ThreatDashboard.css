@@ -51,3 +51,8 @@
     background: rgba(249, 202, 36, 0.1);
     color: #f9ca24;
 }
+
+.stat-content {
+    flex: 1;
+}
+  
