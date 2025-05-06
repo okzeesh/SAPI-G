@@ -217,3 +217,9 @@
     height: 40px;
     border-radius: 8px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background: rgba(255, 70, 126, 0.1);
+    color: #ff467e;
+}
