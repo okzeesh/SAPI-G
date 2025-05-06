@@ -308,4 +308,10 @@
       grid-template-columns: 1fr;
     }
 }
+
+.responsive-container {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   
