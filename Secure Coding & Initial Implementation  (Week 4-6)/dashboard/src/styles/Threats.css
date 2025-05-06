@@ -280,4 +280,9 @@
     width: 14px;
     height: 14px;
     border-radius: 2px;
-  }
+}
+
+.chart-legend-label {
+    font-size: 0.9rem;
+    color: #fff;
+}
