@@ -75,3 +75,5 @@
 
 /* Responsive navigation */
 .responsive-nav {
+  display: flex;
+  flex-wrap: wrap;
