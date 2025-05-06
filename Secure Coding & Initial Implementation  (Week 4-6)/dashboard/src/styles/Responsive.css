@@ -30,3 +30,4 @@
 }
 
 .responsive-table table {
+  min-width: 600px;
