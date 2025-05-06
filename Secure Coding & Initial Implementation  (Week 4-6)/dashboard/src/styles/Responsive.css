@@ -36,3 +36,6 @@
   
 /* Responsive cards */
 .responsive-card {
+  background: var(--background-dark);
+  border-radius: 12px;
+  padding: 1.5rem;
