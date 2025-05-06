@@ -312,3 +312,6 @@
   width: 90%;
   max-width: 500px;
   max-height: 90vh;
+  overflow-y: auto;
+  background: var(--background-dark);
+  border-radius: 12px;
