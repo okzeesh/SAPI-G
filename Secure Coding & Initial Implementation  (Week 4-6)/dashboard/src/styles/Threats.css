@@ -293,3 +293,19 @@
       grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 768px) {
+    .threats-form {
+      padding: 1rem;
+    }
+  
+    .threats-title {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .quick-actions {
+      grid-template-columns: 1fr;
+    }
+}
+  
