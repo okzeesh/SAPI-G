@@ -393,3 +393,8 @@
     color: #0f172a;
     box-shadow: 0 2px 8px rgba(0, 242, 195, 0.2);
 }
+
+.responsive-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 242, 195, 0.3);
+}
