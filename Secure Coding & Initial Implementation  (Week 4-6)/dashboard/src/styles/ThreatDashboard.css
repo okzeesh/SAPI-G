@@ -104,3 +104,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+.time-filter button:hover {
+    background: rgba(0, 242, 195, 0.2);
+}
