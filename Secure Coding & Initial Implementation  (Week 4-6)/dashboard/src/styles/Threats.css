@@ -456,3 +456,23 @@
     background: rgba(0, 242, 195, 0.1);
     color: #00f2c3;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .responsive-container {
+      padding: 1rem;
+    }
+  
+    .responsive-card {
+      padding: 1rem;
+    }
+  
+    .logs-table {
+      font-size: 0.9rem;
+    }
+  
+    .logs-table th,
+    .logs-table td {
+      padding: 0.75rem;
+    }
+} 
