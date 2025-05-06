@@ -163,3 +163,8 @@
   }
 
   .responsive-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .responsive-button {
