@@ -256,3 +256,8 @@
     font-size: 0.8rem;
     font-weight: 500;
 }
+
+.status-badge.blocked {
+    background: rgba(0, 242, 195, 0.1);
+    color: #00f2c3;
+}
