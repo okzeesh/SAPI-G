@@ -113,3 +113,10 @@
     background: rgba(0, 242, 195, 0.2);
     color: #fff;
 }
+
+.threat-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+  
