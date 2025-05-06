@@ -133,3 +133,9 @@
 /* Small laptops */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .responsive-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 1025px) {
