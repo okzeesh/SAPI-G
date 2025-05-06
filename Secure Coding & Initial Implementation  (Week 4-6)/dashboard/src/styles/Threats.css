@@ -275,3 +275,9 @@
     align-items: center;
     gap: 0.5rem;
 }
+
+.chart-legend-color {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+  }
