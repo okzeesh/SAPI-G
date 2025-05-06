@@ -55,4 +55,8 @@
 .stat-content {
     flex: 1;
 }
+
+.stat-value {
+    font-size: 1.75rem;
+    font-weight: 600;
   
