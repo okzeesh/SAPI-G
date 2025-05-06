@@ -94,3 +94,6 @@
 @media screen and (max-width: 480px) {
   .responsive-container {
     padding: 0.5rem;
+  }
+
+  .responsive-card {
