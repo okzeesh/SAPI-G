@@ -390,3 +390,6 @@
     cursor: pointer;
     transition: all 0.3s ease;
     background: linear-gradient(135deg, #00f2c3 0%, #00d4b1 100%);
+    color: #0f172a;
+    box-shadow: 0 2px 8px rgba(0, 242, 195, 0.2);
+}
