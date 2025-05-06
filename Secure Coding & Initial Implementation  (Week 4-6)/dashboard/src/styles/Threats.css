@@ -386,3 +386,7 @@
     border: none;
     border-radius: 8px;
     font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #00f2c3 0%, #00d4b1 100%);
