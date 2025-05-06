@@ -317,3 +317,7 @@
   border-radius: 12px;
   padding: 1.5rem;
   z-index: 1000;
+}
+
+/* Responsive dropdown */
+.responsive-dropdown {
