@@ -326,3 +326,7 @@
 }
 
 .responsive-dropdown-content {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: 200px;
