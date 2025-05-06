@@ -211,3 +211,9 @@
 .threat-item:hover {
     background: rgba(30, 41, 59, 0.7);
 }
+
+.threat-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
