@@ -261,3 +261,8 @@
     background: rgba(0, 242, 195, 0.1);
     color: #00f2c3;
 }
+
+.status-badge.active {
+    background: rgba(255, 70, 126, 0.1);
+    color: #ff467e;
+}
