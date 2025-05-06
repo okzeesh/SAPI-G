@@ -414,3 +414,10 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
+.status-badge.blocked {
+    background: rgba(0, 242, 195, 0.2);
+    color: #00f2c3;
+    border: 1px solid rgba(0, 242, 195, 0.3);
+}
+  
