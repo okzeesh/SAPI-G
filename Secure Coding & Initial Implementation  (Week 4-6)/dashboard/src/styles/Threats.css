@@ -269,3 +269,9 @@
     justify-content: center;
     margin-top: 1rem;
 }
+
+.chart-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
