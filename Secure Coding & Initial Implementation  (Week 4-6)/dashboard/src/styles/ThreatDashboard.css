@@ -136,3 +136,9 @@
   color: #fff;
   margin-bottom: 1.5rem;
 }
+
+.types-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
