@@ -321,3 +321,8 @@
 
 /* Responsive dropdown */
 .responsive-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.responsive-dropdown-content {
