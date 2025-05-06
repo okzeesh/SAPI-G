@@ -375,3 +375,8 @@
     background: rgba(0, 242, 195, 0.1);
     transition: background-color 0.3s ease;
 }
+
+.responsive-dropdown {
+    position: relative;
+    display: inline-block;
+}
