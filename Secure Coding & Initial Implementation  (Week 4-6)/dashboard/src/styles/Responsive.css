@@ -282,3 +282,8 @@
 .text-xl {
   font-size: 1.25rem;
 }
+
+.text-2xl { font-size: 1.5rem; }
+
+@media screen and (max-width: 480px) {
+  .text-2xl { font-size: 1.25rem; }
