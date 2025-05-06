@@ -21,7 +21,7 @@
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-  
+
 /* Responsive tables */
 .responsive-table {
   width: 100%;
@@ -33,10 +33,13 @@
   min-width: 600px;
   width: 100%;
 }
-  
+
 /* Responsive cards */
 .responsive-card {
   background: var(--background-dark);
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive buttons */
