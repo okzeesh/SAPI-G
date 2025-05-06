@@ -122,3 +122,8 @@
   }
 
   .responsive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .responsive-chart {
+    height: 275px;
