@@ -191,3 +191,9 @@
     border-radius: 2px;
     transition: width 0.3s ease;
 }
+
+.threats-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
