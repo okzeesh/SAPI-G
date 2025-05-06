@@ -366,3 +366,12 @@
 .logs-table tr:nth-child(even) {
     background: rgba(30, 41, 59, 0.3);
 }
+
+.logs-table tr:nth-child(odd) {
+    background: rgba(15, 23, 42, 0.5);
+}
+  
+.logs-table tr:hover {
+    background: rgba(0, 242, 195, 0.1);
+    transition: background-color 0.3s ease;
+}
