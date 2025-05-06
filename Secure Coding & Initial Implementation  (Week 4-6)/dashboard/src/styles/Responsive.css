@@ -87,3 +87,8 @@
   width: 100%;
   height: 300px;
   min-height: 200px;
+}
+
+/* Media Queries */
+/* Mobile devices */
+@media screen and (max-width: 480px) {
