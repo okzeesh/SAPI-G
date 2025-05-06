@@ -234,3 +234,8 @@
     color: #fff;
     margin-bottom: 0.25rem;
 }
+
+.threat-details {
+    display: flex;
+    gap: 1rem;
+}
