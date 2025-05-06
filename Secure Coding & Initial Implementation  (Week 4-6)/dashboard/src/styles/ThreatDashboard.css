@@ -120,3 +120,8 @@
     gap: 1.5rem;
 }
   
+.threat-types,
+.recent-threats {
+  background: rgba(30, 41, 59, 0.92);
+  border-radius: 16px;
+  border: 1.5px solid rgba(0, 242, 195, 0.08);
