@@ -80,3 +80,8 @@
   gap: 1rem;
   align-items: center;
   padding: 1rem;
+}
+
+/* Responsive charts */
+.responsive-chart {
+  width: 100%;
