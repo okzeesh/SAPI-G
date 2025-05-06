@@ -128,3 +128,11 @@
   box-shadow: 0 6px 32px rgba(0, 242, 195, 0.08), 0 1.5px 8px rgba(108, 92, 231, 0.10);
   padding: 1.5rem;
 }
+
+.threat-types h4,
+.recent-threats h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
