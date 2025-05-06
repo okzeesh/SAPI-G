@@ -239,3 +239,9 @@
     display: flex;
     gap: 1rem;
 }
+
+.threat-ip,
+.threat-time {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
