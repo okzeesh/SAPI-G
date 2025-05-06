@@ -362,3 +362,7 @@
     padding: 1rem;
     border-bottom: 1px solid rgba(0, 242, 195, 0.1);
 }
+
+.logs-table tr:nth-child(even) {
+    background: rgba(30, 41, 59, 0.3);
+}
