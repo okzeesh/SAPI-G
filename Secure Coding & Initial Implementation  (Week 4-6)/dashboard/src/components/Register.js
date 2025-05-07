@@ -82,3 +82,22 @@ const Register = ({ setIsLoggedIn }) => {
                     />
                     <label className="input-label">Username</label>
                 </div>
+                <div className="form-group">
+                    <input
+                        type="email"
+                        className="form-input"
+                        required
+                        value={registerData.email}
+                        onChange={(e) => setRegisterData({ ...registerData, email: e.target.value })}
+                    />
+                    <label className="input-label">Email</label>
+                </div>
+                <div className="form-group password-container">
+                    <input
+                        type={showRegisterPassword ? 'text' : 'password'}
+              className="form-input"
+              required
+              value={registerData.password}
+              onChange={(e) => setRegisterData({ ...registerData, password: e.target.value })}
+            />
+
