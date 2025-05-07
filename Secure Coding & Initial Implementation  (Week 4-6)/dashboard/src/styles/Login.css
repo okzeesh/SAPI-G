@@ -69,3 +69,6 @@ body {
 /* Shared form container styles */
 .login-container,
 .register-container {
+    background: rgba(15, 23, 42, 0.95);
+    padding: 2.5rem;
+    border-radius: 20px;
