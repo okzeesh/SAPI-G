@@ -154,3 +154,7 @@ const ThreatDashboard = () => {
               <div className="stat-label">Blocked</div>
             </div>
           </div>
+          <div className="stat-card">
+            <div className="stat-icon">
+              <i className="fas fa-bolt"></i>
+            </div>
