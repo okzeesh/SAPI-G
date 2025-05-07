@@ -108,4 +108,13 @@ const Register = ({ setIsLoggedIn }) => {
                     >
                         👁
                     </button>
+                </div>
+                <div className="form-group password-container">
+                    <input
+                        type={showConfirmPassword ? 'text' : 'password'}
+                        className="form-input"
+                        required
+                        value={registerData.confirmPassword}
+                        onChange={(e) => setRegisterData({ ...registerData, confirmPassword: e.target.value })}
+                    />
 
