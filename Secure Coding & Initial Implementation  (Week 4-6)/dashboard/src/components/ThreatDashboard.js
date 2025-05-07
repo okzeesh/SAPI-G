@@ -42,3 +42,8 @@ const ThreatDashboard = () => {
           // Update traffic data
           if (trafficRes.data && trafficRes.data.traffic) {
             setThreatData(trafficRes.data.traffic.map(item => ({
+                label: item.label,
+                total: item.total,
+                detected: item.detected,
+                blocked: item.blocked
+              })));
