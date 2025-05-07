@@ -17,3 +17,10 @@ const Register = ({ setIsLoggedIn }) => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState('');
   const navigate = useNavigate();
+
+  const handleRegister = async (e) => {
+    e.preventDefault();
+    setError('');
+    if (registerData.password !== registerData.confirmPassword) {
+      setError('Passwords do not match');
+      return;
