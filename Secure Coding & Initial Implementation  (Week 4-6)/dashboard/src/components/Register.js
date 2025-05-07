@@ -140,4 +140,17 @@ const Register = ({ setIsLoggedIn }) => {
                     />
                     Register with Google 
                 </a>
+                div className="toggle-form-container">
+            <button type="button" className="toggle-form-btn" onClick={() => navigate('/login')}>
+              Back to login
+            </button>
+          </div>
+          <div className="security-tag">All credentials are encrypted</div>
+        </form>
+      </div>
+    </div>
+  );
+};
+
+export default Register; 
 
