@@ -174,3 +174,8 @@ body {
 .toggle-password:hover {
   color: #00f2c3;
 }
+
+.login-btn,
+.register-btn {
+  width: 100%;
+  padding: 1.2rem;
