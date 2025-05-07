@@ -53,3 +53,32 @@ const Register = ({ setIsLoggedIn }) => {
                 <div className="name-group">
                     <div className="form-group">
                         <input
+                            type="text"
+                            className="form-input"
+                            required
+                            value={registerData.firstName}
+                            onChange={(e) => setRegisterData({ ...registerData, firstName: e.target.value })}
+                          />
+                          <label className="input-label">First Name</label>
+                          </div>
+                          <div className="form-group">
+                            <input
+                                type="text"
+                                className="form-input"
+                                required
+                                value={registerData.lastName}
+                                onChange={(e) => setRegisterData({ ...registerData, lastName: e.target.value })}
+                            />
+                            <label className="input-label">Last Name</label>
+                        </div>
+                    </div>
+                 <div className="form-group">
+                    <input
+                        type="text"
+                        className="form-input"
+                        required
+                        value={registerData.username}
+                        onChange={(e) => setRegisterData({ ...registerData, username: e.target.value })}
+                    />
+                    <label className="input-label">Username</label>
+                </div>
