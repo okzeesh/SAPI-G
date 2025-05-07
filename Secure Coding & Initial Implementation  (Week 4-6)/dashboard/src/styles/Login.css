@@ -76,3 +76,5 @@ body {
     max-width: 400px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
     position: relative;
+    z-index: 1;
+    border: 2px solid #00f2c3;
