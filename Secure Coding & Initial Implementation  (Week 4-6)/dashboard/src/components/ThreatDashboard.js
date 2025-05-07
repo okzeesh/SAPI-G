@@ -106,3 +106,6 @@ const ThreatDashboard = () => {
         'DDoS': 'fas fa-network-wired',
         'Malware': 'fas fa-virus',
         'Phishing': 'fas fa-fish',
+        'BENIGN': 'fas fa-shield-alt'
+      };
+      return typeIcons[type] || 'fas fa-shield-alt';
