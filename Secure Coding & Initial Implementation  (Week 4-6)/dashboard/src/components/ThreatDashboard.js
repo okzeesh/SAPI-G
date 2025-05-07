@@ -127,3 +127,8 @@ const ThreatDashboard = () => {
   
     if (loading) {
       return <div className="loading">Loading dashboard data...</div>;
+    }
+  
+    if (error) {
+      return <div className="error">{error}</div>;
+    }
