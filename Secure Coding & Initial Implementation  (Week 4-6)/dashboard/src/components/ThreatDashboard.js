@@ -17,3 +17,8 @@ const ThreatDashboard = () => {
     const [error, setError] = useState(null);
   
     useEffect(() => {
+        const fetchData = async () => {
+          try {
+            setLoading(true);
+            setError(null);
+            const token = localStorage.getItem("token");
