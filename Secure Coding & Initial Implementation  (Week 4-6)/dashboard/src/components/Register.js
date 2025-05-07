@@ -33,4 +33,4 @@ const Register = ({ setIsLoggedIn }) => {
         if (res.data.success) {
             alert('Registration successful!');
             navigate('/login');
-          }
+        }
