@@ -150,3 +150,7 @@ const ThreatDashboard = () => {
               <i className="fas fa-shield-alt"></i>
             </div>
             <div className="stat-content">
+              <div className="stat-value">{threatStats.blockedThreats}</div>
+              <div className="stat-label">Blocked</div>
+            </div>
+          </div>
