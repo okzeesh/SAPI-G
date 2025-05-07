@@ -25,3 +25,8 @@ const Register = ({ setIsLoggedIn }) => {
       setError('Passwords do not match');
       return;
     }
+    try {
+        const { firstName, lastName, username, email, password } = registerData;
+        const res = await axios.post(`${API_URL}/api/register`, {
+          firstName, lastName, username, email, password
+        });
