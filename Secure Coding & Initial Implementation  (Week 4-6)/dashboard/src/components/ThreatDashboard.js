@@ -163,3 +163,9 @@ const ThreatDashboard = () => {
               <div className="stat-label">Active</div>
             </div>
           </div>
+        </div>
+  
+        <div className="threat-chart">
+          <div className="chart-header">
+            <h4>Threat Activity</h4>
+            <div className="time-filter">
