@@ -40,3 +40,8 @@ const Register = ({ setIsLoggedIn }) => {
         setError(err.response?.data?.message || 'Registration error. Try again.');
       }
     };
+
+    return (
+        <div className="login-center-wrapper">
+          <div className="login-container">
+            <div className="cyber-border"></div>
