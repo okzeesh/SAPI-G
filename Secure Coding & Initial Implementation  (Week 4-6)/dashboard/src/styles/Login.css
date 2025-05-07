@@ -119,3 +119,8 @@ body {
   }
   
   .input-label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
