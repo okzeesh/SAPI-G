@@ -114,3 +114,8 @@ body {
 
 /* Form inputs */
 .form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .input-label {
