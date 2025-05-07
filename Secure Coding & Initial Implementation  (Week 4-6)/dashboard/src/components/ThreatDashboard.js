@@ -10,3 +10,10 @@ const ThreatDashboard = () => {
       blockedThreats: 0,
       activeThreats: 0
     });
+    const [threatTypes, setThreatTypes] = useState([]);
+    const [recentThreats, setRecentThreats] = useState([]);
+    const [timeRange, setTimeRange] = useState('hour');
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+  
+    useEffect(() => {
