@@ -122,5 +122,22 @@ const Register = ({ setIsLoggedIn }) => {
                         type="button"
                         className="toggle-password"
                         onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                    ></button>
+                    >
+                      👁
+                    </button>
+                </div>
+                {error && <div style={{ color: 'red', marginBottom: '1rem' }}>{error}</div>}
+                <button type="submit" className="register-btn">Register</button>
+                <a
+                    href={`${API_URL}/auth/google`}
+                    className="google-login-btn"
+                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '0.5rem', textDecoration: 'none' }}
+                >
+                   <img
+                        src="https://www.google.com/favicon.ico"
+                        alt="Google"
+                        style={{ width: '20px', height: '20px', marginRight: '10px' }}
+                    />
+                    Register with Google 
+                </a>
 
