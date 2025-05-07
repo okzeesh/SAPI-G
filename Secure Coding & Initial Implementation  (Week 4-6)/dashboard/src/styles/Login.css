@@ -106,3 +106,7 @@ body {
 }
 
 .login-subtitle,
+.register-subtitle {
+  color: #6c5ce7;
+  font-size: 0.9rem;
+  font-weight: 300;
