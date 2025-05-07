@@ -53,3 +53,8 @@ const ThreatDashboard = () => {
             setThreatStats({
               totalThreats: requestsRes.data.totalRequests,
               blockedThreats: blockedRes.data.blockedThreats,
+              activeThreats: requestsRes.data.totalRequests - blockedRes.data.blockedThreats
+            });
+    
+            // Update threat types
+            if (threatsRes.data) {
