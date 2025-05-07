@@ -169,3 +169,7 @@ const ThreatDashboard = () => {
           <div className="chart-header">
             <h4>Threat Activity</h4>
             <div className="time-filter">
+              <button 
+                className={timeRange === 'hour' ? 'active' : ''} 
+                onClick={() => setTimeRange('hour')}
+              >
