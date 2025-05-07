@@ -30,3 +30,7 @@ const Register = ({ setIsLoggedIn }) => {
         const res = await axios.post(`${API_URL}/api/register`, {
           firstName, lastName, username, email, password
         });
+        if (res.data.success) {
+            alert('Registration successful!');
+            navigate('/login');
+          }
