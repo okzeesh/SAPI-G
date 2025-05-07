@@ -91,3 +91,7 @@ const ThreatDashboard = () => {
           setLoading(false);
         }
       };
+
+      fetchData();
+      const interval = setInterval(fetchData, 10000);
+      return () => clearInterval(interval);
