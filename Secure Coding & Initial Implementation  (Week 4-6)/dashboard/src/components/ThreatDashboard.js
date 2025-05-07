@@ -137,3 +137,6 @@ const ThreatDashboard = () => {
       <div className="threat-dashboard">
         <div className="threat-stats">
           <div className="stat-card">
+            <div className="stat-icon">
+              <i className="fas fa-exclamation-triangle"></i>
+            </div>
