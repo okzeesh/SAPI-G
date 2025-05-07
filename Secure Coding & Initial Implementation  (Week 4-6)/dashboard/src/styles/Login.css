@@ -78,3 +78,8 @@ body {
     position: relative;
     z-index: 1;
     border: 2px solid #00f2c3;
+    
+}
+
+/* Toggle visibility logic */
+.login-container {
