@@ -58,3 +58,7 @@ const ThreatDashboard = () => {
     
             // Update threat types
             if (threatsRes.data) {
+                const typeCounts = threatsRes.data.reduce((acc, threat) => {
+                  acc[threat.threatType] = (acc[threat.threatType] || 0) + 1;
+                  return acc;
+                }, {});
