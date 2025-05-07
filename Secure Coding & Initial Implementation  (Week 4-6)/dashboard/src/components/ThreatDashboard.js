@@ -77,3 +77,6 @@ const ThreatDashboard = () => {
               const recent = threatsRes.data.slice(0, 10).map(threat => ({
                 name: threat.threatType,
                 ip: threat.ip,
+                time: formatTimeAgo(new Date(threat.detectedAt)),
+                status: threat.threatType === 'BENIGN' ? 'mitigated' : 'active',
+                icon: getThreatIcon(threat.threatType)
