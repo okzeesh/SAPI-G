@@ -123,3 +123,7 @@ const ThreatDashboard = () => {
         if (hours > 0) return `${hours} hours ago`;
         if (minutes > 0) return `${minutes} minutes ago`;
         return 'just now';
+    };
+  
+    if (loading) {
+      return <div className="loading">Loading dashboard data...</div>;
