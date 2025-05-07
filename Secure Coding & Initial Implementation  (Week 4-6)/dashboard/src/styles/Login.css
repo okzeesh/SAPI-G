@@ -278,3 +278,13 @@ body {
   100% {
     background-position: 100% 100%;
   }
+}
+
+@keyframes btnScan {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
