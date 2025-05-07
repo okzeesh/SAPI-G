@@ -9,3 +9,7 @@ const Register = ({ setIsLoggedIn }) => {
       firstName: '',
       lastName: '',
       username: '',
+      email: '',
+      password: '',
+      confirmPassword: ''
+  });
