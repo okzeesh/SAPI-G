@@ -219,3 +219,72 @@ body {
 .name-group {
   display: flex;
   gap: 1rem;
+}
+
+.name-group .form-group {
+  flex: 1;
+}
+
+/* Toggle buttons */
+.toggle-form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.toggle-form-btn {
+  background: none;
+  border: none;
+  color: #00f2c3;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.toggle-form-btn:hover {
+  color: #6c5ce7;
+  text-shadow: 0 0 10px rgba(108, 92, 231, 0.5);
+  background: rgba(15, 23, 42, 0.3);
+}
+
+.security-tag {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #64748b;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.security-tag::before,
+.security-tag::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #00f2c3;
+  opacity: 0.3;
+}
+
+@keyframes scan {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes btnScan {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
