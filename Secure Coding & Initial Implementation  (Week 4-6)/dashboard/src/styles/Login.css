@@ -94,3 +94,7 @@ body {
   margin-bottom: 2rem;
   position: relative;
 }
+
+.login-title,
+.register-title {
+  color: #00f2c3;
