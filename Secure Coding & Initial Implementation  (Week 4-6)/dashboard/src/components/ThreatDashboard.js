@@ -62,3 +62,7 @@ const ThreatDashboard = () => {
                   acc[threat.threatType] = (acc[threat.threatType] || 0) + 1;
                   return acc;
                 }, {});
+      
+                const types = Object.entries(typeCounts).map(([name, count]) => ({
+                  name,
+                  count,
