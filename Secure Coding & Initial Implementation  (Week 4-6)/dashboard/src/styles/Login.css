@@ -118,9 +118,14 @@ body {
     position: relative;
   }
   
-  .input-label {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #94a3b8;
+.input-label {
+position: absolute;
+left: 15px;
+top: 50%;
+transform: translateY(-50%);
+color: #94a3b8;
+pointer-events: none;
+transition: 0.3s;
+}
+
+.form-input {
