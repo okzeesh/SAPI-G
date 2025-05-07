@@ -66,3 +66,7 @@ const ThreatDashboard = () => {
                 const types = Object.entries(typeCounts).map(([name, count]) => ({
                   name,
                   count,
+                  icon: getThreatIcon(name)
+                }));
+      
+                setThreatTypes(types);
