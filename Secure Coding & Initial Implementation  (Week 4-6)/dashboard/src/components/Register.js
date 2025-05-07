@@ -140,7 +140,7 @@ const Register = ({ setIsLoggedIn }) => {
                     />
                     Register with Google 
                 </a>
-                div className="toggle-form-container">
+                <div className="toggle-form-container">
             <button type="button" className="toggle-form-btn" onClick={() => navigate('/login')}>
               Back to login
             </button>
