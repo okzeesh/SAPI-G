@@ -22,3 +22,11 @@ const ThreatDashboard = () => {
             setLoading(true);
             setError(null);
             const token = localStorage.getItem("token");
+            
+            // Fetch all data in parallel
+            const [trafficRes, requestsRes, blockedRes, threatsRes] = await Promise.all([
+              axios.get(`${API_URL}/api/stats/traffic?range=${timeRange}`, {
+                headers: { Authorization: `Bearer ${token}` }
+              }),
+              axios.get(`${API_URL}/api/stats/requests`, {
+                headers: { Authorization: `Bearer ${token}` }
