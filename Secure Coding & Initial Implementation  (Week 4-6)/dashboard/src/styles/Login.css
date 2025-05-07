@@ -64,31 +64,33 @@ body {
   z-index: 0;
 }
 
-
-
 /* Shared form container styles */
 .login-container,
 .register-container {
-    background: rgba(15, 23, 42, 0.95);
-    padding: 2.5rem;
-    border-radius: 20px;
-    width: 90%;
-    max-width: 400px;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
-    position: relative;
-    z-index: 1;
-    border: 2px solid #00f2c3;
-    
+  background: rgba(15, 23, 42, 0.95);
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+  border: 2px solid #00f2c3;
 }
 
 /* Toggle visibility logic */
 .login-container {
-    display: block;
-  }
-  
-  .register-container {
-    display: none;
-  }
-  
-  /* Header styles */
-  .login-header,
+  display: block;
+}
+
+.register-container {
+  display: none;
+}
+
+/* Header styles */
+.login-header,
+.register-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
