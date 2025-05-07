@@ -100,4 +100,12 @@ const Register = ({ setIsLoggedIn }) => {
                         value={registerData.password}
                         onChange={(e) => setRegisterData({ ...registerData, password: e.target.value })}
                     />
+                    <label className="input-label">Password</label>
+                    <button
+                        type="button"
+                        className="toggle-password"
+                        onClick={() => setShowRegisterPassword(!showRegisterPassword)}
+                    >
+                        👁
+                    </button>
 
