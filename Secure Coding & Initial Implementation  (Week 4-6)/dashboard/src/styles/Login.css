@@ -98,3 +98,7 @@ body {
 .login-title,
 .register-title {
   color: #00f2c3;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
