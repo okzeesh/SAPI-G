@@ -72,3 +72,7 @@ body {
     background: rgba(15, 23, 42, 0.95);
     padding: 2.5rem;
     border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    position: relative;
