@@ -14,6 +14,9 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
 
 .top-nav {
     position: fixed;
