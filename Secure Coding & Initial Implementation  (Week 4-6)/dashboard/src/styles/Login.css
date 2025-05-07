@@ -214,3 +214,8 @@ body {
   transform: rotate(45deg);
   animation: btnScan 3s infinite linear;
 }
+
+/* Register name fields */
+.name-group {
+  display: flex;
+  gap: 1rem;
