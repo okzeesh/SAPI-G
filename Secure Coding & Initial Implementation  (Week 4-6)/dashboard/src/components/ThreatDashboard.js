@@ -113,3 +113,8 @@ const ThreatDashboard = () => {
   
     // Helper function to format time ago
     const formatTimeAgo = (timestamp) => {
+        const now = new Date();
+        const diff = now - timestamp;
+        const minutes = Math.floor(diff / 60000);
+        const hours = Math.floor(minutes / 60);
+        const days = Math.floor(hours / 24);
