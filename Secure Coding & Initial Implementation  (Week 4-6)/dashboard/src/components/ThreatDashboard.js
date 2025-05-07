@@ -104,3 +104,5 @@ const ThreatDashboard = () => {
         'XSS Attack': 'fas fa-code',
         'Brute Force': 'fas fa-key',
         'DDoS': 'fas fa-network-wired',
+        'Malware': 'fas fa-virus',
+        'Phishing': 'fas fa-fish',
