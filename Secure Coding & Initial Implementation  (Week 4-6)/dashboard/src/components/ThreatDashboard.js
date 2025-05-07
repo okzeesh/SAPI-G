@@ -133,65 +133,111 @@ const ThreatDashboard = () => {
       return <div className="error">{error}</div>;
     }
 
-    return (
-      <div className="threat-dashboard">
-        <div className="threat-stats">
-          <div className="stat-card">
-            <div className="stat-icon">
-              <i className="fas fa-exclamation-triangle"></i>
-            </div>
-            <div className="stat-content">
-              <div className="stat-value">{threatStats.totalThreats}</div>
-              <div className="stat-label">Total Threats</div>
-            </div>
+  return (
+    <div className="threat-dashboard">
+      <div className="threat-stats">
+        <div className="stat-card">
+          <div className="stat-icon">
+            <i className="fas fa-exclamation-triangle"></i>
           </div>
-          <div className="stat-card">
-            <div className="stat-icon">
-              <i className="fas fa-shield-alt"></i>
-            </div>
-            <div className="stat-content">
-              <div className="stat-value">{threatStats.blockedThreats}</div>
-              <div className="stat-label">Blocked</div>
-            </div>
-          </div>
-          <div className="stat-card">
-            <div className="stat-icon">
-              <i className="fas fa-bolt"></i>
-            </div>
-            <div className="stat-content">
-              <div className="stat-value">{threatStats.activeThreats}</div>
-              <div className="stat-label">Active</div>
-            </div>
+          <div className="stat-content">
+            <div className="stat-value">{threatStats.totalThreats}</div>
+            <div className="stat-label">Total Threats</div>
           </div>
         </div>
-  
-        <div className="threat-chart">
-          <div className="chart-header">
-            <h4>Threat Activity</h4>
-            <div className="time-filter">
-              <button 
-                className={timeRange === 'hour' ? 'active' : ''} 
-                onClick={() => setTimeRange('hour')}
-              >
+        <div className="stat-card">
+          <div className="stat-icon">
+            <i className="fas fa-shield-alt"></i>
+          </div>
+          <div className="stat-content">
+            <div className="stat-value">{threatStats.blockedThreats}</div>
+            <div className="stat-label">Blocked</div>
+          </div>
+        </div>
+        <div className="stat-card">
+          <div className="stat-icon">
+            <i className="fas fa-bolt"></i>
+          </div>
+          <div className="stat-content">
+            <div className="stat-value">{threatStats.activeThreats}</div>
+            <div className="stat-label">Active</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="threat-chart">
+        <div className="chart-header">
+          <h4>Threat Activity</h4>
+          <div className="time-filter">
+            <button 
+              className={timeRange === 'hour' ? 'active' : ''} 
+              onClick={() => setTimeRange('hour')}
+            >
               1h
             </button>
             <button 
               className={timeRange === 'day' ? 'active' : ''} 
               onClick={() => setTimeRange('day')}
-              >
-                24h
-              </button>
-              <button 
-                className={timeRange === 'week' ? 'active' : ''} 
-                onClick={() => setTimeRange('week')}
-              >
+            >
+              24h
+            </button>
+            <button 
+              className={timeRange === 'week' ? 'active' : ''} 
+              onClick={() => setTimeRange('week')}
+            >
               7d
             </button>
             <button 
               className={timeRange === 'month' ? 'active' : ''} 
               onClick={() => setTimeRange('month')}
-              >
-                30d
-              </button>
-            </div>
+            >
+              30d
+            </button>
           </div>
+        </div>
+        <div className="chart-container">
+          <ResponsiveContainer width="100%" height={300}>
+            <LineChart data={threatData} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
+              <defs>
+                <linearGradient id="colorThreats" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="5%" stopColor="#ff467e" stopOpacity={0.35}/>
+                  <stop offset="95%" stopColor="#ff467e" stopOpacity={0}/>
+                </linearGradient>
+                <linearGradient id="colorBlocked" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="5%" stopColor="#00f2c3" stopOpacity={0.32}/>
+                  <stop offset="95%" stopColor="#00f2c3" stopOpacity={0}/>
+                </linearGradient>
+              </defs>
+              <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
+              <XAxis dataKey="label" tick={{ fontSize: 10, fill: '#b2becd' }} minTickGap={15} />
+              <YAxis tick={{ fontSize: 12, fill: '#b2becd' }} allowDecimals={false} width={40} axisLine={false} />
+              <Tooltip 
+                contentStyle={{ 
+                  background: '#181c2f', 
+                  border: '1.5px solid #ff467e', 
+                  borderRadius: 8, 
+                  color: '#00f2c3', 
+                  fontWeight: 600, 
+                  fontSize: '1rem', 
+                  boxShadow: '0 2px 12px #ff467e33' 
+                }} 
+                labelStyle={{ color: '#00f2c3' }} 
+              />
+              <Area type="monotone" dataKey="detected" stroke="#ff467e" fillOpacity={1} fill="url(#colorThreats)" name="Detected" />
+              <Area type="monotone" dataKey="blocked" stroke="#00f2c3" fillOpacity={1} fill="url(#colorBlocked)" name="Blocked" />
+              <Line type="monotone" dataKey="detected" stroke="#ff467e" strokeWidth={2.5} dot={false} isAnimationActive={false} name="Detected" />
+              <Line type="monotone" dataKey="blocked" stroke="#00f2c3" strokeWidth={2.5} dot={false} isAnimationActive={false} name="Blocked" />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+        <div className="chart-legend">
+          <div className="chart-legend-item">
+            <div className="chart-legend-color" style={{ background: '#ff467e' }}></div>
+            <span className="chart-legend-label">Detected</span>
+          </div>
+          <div className="chart-legend-item">
+            <div className="chart-legend-color" style={{ background: '#00f2c3' }}></div>
+            <span className="chart-legend-label">Blocked</span>
+          </div>
+        </div>
+      </div>
