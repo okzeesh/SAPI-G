@@ -109,3 +109,7 @@ const ThreatDashboard = () => {
         'BENIGN': 'fas fa-shield-alt'
       };
       return typeIcons[type] || 'fas fa-shield-alt';
+    };
+  
+    // Helper function to format time ago
+    const formatTimeAgo = (timestamp) => {
