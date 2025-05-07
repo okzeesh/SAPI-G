@@ -190,3 +190,8 @@ const ThreatDashboard = () => {
             <button 
               className={timeRange === 'month' ? 'active' : ''} 
               onClick={() => setTimeRange('month')}
+              >
+                30d
+              </button>
+            </div>
+          </div>
