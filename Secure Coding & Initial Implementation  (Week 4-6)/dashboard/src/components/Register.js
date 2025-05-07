@@ -24,3 +24,4 @@ const Register = ({ setIsLoggedIn }) => {
     if (registerData.password !== registerData.confirmPassword) {
       setError('Passwords do not match');
       return;
+    }
