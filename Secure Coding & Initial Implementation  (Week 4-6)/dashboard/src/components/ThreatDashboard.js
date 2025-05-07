@@ -293,3 +293,32 @@ const ThreatDashboard = () => {
             ))}
           </div>
         </div>
+
+        <div className="recent-threats">
+          <h4>Recent Threats</h4>
+          <div className="threats-list">
+            {recentThreats.map((threat, index) => (
+              <div key={index} className="threat-item">
+                <div className="threat-icon">
+                  <i className={threat.icon}></i>
+                </div>
+                <div className="threat-info">
+                  <div className="threat-name">{threat.name}</div>
+                  <div className="threat-details">
+                    <span className="threat-ip">{threat.ip}</span>
+                    <span className="threat-time">{threat.time}</span>
+                  </div>
+                </div>
+                <div className="threat-status">
+                  <span className={`status-badge ${threat.status}`}>{threat.status}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ThreatDashboard; 
