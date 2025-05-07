@@ -80,3 +80,10 @@ const ThreatDashboard = () => {
                 time: formatTimeAgo(new Date(threat.detectedAt)),
                 status: threat.threatType === 'BENIGN' ? 'mitigated' : 'active',
                 icon: getThreatIcon(threat.threatType)
+            }));
+            setRecentThreats(recent);
+          }
+  
+          setLoading(false);
+        } catch (err) {
+          console.error("Error fetching dashboard data:", err);
