@@ -259,3 +259,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+}
+
+.security-tag::before,
+.security-tag::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #00f2c3;
