@@ -241,3 +241,55 @@ const ThreatDashboard = () => {
           </div>
         </div>
       </div>
+
+      <div className="threat-details">
+        <div className="threat-types">
+          <h4>Threat Types</h4>
+          <div className="types-list">
+            {threatTypes.map((type, index) => (
+              <div key={index} className="type-item">
+                <div className="type-icon">
+                  <i className={type.icon}></i>
+                </div>
+                <div className="type-info">
+                  <div className="type-name">{type.name}</div>
+                  <div className="type-count">{type.count}</div>
+                </div>
+                <div className="type-bar">
+                  <div 
+                    className="type-progress" 
+                    style={{ 
+                      width: `${(type.count / threatStats.totalThreats) * 100}%` 
+                    }}
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="threat-details">
+        <div className="threat-types">
+          <h4>Threat Types</h4>
+          <div className="types-list">
+            {threatTypes.map((type, index) => (
+              <div key={index} className="type-item">
+                <div className="type-icon">
+                  <i className={type.icon}></i>
+                </div>
+                <div className="type-info">
+                  <div className="type-name">{type.name}</div>
+                  <div className="type-count">{type.count}</div>
+                </div>
+                <div className="type-bar">
+                  <div 
+                    className="type-progress" 
+                    style={{ 
+                      width: `${(type.count / threatStats.totalThreats) * 100}%` 
+                    }}
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
