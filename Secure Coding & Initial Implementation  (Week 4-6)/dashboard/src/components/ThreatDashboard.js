@@ -38,4 +38,7 @@ const ThreatDashboard = () => {
               headers: { Authorization: `Bearer ${token}` }
             })
           ]);
-  
+
+          // Update traffic data
+          if (trafficRes.data && trafficRes.data.traffic) {
+            setThreatData(trafficRes.data.traffic.map(item => ({
