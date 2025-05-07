@@ -30,3 +30,6 @@ const ThreatDashboard = () => {
               }),
               axios.get(`${API_URL}/api/stats/requests`, {
                 headers: { Authorization: `Bearer ${token}` }
+            }),
+            axios.get(`${API_URL}/api/stats/blocked`, {
+              headers: { Authorization: `Bearer ${token}` }
