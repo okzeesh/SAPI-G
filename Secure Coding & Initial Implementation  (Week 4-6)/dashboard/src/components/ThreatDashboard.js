@@ -145,3 +145,8 @@ const ThreatDashboard = () => {
               <div className="stat-label">Total Threats</div>
             </div>
           </div>
+          <div className="stat-card">
+            <div className="stat-icon">
+              <i className="fas fa-shield-alt"></i>
+            </div>
+            <div className="stat-content">
