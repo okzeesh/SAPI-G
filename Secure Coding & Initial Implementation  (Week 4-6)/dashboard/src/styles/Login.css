@@ -194,3 +194,7 @@ body {
 .login-btn:hover,
 .register-btn:hover {
   box-shadow: 0 0 25px rgba(108, 92, 231, 0.4);
+  transform: translateY(-2px);
+}
+
+.login-btn::after,
