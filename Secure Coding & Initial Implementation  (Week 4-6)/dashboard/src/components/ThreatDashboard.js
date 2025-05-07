@@ -70,3 +70,10 @@ const ThreatDashboard = () => {
                 }));
       
                 setThreatTypes(types);
+            }
+    
+            // Update recent threats
+            if (threatsRes.data) {
+              const recent = threatsRes.data.slice(0, 10).map(threat => ({
+                name: threat.threatType,
+                ip: threat.ip,
