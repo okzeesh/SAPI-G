@@ -129,3 +129,7 @@ transition: 0.3s;
 }
 
 .form-input {
+    width: 100%;
+    padding: 1.2rem;
+    background: #1e293b;
+    border: 2px solid #334155;
