@@ -36,3 +36,7 @@ const Register = ({ setIsLoggedIn }) => {
         } else {
             setError(res.data.message || 'Registration failed');
         }
+    } catch (err) {
+        setError(err.response?.data?.message || 'Registration error. Try again.');
+      }
+    };
