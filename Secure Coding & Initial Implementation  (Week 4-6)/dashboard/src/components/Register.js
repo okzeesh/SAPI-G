@@ -13,3 +13,7 @@ const Register = ({ setIsLoggedIn }) => {
       password: '',
       confirmPassword: ''
   });
+  const [showRegisterPassword, setShowRegisterPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
