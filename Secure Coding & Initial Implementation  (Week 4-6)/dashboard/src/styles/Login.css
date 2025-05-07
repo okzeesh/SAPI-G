@@ -145,15 +145,32 @@ body {
   box-shadow: 0 0 15px rgba(0, 242, 195, 0.2);
 }
 
-.form-input: focus + .input-label;
+.form-input:focus + .input-label,
 .form-input:valid + .input-label {
-top: -10px;
-left: 10px;
-font-size: 0.8rem;
-color: #00f2c3;
-background: #0f172a;
-padding: 0 5px;
+  top: -10px;
+  left: 10px;
+  font-size: 0.8rem;
+  color: #00f2c3;
+  background: #0f172a;
+  padding: 0 5px;
 }
 
 .password-container {
-position: relative;
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #94a3b8;
+  transition: 0.3s;
+}
+
+.toggle-password:hover {
+  color: #00f2c3;
+}
