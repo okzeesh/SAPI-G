@@ -95,3 +95,8 @@ const ThreatDashboard = () => {
       fetchData();
       const interval = setInterval(fetchData, 10000);
       return () => clearInterval(interval);
+    }, [timeRange]);
+  
+    // Helper function to get threat icon
+    const getThreatIcon = (type) => {
+      const typeIcons = {
