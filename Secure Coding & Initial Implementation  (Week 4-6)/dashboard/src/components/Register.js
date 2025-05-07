@@ -49,3 +49,7 @@ const Register = ({ setIsLoggedIn }) => {
                 <div className="login-header">
                     <h1 className="login-title">REGISTER</h1>
                     <p className="login-subtitle">Create new admin account</p>
+                </div>
+                <div className="name-group">
+                    <div className="form-group">
+                        <input
