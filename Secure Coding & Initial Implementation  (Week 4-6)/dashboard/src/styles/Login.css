@@ -63,3 +63,9 @@ body {
   opacity: 0.05;
   z-index: 0;
 }
+
+
+
+/* Shared form container styles */
+.login-container,
+.register-container {
