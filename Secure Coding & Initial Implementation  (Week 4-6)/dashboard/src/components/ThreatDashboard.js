@@ -100,3 +100,7 @@ const ThreatDashboard = () => {
     // Helper function to get threat icon
     const getThreatIcon = (type) => {
       const typeIcons = {
+        'SQL Injection': 'fas fa-database',
+        'XSS Attack': 'fas fa-code',
+        'Brute Force': 'fas fa-key',
+        'DDoS': 'fas fa-network-wired',
