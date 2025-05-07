@@ -47,3 +47,9 @@ const ThreatDashboard = () => {
                 detected: item.detected,
                 blocked: item.blocked
               })));
+            }
+    
+            // Update threat stats
+            setThreatStats({
+              totalThreats: requestsRes.data.totalRequests,
+              blockedThreats: blockedRes.data.blockedThreats,
