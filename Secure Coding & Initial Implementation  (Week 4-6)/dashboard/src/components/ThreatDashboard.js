@@ -132,3 +132,8 @@ const ThreatDashboard = () => {
     if (error) {
       return <div className="error">{error}</div>;
     }
+
+    return (
+      <div className="threat-dashboard">
+        <div className="threat-stats">
+          <div className="stat-card">
