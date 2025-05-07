@@ -45,3 +45,7 @@ const Register = ({ setIsLoggedIn }) => {
         <div className="login-center-wrapper">
           <div className="login-container">
             <div className="cyber-border"></div>
+            <form onSubmit={handleRegister}>
+                <div className="login-header">
+                    <h1 className="login-title">REGISTER</h1>
+                    <p className="login-subtitle">Create new admin account</p>
