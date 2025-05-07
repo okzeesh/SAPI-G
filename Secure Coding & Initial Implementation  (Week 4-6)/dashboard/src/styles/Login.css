@@ -83,3 +83,12 @@ body {
 
 /* Toggle visibility logic */
 .login-container {
+    display: block;
+  }
+  
+  .register-container {
+    display: none;
+  }
+  
+  /* Header styles */
+  .login-header,
