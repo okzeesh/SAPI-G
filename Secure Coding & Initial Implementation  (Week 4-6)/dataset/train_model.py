@@ -92,5 +92,6 @@ def preprocess_data(df):
     
      # Scale numerical features
     scaler = StandardScaler()
-    
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test)
     
