@@ -120,3 +120,5 @@ const Threats = () => {
         'Threat Type': threat.threatType,
         'IP Address': threat.ip,
         'Status': threat.status,
+        'Confidence': `${(threat.confidence * 100).toFixed(1)}%`
+      }))
