@@ -311,3 +311,7 @@ def predict():
     except Exception as e:
         logging.error(f"Error in /predict: {str(e)}")
         return jsonify({"error": str(e)}), 500
+    
+if __name__ == '__main__':
+    # Start the detector
+    detector.start()
