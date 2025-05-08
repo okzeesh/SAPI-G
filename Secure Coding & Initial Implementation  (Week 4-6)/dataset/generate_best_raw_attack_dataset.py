@@ -159,3 +159,4 @@ random.shuffle(rows)
 
 # Save to CSV
 df = pd.DataFrame(rows)
+df.to_csv('dataset/best_raw_attack_dataset.csv', index=False)
