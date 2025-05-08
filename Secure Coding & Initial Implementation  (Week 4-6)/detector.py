@@ -114,3 +114,6 @@ class HTTPAttackDetector:
                     'is_outlook': 1 if request_data.get('email', '').endswith('@outlook.com') else 0,
                     'dummy': 0
                 }
+
+                # Convert to DataFrame with exact same column order as training
+                feature_order = [
