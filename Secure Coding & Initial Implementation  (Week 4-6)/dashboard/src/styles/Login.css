@@ -340,4 +340,4 @@ body::before {
 .page-border-wrapper {
   min-height: 100vh;
   min-width: 100vw;
-box-sizing: border-box;
+  box-sizing: border-box;
