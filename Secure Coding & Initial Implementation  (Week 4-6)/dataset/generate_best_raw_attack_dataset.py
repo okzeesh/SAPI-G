@@ -146,3 +146,4 @@ for _ in range(bruteforce_count):
 
 # Port Scan
 for _ in range(portscan_count):
+    email = generate_random_email()
