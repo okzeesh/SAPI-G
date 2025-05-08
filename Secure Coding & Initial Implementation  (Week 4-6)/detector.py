@@ -46,3 +46,5 @@ class HTTPAttackDetector:
         # Get the latest model files from dataset/models
         model_dir = 'dataset/models'
         model_files = [f for f in os.listdir(model_dir) if f.startswith('security_model_')]
+        if not model_files:
+            raise FileNotFoundError("No model files found in dataset/models directory")
