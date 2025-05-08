@@ -90,3 +90,7 @@ const Threats = () => {
 
   const exportToPDF = () => {
     const doc = new jsPDF();
+    doc.text('Threat Monitoring Report', 14, 15);
+    
+    const tableColumn = ['Detected At', 'Threat Type', 'IP Address', 'Status', 'Confidence'];
+    const tableRows = threats.map(threat => [
