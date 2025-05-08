@@ -237,3 +237,6 @@ def main():
     joblib.dump(model, f'models/security_model_{timestamp}.joblib')
     joblib.dump(scaler, f'models/scaler_{timestamp}.joblib')
     joblib.dump(label_encoder, f'models/label_encoder_{timestamp}.joblib')
+    
+    print("\nTraining completed successfully!")
+    print("Results saved in 'results' directory:")
