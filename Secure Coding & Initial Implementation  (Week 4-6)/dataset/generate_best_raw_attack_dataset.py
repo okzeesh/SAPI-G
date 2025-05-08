@@ -26,3 +26,5 @@ bruteforce_passwords = [
 ]
 # Port scan: simulate by using many different endpoints/ports from same IP
 portscan_endpoints = [
+        '/api/login', '/api/register', '/api/data', '/api/admin', '/api/user', '/api/secret', '/api/config'
+
