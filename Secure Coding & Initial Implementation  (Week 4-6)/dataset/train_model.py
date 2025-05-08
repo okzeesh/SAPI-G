@@ -81,3 +81,6 @@ def preprocess_data(df):
     X = df[feature_order]
     y = df['label']
     
+    # Encode target variable
+    label_encoder = LabelEncoder()
+    y_encoded = label_encoder.fit_transform(y)
