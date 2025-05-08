@@ -57,3 +57,5 @@ def generate_random_ip():
          (104, 16, 0, 1, 254),   # Public network
          (185, 199, 108, 1, 254) # Public network
      ]
+     range_choice = random.choice(ranges)
+     
