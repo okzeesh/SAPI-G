@@ -279,3 +279,7 @@ def get_threats():
         limit = int(request.args.get('limit', 100))
         attack_type = request.args.get('attack_type')
         ip = request.args.get('ip')
+
+        # Build query
+        query = {}
+        if attack_type:
