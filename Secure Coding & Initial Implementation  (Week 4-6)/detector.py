@@ -224,4 +224,7 @@ class HTTPAttackDetector:
 
             logging.warning(f"Attack detected: {prediction} from IP {request_data.get('ip')}")
         except Exception as e:
+            logging.error(f"Error logging alert: {str(e)}")
+
+    def process_queue(self):
 
