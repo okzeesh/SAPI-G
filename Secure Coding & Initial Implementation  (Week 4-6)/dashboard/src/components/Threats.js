@@ -161,3 +161,7 @@ const Threats = () => {
                   <span className="status-badge" style={{
                     background: 'rgba(108,92,231,0.15)',
                     color: 'var(--primary-color)'
+                  }}>
+                    {(threat.confidence * 100).toFixed(1)}%
+                  </span>
+                </td>
