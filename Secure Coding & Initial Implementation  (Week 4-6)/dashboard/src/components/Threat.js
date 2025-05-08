@@ -14,3 +14,7 @@ const THREATS_PER_PAGE = 15;
 const Threats = () => {
   const [threats, setThreats] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [page, setPage] = useState(1);
+  const [showExportOptions, setShowExportOptions] = useState(false);
+  const navigate = useNavigate();
