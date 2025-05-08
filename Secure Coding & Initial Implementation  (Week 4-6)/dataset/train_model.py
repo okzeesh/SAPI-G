@@ -125,3 +125,7 @@ def train_model(X_train, y_train, X_test, y_test):
         'min_samples_leaf': [1, 2],
         'max_features': ['sqrt', 'log2']
     }
+    
+    # Perform grid search with cross-validation
+    try:
+        print("Starting model training...")
