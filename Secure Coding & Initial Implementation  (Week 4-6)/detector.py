@@ -86,3 +86,7 @@ class HTTPAttackDetector:
                 ]
                 features_df = pd.DataFrame([features])[feature_order]
             else:
+                # Extract features from request data
+                features = {
+                    'email_length': len(request_data.get('email', '')),
+                    'password_length': len(request_data.get('password', '')),
