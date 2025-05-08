@@ -199,3 +199,6 @@ def evaluate_model(model, X_test, y_test, label_encoder):
         'importance': model.feature_importances_
         })
     feature_importance = feature_importance.sort_values('importance', ascending=False)
+    
+    plt.figure(figsize=(12, 6))
+    sns.barplot(x='importance', y='feature', data=feature_importance.head(10))
