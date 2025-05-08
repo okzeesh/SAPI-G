@@ -242,3 +242,4 @@ def main():
     print("Results saved in 'results' directory:")
     print("- confusion_matrix.png")
     print("- feature_importance.png")
+    print("- classification_report.txt")
