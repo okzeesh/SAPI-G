@@ -149,4 +149,8 @@ class HTTPAttackDetector:
             features = self.extract_features(request_data)
             if features is None:
                 return None, None
+            
+            # Make prediction
+            prediction = self.model.predict(features)[0]
+            probabilities = self.model.predict_proba(features)[0]
 
