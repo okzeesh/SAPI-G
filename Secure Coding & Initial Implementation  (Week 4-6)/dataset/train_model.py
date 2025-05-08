@@ -174,3 +174,6 @@ def train_model(X_train, y_train, X_test, y_test):
         digits=4
     )
     
+    print(report)
+    
+    # Save classification report to file
