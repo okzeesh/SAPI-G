@@ -192,3 +192,6 @@ def evaluate_model(model, X_test, y_test, label_encoder):
     plt.tight_layout()
     plt.savefig('results/confusion_matrix.png')
     plt.close()
+    
+    # Calculate and save feature importance plot
+    feature_importance = pd.DataFrame({
