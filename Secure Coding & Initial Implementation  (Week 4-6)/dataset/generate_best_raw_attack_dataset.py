@@ -117,3 +117,4 @@ for _ in range(benign_count):
 # SQLi
 for _ in range(sqli_count):
     email = generate_random_email()
+    password = random.choice(sqli_payloads)
