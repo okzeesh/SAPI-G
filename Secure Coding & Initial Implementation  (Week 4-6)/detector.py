@@ -111,3 +111,6 @@ class HTTPAttackDetector:
                     'day': datetime.now().weekday(), 
                     'is_gmail': 1 if request_data.get('email', '').endswith('@gmail.com') else 0,
                     'is_yahoo': 1 if request_data.get('email', '').endswith('@yahoo.com') else 0,
+                    'is_outlook': 1 if request_data.get('email', '').endswith('@outlook.com') else 0,
+                    'dummy': 0
+                }
