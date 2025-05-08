@@ -56,3 +56,5 @@ class HTTPAttackDetector:
 
         # Load the model, scaler, and label encoder
         self.model = joblib.load(os.path.join(model_dir, f'security_model_{timestamp}.joblib'))
+        self.scaler = joblib.load(os.path.join(model_dir, f'scaler_{timestamp}.joblib'))
+        self.label_encoder = joblib.load(os.path.join(model_dir, f'label_encoder_{timestamp}.joblib'))
