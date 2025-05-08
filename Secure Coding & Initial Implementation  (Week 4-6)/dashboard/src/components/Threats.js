@@ -116,3 +116,5 @@ const Threats = () => {
   const exportToExcel = () => {
     const worksheet = XLSX.utils.json_to_sheet(
       threats.map(threat => ({
+        'Detected At': new Date(threat.detectedAt).toLocaleString(),
+        'Threat Type': threat.threatType,
