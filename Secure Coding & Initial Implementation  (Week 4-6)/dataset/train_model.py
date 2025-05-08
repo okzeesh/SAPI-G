@@ -64,3 +64,4 @@ def extract_features(df):
     df['dummy'] = 0
     
     return df
+
