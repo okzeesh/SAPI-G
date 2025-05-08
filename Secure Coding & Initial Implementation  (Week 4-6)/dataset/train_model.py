@@ -168,4 +168,6 @@ def train_model(X_train, y_train, X_test, y_test):
     y_pred = model.predict(X_test)
     # Print classification report
     print("\nClassification Report:")
+    report = classification_report(
+        y_test, y_pred,
     
