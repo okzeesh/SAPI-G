@@ -150,3 +150,6 @@ const Threats = () => {
             {threatsToShow.map((threat, idx) => (
               <tr key={threat._id || idx} style={{background: idx % 2 === 0 ? 'rgba(36, 44, 62, 0.95)' : 'rgba(30,41,59,0.85)', borderBottom: '1px solid #334155'}}>
                 <td style={{padding: '0.6rem 0.5rem'}}>{threat.detectedAt ? new Date(threat.detectedAt).toLocaleString() : ''}</td>
+                <td style={{padding: '0.6rem 0.5rem', color: getThreatColor(threat.threatType)}}>{threat.threatType}</td>
+                <td style={{padding: '0.6rem 0.5rem'}}>{threat.ip}</td>
+                <td style={{padding: '0.6rem 0.5rem'}}>
