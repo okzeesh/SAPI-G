@@ -71,3 +71,4 @@ def preprocess_data(df):
     df = extract_features(df)
     # Define feature order to match backend
     feature_order = [
+        
