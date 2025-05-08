@@ -138,3 +138,6 @@ def train_model(X_train, y_train, X_test, y_test):
             cv=3,
             n_jobs=1,
             verbose=2,
+            error_score='raise',
+            return_train_score=True
+        )
