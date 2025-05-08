@@ -145,4 +145,8 @@ class HTTPAttackDetector:
     def detect_attack(self, request_data):
         """Detect if the request is an attack using the trained model"""
         try:
+            # Extract and scale features
+            features = self.extract_features(request_data)
+            if features is None:
+                return None, None
 
