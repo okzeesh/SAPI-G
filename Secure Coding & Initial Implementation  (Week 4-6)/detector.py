@@ -219,4 +219,6 @@ class HTTPAttackDetector:
             alert_file = os.path.join('alerts', f"alerts_{datetime.now().strftime('%Y%m%d')}.csv")
             pd.DataFrame([alert_data]).to_csv(alert_file, mode='a', header=not os.path.exists(alert_file), index=False)
             
+            # Log to MongoDB
+            self.log_to_mongodb(request_data, prediction, probability)
 
