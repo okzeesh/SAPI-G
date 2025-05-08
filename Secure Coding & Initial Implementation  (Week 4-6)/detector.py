@@ -163,3 +163,7 @@ class HTTPAttackDetector:
             # Get the confidence for the predicted class
             confidence = float(probabilities[prediction])
 
+            # Log the raw model output
+            logging.debug(f"Raw model prediction: {prediction}")
+            logging.debug(f"Raw prediction label: {prediction_label}")
+
