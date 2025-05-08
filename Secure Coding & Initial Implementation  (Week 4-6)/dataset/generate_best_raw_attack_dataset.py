@@ -111,3 +111,4 @@ for _ in range(benign_count):
     user_agent = random.choice(user_agents)
     ip = generate_random_ip()
     timestamp = random_timestamp()
+    endpoint = random.choice(endpoints)
