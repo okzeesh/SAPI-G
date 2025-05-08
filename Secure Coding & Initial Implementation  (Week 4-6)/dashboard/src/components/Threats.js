@@ -122,3 +122,7 @@ const Threats = () => {
         'Status': threat.status,
         'Confidence': `${(threat.confidence * 100).toFixed(1)}%`
       }))
+    );
+    
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'Threats');
