@@ -99,3 +99,4 @@ def generate_random_email():
 benign_count = 150_000    # 30% - More normal traffic
 sqli_count = 100_000      # 20% - Common attack
 xss_count = 100_000       # 20% - Common attack
+bruteforce_count = 90_000 # 18% - Less common
