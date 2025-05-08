@@ -33,3 +33,8 @@ class HTTPAttackDetector:
         self.threats_collection.create_index([('timestamp', -1)])
         self.threats_collection.create_index([('ip', 1)])
         self.threats_collection.create_index([('attack_type', 1)])
+
+        # Define label mapping
+        self.label_mapping = {
+            'PortScan': 'Port scan',
+            'SQLi': 'SQL Injection',
