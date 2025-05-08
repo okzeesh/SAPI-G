@@ -124,3 +124,5 @@ for _ in range(sqli_count):
     endpoint = random.choice(endpoints)
     rows.append({'email': email, 'password': password, 'user_agent': user_agent, 'ip': ip, 'timestamp': timestamp, 'endpoint': endpoint, 'label': 'SQLi'})
 
+# XSS
+for _ in range(xss_count):
