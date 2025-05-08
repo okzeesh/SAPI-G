@@ -11,3 +11,8 @@ import queue
 from pymongo import MongoClient
 from bson.json_util import dumps
 from sklearn.preprocessing import StandardScaler, LabelEncoder
+
+# Set up logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
