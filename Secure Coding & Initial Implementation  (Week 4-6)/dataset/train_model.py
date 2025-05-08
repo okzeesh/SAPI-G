@@ -204,3 +204,5 @@ def evaluate_model(model, X_test, y_test, label_encoder):
     sns.barplot(x='importance', y='feature', data=feature_importance.head(10))
     plt.title('Top 10 Feature Importance')
     plt.tight_layout()
+     plt.savefig('results/feature_importance.png')
+    plt.close()
