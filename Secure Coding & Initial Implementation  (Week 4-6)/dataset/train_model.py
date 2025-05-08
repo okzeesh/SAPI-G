@@ -119,3 +119,5 @@ def train_model(X_train, y_train, X_test, y_test):
     
     # Define parameter grid for tuning
     param_grid = {
+        'n_estimators': [100, 200],
+        'max_depth': [4, 6],
