@@ -269,3 +269,4 @@ def analyze_request():
         return jsonify({"status": "Request queued for analysis"})
     except Exception as e:
         logging.error(f"Error in analyze_request: {str(e)}")
+        return jsonify({"error": str(e)}), 500
