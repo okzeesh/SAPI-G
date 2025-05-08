@@ -110,3 +110,4 @@ for _ in range(benign_count):
     password = random.choice(benign_passwords)
     user_agent = random.choice(user_agents)
     ip = generate_random_ip()
+    timestamp = random_timestamp()
