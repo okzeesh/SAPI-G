@@ -54,3 +54,5 @@ def extract_features(df):
     # 6. Time features
     df['hour'] = df['timestamp'].dt.hour
     df['day'] = df['timestamp'].dt.dayofweek
+    
+    
