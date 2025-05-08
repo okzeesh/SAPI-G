@@ -300,3 +300,6 @@ def get_threats():
     
 @app.route('/predict', methods=['POST'])
 def predict():
+    try:
+        request_data = request.json
+        threat_type, confidence = detector.detect_attack(request_data)
