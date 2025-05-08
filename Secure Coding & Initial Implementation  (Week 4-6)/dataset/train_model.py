@@ -31,4 +31,5 @@ def extract_features(df):
     
     # 2. IP-based features
     ip_parts = df['ip'].str.split('.', expand=True)
-    
+    df['ip_octet_1'] = ip_parts[0].astype(float).fillna(0).astype(int)
+    df['ip_octet_2'] = ip_parts[1].astype(float).fillna(0).astype(int)
