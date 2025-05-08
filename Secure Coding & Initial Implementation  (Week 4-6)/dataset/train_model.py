@@ -116,3 +116,6 @@ def train_model(X_train, y_train, X_test, y_test):
         class_weight='balanced',
         n_jobs=-1
     )
+    
+    # Define parameter grid for tuning
+    param_grid = {
