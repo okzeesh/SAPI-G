@@ -236,4 +236,7 @@ class HTTPAttackDetector:
                 if prediction and prediction != 'benign':
                     self.log_alert(request_data, prediction, probability)
             except queue.Empty:
+                continue
+            except Exception as e:
+                logging.error(f"Error processing queue: {str(e)}")
 
