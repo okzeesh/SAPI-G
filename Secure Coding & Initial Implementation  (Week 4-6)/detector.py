@@ -32,3 +32,4 @@ class HTTPAttackDetector:
         # Create indexes for faster queries
         self.threats_collection.create_index([('timestamp', -1)])
         self.threats_collection.create_index([('ip', 1)])
+        self.threats_collection.create_index([('attack_type', 1)])
