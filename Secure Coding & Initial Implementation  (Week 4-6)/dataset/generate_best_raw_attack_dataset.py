@@ -127,3 +127,6 @@ for _ in range(sqli_count):
 # XSS
 for _ in range(xss_count):
     email = generate_random_email()
+    password = random.choice(xss_payloads)
+    
+    
