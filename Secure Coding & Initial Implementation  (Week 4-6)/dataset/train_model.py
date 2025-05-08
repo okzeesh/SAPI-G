@@ -38,3 +38,5 @@ def extract_features(df):
     
      # 3. Time-based features
     df['timestamp'] = pd.to_datetime(df['timestamp'])
+    df['time_since_last'] = df.groupby('ip')['timestamp'].diff().dt.total_seconds().fillna(0)
+    df['time_since_last'] = df['time_since_last'].clip(0, 3600)  # Cap at 1 hour
