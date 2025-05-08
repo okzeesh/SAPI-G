@@ -177,4 +177,6 @@ class HTTPAttackDetector:
 
             return threat_type, confidence
         except Exception as e:
+            logging.error(f"Error in attack detection: {str(e)}")
+            return None, None
 
