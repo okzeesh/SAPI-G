@@ -26,3 +26,5 @@ class HTTPAttackDetector:
     def __init__(self):
         # Initialize MongoDB connection
         self.mongo_client = MongoClient('mongodb://localhost:27017/')
+        self.db = self.mongo_client['threat_detection']
+        self.threats_collection = self.db['threats']
