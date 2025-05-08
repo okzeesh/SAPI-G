@@ -97,3 +97,8 @@ const Threats = () => {
       new Date(threat.detectedAt).toLocaleString(),
       threat.threatType,
       threat.ip,
+      threat.status,
+      `${(threat.confidence * 100).toFixed(1)}%`
+    ]);
+
+    autoTable(doc, {
