@@ -63,5 +63,6 @@ def generate_random_ip():
 # More diverse endpoints
 endpoints = [
         '/api/login', '/api/register', '/api/data', '/api/admin', '/api/user', 
+    '/api/secret', '/api/config', '/api/v1/auth', '/api/v2/login', '/api/v3/authenticate',
 
      
