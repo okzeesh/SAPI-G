@@ -126,3 +126,5 @@ const Threats = () => {
     
     const workbook = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(workbook, worksheet, 'Threats');
+    XLSX.writeFile(workbook, 'threats-report.xlsx');
+  };
