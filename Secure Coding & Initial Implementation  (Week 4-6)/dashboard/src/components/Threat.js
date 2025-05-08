@@ -68,4 +68,7 @@ const Threats = () => {
       };
     }, []);
 
-
+    const totalPages = Math.ceil(threats.length / THREATS_PER_PAGE);
+    const startIdx = (page - 1) * THREATS_PER_PAGE;
+    const endIdx = startIdx + THREATS_PER_PAGE;
+    const threatsToShow = threats.slice(startIdx, endIdx);
