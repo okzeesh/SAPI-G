@@ -266,3 +266,6 @@ def analyze_request():
     try:
         request_data = request.json
         detector.request_queue.put(request_data)
+        return jsonify({"status": "Request queued for analysis"})
+    except Exception as e:
+        logging.error(f"Error in analyze_request: {str(e)}")
