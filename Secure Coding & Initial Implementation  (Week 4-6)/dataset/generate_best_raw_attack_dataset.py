@@ -21,3 +21,4 @@ xss_payloads = [
         '<div onmouseover=alert(1)>XSS</div>', '<input onfocus=alert(1)>'
 ]
 bruteforce_passwords = [
+        '123456', '111111', '000000', '654321', '222222', '333333', '444444', '555555', '666666', '777777',
