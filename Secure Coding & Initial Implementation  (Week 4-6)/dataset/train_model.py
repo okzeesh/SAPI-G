@@ -233,3 +233,5 @@ def main():
     
     # Save the model and preprocessing objects
     print("\nSaving model and preprocessing objects...")
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    joblib.dump(model, f'models/security_model_{timestamp}.joblib')
