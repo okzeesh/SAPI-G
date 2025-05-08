@@ -108,3 +108,4 @@ rows = []
 for _ in range(benign_count):
     email = generate_random_email()
     password = random.choice(benign_passwords)
+    user_agent = random.choice(user_agents)
