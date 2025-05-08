@@ -244,4 +244,5 @@ def main():
     print("- feature_importance.png")
     print("- classification_report.txt")
     
-    
+if __name__ == "__main__":
+    main()     
