@@ -142,4 +142,5 @@ def train_model(X_train, y_train, X_test, y_test):
             return_train_score=True
         )
         
-        
+         # Fit the model with sample weights
+        grid_search.fit(X_train, y_train, sample_weight=sample_weights)
