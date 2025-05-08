@@ -180,4 +180,5 @@ def evaluate_model(model, X_test, y_test, label_encoder):
     with open('results/classification_report.txt', 'w') as f:
         f.write(report)
         
-        
+        # Create and save confusion matrix plot
+    plt.figure(figsize=(10, 8))
