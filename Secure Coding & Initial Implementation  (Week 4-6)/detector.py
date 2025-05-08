@@ -208,4 +208,7 @@ class HTTPAttackDetector:
             timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             alert_data = {
                 'timestamp': timestamp,
+                'ip': request_data.get('ip'),
+                'endpoint': request_data.get('endpoint'),
+                'method': request_data.get('method'),
 
