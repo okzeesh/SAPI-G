@@ -6,3 +6,4 @@ import string
 # Example payloads
 benign_passwords = [
         'myDogRex2024', 'BlueSky!@#', 'CoffeeLover99', 'SecurePass!2024', 'Bookworm_42',
+    'Travel4Fun', 'GuitarHero2023', 'Sunset$Beach', 'WinterIsComing', 'HelloWorld2024',
