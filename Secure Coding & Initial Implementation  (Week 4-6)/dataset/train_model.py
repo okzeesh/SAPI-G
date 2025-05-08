@@ -177,3 +177,5 @@ def evaluate_model(model, X_test, y_test, label_encoder):
     print(report)
     
     # Save classification report to file
+    with open('results/classification_report.txt', 'w') as f:
+        f.write(report)
