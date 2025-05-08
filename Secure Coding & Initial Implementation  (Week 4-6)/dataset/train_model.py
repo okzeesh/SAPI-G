@@ -164,4 +164,6 @@ def train_model(X_train, y_train, X_test, y_test):
     """Evaluate the model performance and save plots"""
     # Create results directory if it doesn't exist
     os.makedirs('results', exist_ok=True)
+    # Make predictions
+    y_pred = model.predict(X_test)
     
