@@ -79,3 +79,5 @@ def random_timestamp():
         time_range = random.randint(0, 60)  # More frequent
     else:
         time_range = random.randint(0, 120)  # Less frequent
+        
+    return (start + datetime.timedelta(
