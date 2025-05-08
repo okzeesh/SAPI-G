@@ -256,4 +256,8 @@ class HTTPAttackDetector:
         self.mongo_client.close()
         logging.info("Attack detection system stopped")
 
+# Initialize Flask app and detector
+app = Flask(__name__)
+detector = HTTPAttackDetector()
+
 
