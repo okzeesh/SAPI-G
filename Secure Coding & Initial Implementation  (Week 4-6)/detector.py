@@ -274,3 +274,6 @@ def analyze_request():
 @app.route('/threats', methods=['GET'])
 def get_threats():
     """API endpoint to get recent threats from MongoDB"""
+    try:
+        # Get query parameters
+        limit = int(request.args.get('limit', 100))
