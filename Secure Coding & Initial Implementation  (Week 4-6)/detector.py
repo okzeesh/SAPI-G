@@ -126,3 +126,6 @@ class HTTPAttackDetector:
             
             # Log the DataFrame before scaling
             logging.debug(f"Features DataFrame: {features_df}")
+
+            # Scale the features
+            features_scaled = self.scaler.transform(features_df)
