@@ -83,3 +83,4 @@ def random_timestamp():
     return (start + datetime.timedelta(
         days=random.randint(0, 364),
         hours=hour,
+        minutes=random.randint(0, 59),
