@@ -103,3 +103,6 @@ bruteforce_count = 90_000 # 18% - Less common
 portscan_count = 60_000   # 12% - Least common
 
 rows = []
+
+# Benign
+for _ in range(benign_count):
