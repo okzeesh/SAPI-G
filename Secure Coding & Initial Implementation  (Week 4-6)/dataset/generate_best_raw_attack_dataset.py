@@ -120,3 +120,4 @@ for _ in range(sqli_count):
     password = random.choice(sqli_payloads)
     user_agent = random.choice(user_agents)
     ip = generate_random_ip()
+    timestamp = random_timestamp()
