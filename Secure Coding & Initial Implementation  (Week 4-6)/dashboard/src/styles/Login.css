@@ -326,3 +326,5 @@ body::before {
   pointer-events: none;
 }
 
+#three-bg {
+position: absolute;
