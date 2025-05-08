@@ -158,3 +158,4 @@ for _ in range(portscan_count):
 random.shuffle(rows)
 
 # Save to CSV
+df = pd.DataFrame(rows)
