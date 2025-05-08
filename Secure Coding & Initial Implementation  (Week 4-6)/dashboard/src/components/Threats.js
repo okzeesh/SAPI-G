@@ -228,3 +228,6 @@ const Threats = () => {
             Export as XLSX
           </button>
         </div>
+        <button onClick={() => navigate('/dashboard')} style={{marginTop: '2.5rem', padding: '0.7rem 1.5rem', borderRadius: '8px', background: 'linear-gradient(45deg, #6c5ce7, #00f2c3)', color: '#fff', border: 'none', fontWeight: 500, fontSize: '1rem', boxShadow: '0 2px 8px rgba(0,242,195,0.10)', cursor: 'pointer'}}>Back to Dashboard</button>
+      </div>
+    </div>
