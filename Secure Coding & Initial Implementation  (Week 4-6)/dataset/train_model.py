@@ -29,4 +29,5 @@ def extract_features(df):
     df['is_login_endpoint'] = (df['endpoint'] == '/api/login').astype(int)
     df['user_agent_length'] = df['user_agent'].str.len().fillna(0)
     
-    
+    # 2. IP-based features
+    ip_parts = df['ip'].str.split('.', expand=True)
