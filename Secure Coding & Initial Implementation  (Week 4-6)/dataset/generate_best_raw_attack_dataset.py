@@ -84,3 +84,4 @@ def random_timestamp():
         days=random.randint(0, 364),
         hours=hour,
         minutes=random.randint(0, 59),
+        seconds=time_range
