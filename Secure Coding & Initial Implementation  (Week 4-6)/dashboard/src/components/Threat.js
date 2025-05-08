@@ -50,3 +50,9 @@ const Threats = () => {
           token: token
         }
       });
+
+      socket.on('connect', () => {
+        console.log('Connected to WebSocket server');
+      });
+
+
