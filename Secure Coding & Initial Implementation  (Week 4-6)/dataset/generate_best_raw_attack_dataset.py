@@ -52,3 +52,4 @@ def generate_random_ip():
          (10, 0, 0, 1, 254),     # Private network
          (172, 16, 0, 1, 254),   # Private network
          (1, 1, 1, 1, 254),      # Public network
+         (8, 8, 8, 1, 254),      # Public network
