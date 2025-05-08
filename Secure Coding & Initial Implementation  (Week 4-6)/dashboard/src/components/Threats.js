@@ -29,61 +29,61 @@ const Threats = () => {
 
     // Initial fetch of threats
     const fetchThreats = () => {
-        axios.get(`${API_URL}/api/threats`, {
-          headers: { Authorization: `Bearer ${token}` }
-        })
+      axios.get(`${API_URL}/api/threats`, {
+        headers: { Authorization: `Bearer ${token}` }
+      })
         .then(res => {
           setThreats(res.data);
           setLoading(false);
         })
         .catch(() => {
-            setError('Failed to fetch threats');
-            setLoading(false);
-          });
-      };
-
-      fetchThreats();
-
-      // Set up WebSocket connection
-    const socket = io(SOCKET_URL, {
-        auth: {
-          token: token
-        }
-      });
-
-      socket.on('connect', () => {
-        console.log('Connected to WebSocket server');
-      });
-
-      socket.on('newThreat', (newThreat) => {
-        setThreats(prevThreats => [newThreat, ...prevThreats]);
-      });
-
-      socket.on('error', (error) => {
-        console.error('WebSocket error:', error);
-      });
-
-      return () => {
-        socket.disconnect();
-      };
-    }, []);
-
-    const totalPages = Math.ceil(threats.length / THREATS_PER_PAGE);
-    const startIdx = (page - 1) * THREATS_PER_PAGE;
-    const endIdx = startIdx + THREATS_PER_PAGE;
-    const threatsToShow = threats.slice(startIdx, endIdx);
-
-    const getThreatColor = (threatType) => {
-        switch(threatType) {
-          case 'SQL Injection':
-            return '#ff467e';
-          case 'XSS Attack':
-            return '#f9ca24';
-          case 'Brute Force':
-            return '#6c5ce7';
-          case 'Port scan':
-            return '#00f2c3';
-          default:
-            return '#fff';
-        }
+          setError('Failed to fetch threats');
+          setLoading(false);
+        });
     };
+
+    fetchThreats();
+
+    // Set up WebSocket connection
+    const socket = io(SOCKET_URL, {
+      auth: {
+        token: token
+      }
+    });
+
+    socket.on('connect', () => {
+      console.log('Connected to WebSocket server');
+    });
+
+    socket.on('newThreat', (newThreat) => {
+      setThreats(prevThreats => [newThreat, ...prevThreats]);
+    });
+
+    socket.on('error', (error) => {
+      console.error('WebSocket error:', error);
+    });
+
+    return () => {
+      socket.disconnect();
+    };
+  }, []);
+
+  const totalPages = Math.ceil(threats.length / THREATS_PER_PAGE);
+  const startIdx = (page - 1) * THREATS_PER_PAGE;
+  const endIdx = startIdx + THREATS_PER_PAGE;
+  const threatsToShow = threats.slice(startIdx, endIdx);
+
+  const getThreatColor = (threatType) => {
+    switch(threatType) {
+      case 'SQL Injection':
+        return '#ff467e';
+      case 'XSS Attack':
+        return '#f9ca24';
+      case 'Brute Force':
+        return '#6c5ce7';
+      case 'Port scan':
+        return '#00f2c3';
+      default:
+        return '#fff';
+    }
+  };
