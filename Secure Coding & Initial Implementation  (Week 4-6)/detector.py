@@ -290,3 +290,5 @@ def get_threats():
         # Get threats from MongoDB
         threats = list(detector.threats_collection
                       .find(query)
+                      .sort('timestamp', -1)
+                      .limit(limit))
