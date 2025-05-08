@@ -16,3 +16,4 @@ sqli_payloads = [
         "; DROP TABLE users; --", "' OR 'a'='a", 'admin\' --', "1' or '1' = '1", "admin' #"
 ]
 xss_payloads = [
+        '<script>alert(1)</script>', '<img src=x onerror=alert(1)>', '<svg/onload=alert(1)>',
