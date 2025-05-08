@@ -42,3 +42,7 @@ class HTTPAttackDetector:
             'BruteForce': 'Brute Force',
             'benign': 'BENIGN'
         }
+
+        # Get the latest model files from dataset/models
+        model_dir = 'dataset/models'
+        model_files = [f for f in os.listdir(model_dir) if f.startswith('security_model_')]
