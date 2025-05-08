@@ -197,4 +197,6 @@ class HTTPAttackDetector:
             
             # Insert into MongoDB
             self.threats_collection.insert_one(threat_document)
+            logging.info(f"Threat logged to MongoDB: {prediction} from IP {request_data.get('ip')}")
+        except Exception as e:
 
