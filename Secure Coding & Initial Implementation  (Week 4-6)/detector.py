@@ -90,3 +90,7 @@ class HTTPAttackDetector:
                 features = {
                     'email_length': len(request_data.get('email', '')),
                     'password_length': len(request_data.get('password', '')),
+                    'password_special_chars': len([c for c in request_data.get('password', '') if not c.isalnum()]),
+                    'is_post': 1 if request_data.get('method') == 'POST' else 0,
+                    'is_login_endpoint': 1 if request_data.get('endpoint') == '/api/login' else 0,
+                    'user_agent_length': len(request_data.get('user_agent', '')),
