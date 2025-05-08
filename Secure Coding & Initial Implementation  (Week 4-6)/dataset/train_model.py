@@ -55,4 +55,5 @@ def extract_features(df):
     df['hour'] = df['timestamp'].dt.hour
     df['day'] = df['timestamp'].dt.dayofweek
     
-    
+     # 7. Email domain features
+    df['is_gmail'] = df['email'].str.endswith('@gmail.com').astype(int)
