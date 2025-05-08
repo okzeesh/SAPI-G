@@ -12,3 +12,4 @@ benign_passwords = [
         'Pythonista_99', 'QuantumLeap42', 'SpaceOdyssey', 'RedVelvetCake', 'PixelPainter'
 ]
 sqli_payloads = [
+        "' OR 1=1 --", 'admin" --', 'password123 OR 1=1', "' UNION SELECT * FROM users --",
