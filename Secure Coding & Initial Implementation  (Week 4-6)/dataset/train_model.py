@@ -186,3 +186,5 @@ def evaluate_model(model, X_test, y_test, label_encoder):
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
                 xticklabels=label_encoder.classes_,
                 yticklabels=label_encoder.classes_)
+    plt.title('Confusion Matrix')
+    plt.xlabel('Predicted')
