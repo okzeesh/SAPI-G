@@ -31,3 +31,4 @@ def extract_features(df):
     
     # 2. IP-based features
     ip_parts = df['ip'].str.split('.', expand=True)
+    
