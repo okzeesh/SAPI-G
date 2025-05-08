@@ -208,4 +208,5 @@ def evaluate_model(model, X_test, y_test, label_encoder):
     plt.close()
     
     # Print feature importance
-    
+    print("\nFeature Importance (Top 10):")
+    print(feature_importance.head(10))
