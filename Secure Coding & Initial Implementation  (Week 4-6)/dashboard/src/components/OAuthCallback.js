@@ -10,3 +10,6 @@ function OAuthCallback({ setIsLoggedIn }) {
         const params = new URLSearchParams(location.search);
         const token = params.get('token');
         console.log("Token from URL:", token);
+        if (token) {
+            localStorage.setItem('token', token);
+            if (setIsLoggedIn) {
