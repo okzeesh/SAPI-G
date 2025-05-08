@@ -240,3 +240,10 @@ class HTTPAttackDetector:
             except Exception as e:
                 logging.error(f"Error processing queue: {str(e)}")
 
+    def start(self):
+        """Start the detection system"""
+        self.is_running = True
+        self.detection_thread = threading.Thread(target=self.process_queue)
+        self.detection_thread.start()
+        logging.info("Attack detection system started")
+
