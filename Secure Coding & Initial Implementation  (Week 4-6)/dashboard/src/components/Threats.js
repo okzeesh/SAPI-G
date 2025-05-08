@@ -179,3 +179,5 @@ const Threats = () => {
         <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2rem' }}>
           <button
             onClick={exportToPDF}
+            style={{
+              padding: '0.7rem 1.5rem',
