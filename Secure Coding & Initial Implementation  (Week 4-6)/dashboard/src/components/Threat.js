@@ -43,3 +43,10 @@ const Threats = () => {
       };
 
       fetchThreats();
+
+      // Set up WebSocket connection
+    const socket = io(SOCKET_URL, {
+        auth: {
+          token: token
+        }
+      });
