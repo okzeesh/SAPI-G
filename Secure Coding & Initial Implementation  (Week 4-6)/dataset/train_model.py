@@ -223,3 +223,6 @@ def main():
     # Preprocess the data
     print("Preprocessing data...")
     X_train, X_test, y_train, y_test, label_encoder, scaler = preprocess_data(df)
+    
+    # Train the model
+    model = train_model(X_train, y_train, X_test, y_test)
