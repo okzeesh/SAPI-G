@@ -14,3 +14,6 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 warnings.filterwarnings('ignore', category=UserWarning, module='joblib')
+
+def extract_features(df):
+    """Extract and engineer features from raw data"""
