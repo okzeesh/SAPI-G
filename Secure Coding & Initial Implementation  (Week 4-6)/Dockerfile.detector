@@ -1,0 +1,35 @@
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Create models directory
+RUN mkdir -p /app/models
+
+# Copy the detector script and ML models
+COPY detector.py /app/
+COPY dataset/models/security_model_20250502_212234.joblib /app/models/
+COPY dataset/models/label_encoder_20250502_212234.joblib /app/models/
+COPY dataset/models/scaler_20250502_212234.joblib /app/models/
+
+# Debug: List contents of models directory and verify file sizes
+RUN ls -la /app/models/ && \
+    echo "Checking if files exist:" && \
+    test -f /app/models/security_model_20250502_212234.joblib && echo "Model file exists" || echo "Model file missing" && \
+    test -f /app/models/label_encoder_20250502_212234.joblib && echo "Label encoder exists" || echo "Label encoder missing" && \
+    test -f /app/models/scaler_20250502_212234.joblib && echo "Scaler exists" || echo "Scaler missing"
+
+# Install required packages with specific versions that match the training environment
+RUN pip install --no-cache-dir \
+    scikit-learn==1.5.2 \
+    pandas==2.1.4 \
+    numpy==1.26.3 \
+    joblib==1.3.2 \
+    flask==3.0.0 \
+    requests==2.31.0 \
+    pymongo==4.6.1
+
+# Expose the port that the detector service will run on
+EXPOSE 5002
+
+# Run the detector script
+CMD ["python", "detector.py"]

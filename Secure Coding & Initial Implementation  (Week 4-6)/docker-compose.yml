@@ -1,0 +1,65 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: backend
+    ports:
+      - "5001:5001"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/sapi
+      - JWT_SECRET=your_secret_key
+      - SESSION_SECRET=your_session_secret
+      - NODE_ENV=production
+      - DETECTOR_URL=http://detector:5002
+      - FRONTEND_URL=${FRONTEND_URL:-http://localhost:3000}
+    depends_on:
+      - mongodb
+      - detector
+    networks:
+      - sapi-network
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: secureapi-dashboard
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=${API_URL:-http://localhost:5001}
+    depends_on:
+      - backend
+    networks:
+      - sapi-network
+    restart: unless-stopped
+
+  detector:
+    build:
+      context: .
+      dockerfile: Dockerfile.detector
+    ports:
+      - "5002:5002"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/sapi
+    depends_on:
+      - mongodb
+    networks:
+      - sapi-network
+    restart: unless-stopped
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - sapi-network
+    restart: unless-stopped
+
+networks:
+  sapi-network:
+    driver: bridge
+
+volumes:
+  mongodb_data: 
