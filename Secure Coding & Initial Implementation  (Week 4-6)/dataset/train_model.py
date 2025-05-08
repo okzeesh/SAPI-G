@@ -206,3 +206,6 @@ def evaluate_model(model, X_test, y_test, label_encoder):
     plt.tight_layout()
      plt.savefig('results/feature_importance.png')
     plt.close()
+    
+    # Print feature importance
+    
