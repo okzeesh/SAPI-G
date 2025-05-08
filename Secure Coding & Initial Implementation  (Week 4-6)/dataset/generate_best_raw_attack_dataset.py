@@ -10,3 +10,4 @@ benign_passwords = [
         'MapleTreeHouse', 'SoccerFan_88', 'JazzLover2022', 'MountainHike$', 'OceanView!2023',
         'PianoKeys#1', 'StarlightNight', 'GreenTeaLover', 'CodeMaster2024', 'RubyOnRails!',
         'Pythonista_99', 'QuantumLeap42', 'SpaceOdyssey', 'RedVelvetCake', 'PixelPainter'
+]
