@@ -40,4 +40,6 @@ user_agents = [
     'Mozilla/5.0 (iPhone; CPU iPhone OS 17_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Mobile/15E148 Safari/604.1',
     'Mozilla/5.0 (Linux; Android 13; SM-S908B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
     'curl/7.68.0', 'python-requests/2.25.1', 'nmap/7.80', 'sqlmap/1.4.6',
+    'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+    'Mozilla/5.0 (compatible; Bingbot/2.0; +http://www.bing.com/bingbot.htm)'
 
