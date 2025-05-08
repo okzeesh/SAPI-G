@@ -94,3 +94,7 @@ class HTTPAttackDetector:
                     'is_post': 1 if request_data.get('method') == 'POST' else 0,
                     'is_login_endpoint': 1 if request_data.get('endpoint') == '/api/login' else 0,
                     'user_agent_length': len(request_data.get('user_agent', '')),
+                    'ip_octet_1': int(request_data.get('ip', '0.0.0.0').split('.')[0]),
+                    'ip_octet_2': int(request_data.get('ip', '0.0.0.0').split('.')[1]),
+                    'ip_octet_3': int(request_data.get('ip', '0.0.0.0').split('.')[2]),
+                    'ip_octet_4': int(request_data.get('ip', '0.0.0.0').split('.')[3]),
