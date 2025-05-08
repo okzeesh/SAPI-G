@@ -213,3 +213,5 @@ def evaluate_model(model, X_test, y_test, label_encoder):
     
 def main():
     # Create models and results directories if they don't exist
+    os.makedirs('models', exist_ok=True)
+    os.makedirs('results', exist_ok=True)
