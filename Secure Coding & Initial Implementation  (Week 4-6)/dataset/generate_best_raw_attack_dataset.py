@@ -32,3 +32,5 @@ portscan_endpoints = [
 email_domains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'protonmail.com', 
                 'icloud.com', 'aol.com', 'mail.com', 'zoho.com', 'yandex.com']
 
+# More diverse user agents
+user_agents = [
