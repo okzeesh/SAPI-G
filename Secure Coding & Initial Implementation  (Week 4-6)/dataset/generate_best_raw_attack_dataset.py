@@ -8,5 +8,5 @@ benign_passwords = [
         'myDogRex2024', 'BlueSky!@#', 'CoffeeLover99', 'SecurePass!2024', 'Bookworm_42',
         'Travel4Fun', 'GuitarHero2023', 'Sunset$Beach', 'WinterIsComing', 'HelloWorld2024',
         'MapleTreeHouse', 'SoccerFan_88', 'JazzLover2022', 'MountainHike$', 'OceanView!2023',
-    'PianoKeys#1', 'StarlightNight', 'GreenTeaLover', 'CodeMaster2024', 'RubyOnRails!',
+        'PianoKeys#1', 'StarlightNight', 'GreenTeaLover', 'CodeMaster2024', 'RubyOnRails!',
     'Pythonista_99', 'QuantumLeap42', 'SpaceOdyssey', 'RedVelvetCake', 'PixelPainter'
