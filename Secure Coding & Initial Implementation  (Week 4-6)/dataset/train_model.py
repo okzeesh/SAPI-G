@@ -71,4 +71,5 @@ def preprocess_data(df):
     df = extract_features(df)
     # Define feature order to match backend
     feature_order = [
-        
+        'email_length', 'password_length', 'password_special_chars', 'is_post', 'is_login_endpoint',
+        'user_agent_length', 'ip_octet_1', 'ip_octet_2', 'ip_octet_3', 'ip_octet_4',
