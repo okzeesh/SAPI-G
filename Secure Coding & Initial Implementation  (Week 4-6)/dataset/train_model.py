@@ -151,4 +151,5 @@ def train_model(X_train, y_train, X_test, y_test):
         # Get the best model
         best_model = grid_search.best_estimator_
         
-        
+        # Train the best model
+        print("\nTraining final model with best parameters...")
