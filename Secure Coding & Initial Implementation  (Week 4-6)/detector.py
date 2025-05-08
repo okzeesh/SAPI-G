@@ -189,4 +189,8 @@ class HTTPAttackDetector:
                 'endpoint': request_data.get('endpoint'),
                 'method': request_data.get('method'),
                 'threatType': prediction,  # Changed from attack_type to threatType
+                'probability': float(max(probability)) if probability is not None else 0.0,
+                'email': request_data.get('email'),
+                'user_agent': request_data.get('user_agent'),
+                'request_data': request_data
 
