@@ -182,4 +182,8 @@ class HTTPAttackDetector:
         
     def log_to_mongodb(self, request_data, prediction, probability):
         """Log the threat to MongoDB"""
+        try:
+            threat_document = {
+                'timestamp': datetime.now(),
+                'ip': request_data.get('ip'),
 
