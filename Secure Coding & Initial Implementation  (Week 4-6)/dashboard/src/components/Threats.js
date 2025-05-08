@@ -138,3 +138,6 @@ const Threats = () => {
       <div className="logs-table-container" style={{overflowX: 'auto', background: 'rgba(30,41,59,0.92)', borderRadius: '16px', boxShadow: '0 2px 12px rgba(0,0,0,0.15)', padding: '2rem 1.5rem'}}>
         <table className="logs-table" style={{width: '100%', color: '#fff', borderCollapse: 'collapse', fontSize: '1.05rem'}}>
           <thead>
+            <tr style={{background: 'rgba(0,242,195,0.08)'}}>
+              <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>Detected At</th>
+              <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>Threat Type</th>
