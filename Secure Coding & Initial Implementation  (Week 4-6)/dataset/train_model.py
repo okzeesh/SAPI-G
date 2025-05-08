@@ -197,3 +197,5 @@ def evaluate_model(model, X_test, y_test, label_encoder):
     feature_importance = pd.DataFrame({
         'feature': [f'feature_{i}' for i in range(X_test.shape[1])],
         'importance': model.feature_importances_
+        })
+    feature_importance = feature_importance.sort_values('importance', ascending=False)
