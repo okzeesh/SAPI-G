@@ -118,3 +118,5 @@ const Threats = () => {
       threats.map(threat => ({
         'Detected At': new Date(threat.detectedAt).toLocaleString(),
         'Threat Type': threat.threatType,
+        'IP Address': threat.ip,
+        'Status': threat.status,
