@@ -54,3 +54,4 @@ def generate_random_ip():
          (1, 1, 1, 1, 254),      # Public network
          (8, 8, 8, 1, 254),      # Public network
          (45, 45, 45, 1, 254),   # Public network
+         (104, 16, 0, 1, 254),   # Public network
