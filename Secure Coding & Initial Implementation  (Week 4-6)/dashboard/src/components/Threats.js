@@ -133,3 +133,5 @@ const Threats = () => {
   if (error) return <div className="profile-page"><h2>Threats</h2><p>{error}</p></div>;
 
   return (
+    <div className="profile-page" style={{maxWidth: '1100px'}}>
+      <h2 style={{marginBottom: '2rem'}}>Threat Monitoring</h2>
