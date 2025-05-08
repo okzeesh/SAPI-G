@@ -84,3 +84,5 @@ class HTTPAttackDetector:
                     'time_since_last', 'body_field_count', 'has_sql', 'has_script', 'hour', 'day',
                     'is_gmail', 'is_yahoo', 'is_outlook', 'dummy'
                 ]
+                features_df = pd.DataFrame([features])[feature_order]
+            else:
