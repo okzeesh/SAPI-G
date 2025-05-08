@@ -188,4 +188,5 @@ def evaluate_model(model, X_test, y_test, label_encoder):
                 yticklabels=label_encoder.classes_)
     plt.title('Confusion Matrix')
     plt.xlabel('Predicted')
-    
+    plt.ylabel('Actual')
+    plt.tight_layout()
