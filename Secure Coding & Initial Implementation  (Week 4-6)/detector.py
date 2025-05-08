@@ -70,3 +70,6 @@ class HTTPAttackDetector:
 
     def extract_features(self, request_data):
         """Extract features from HTTP request data"""
+        try:
+            # Log the raw request data
+            logging.debug(f"Raw request data: {request_data}")
