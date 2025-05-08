@@ -103,3 +103,5 @@ def train_model(X_train, y_train, X_test, y_test):
     class_weights = {
         0: 1.0,  # benign
         1: 1.2,  # SQLi
+        2: 1.2,  # XSS
+        3: 1.2,  # BruteForce
