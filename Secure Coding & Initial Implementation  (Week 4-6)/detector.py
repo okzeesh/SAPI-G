@@ -260,4 +260,6 @@ class HTTPAttackDetector:
 app = Flask(__name__)
 detector = HTTPAttackDetector()
 
-
+@app.route('/analyze', methods=['POST'])
+def analyze_request():
+    """API endpoint to analyze HTTP requests"""
