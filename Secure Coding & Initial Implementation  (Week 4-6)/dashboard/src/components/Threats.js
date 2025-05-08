@@ -87,3 +87,6 @@ const Threats = () => {
         return '#fff';
     }
   };
+
+  const exportToPDF = () => {
+    const doc = new jsPDF();
