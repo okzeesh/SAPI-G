@@ -121,3 +121,5 @@ def train_model(X_train, y_train, X_test, y_test):
     param_grid = {
         'n_estimators': [100, 200],
         'max_depth': [4, 6],
+        'min_samples_split': [2, 5],
+        'min_samples_leaf': [1, 2],
