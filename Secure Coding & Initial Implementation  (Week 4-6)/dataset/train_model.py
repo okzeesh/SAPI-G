@@ -240,3 +240,5 @@ def main():
     
     print("\nTraining completed successfully!")
     print("Results saved in 'results' directory:")
+    print("- confusion_matrix.png")
+    print("- feature_importance.png")
