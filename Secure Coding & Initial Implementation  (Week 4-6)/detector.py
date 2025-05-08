@@ -175,3 +175,6 @@ class HTTPAttackDetector:
                 threat_type = 'BENIGN'
                 confidence = 1.0 - confidence
 
+            return threat_type, confidence
+        except Exception as e:
+
