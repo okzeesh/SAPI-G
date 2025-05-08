@@ -179,4 +179,7 @@ class HTTPAttackDetector:
         except Exception as e:
             logging.error(f"Error in attack detection: {str(e)}")
             return None, None
+        
+    def log_to_mongodb(self, request_data, prediction, probability):
+        """Log the threat to MongoDB"""
 
