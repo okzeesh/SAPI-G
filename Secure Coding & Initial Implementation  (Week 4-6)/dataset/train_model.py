@@ -148,4 +148,5 @@ def train_model(X_train, y_train, X_test, y_test):
         print("\nBest parameters found:")
         print(grid_search.best_params_)
         
-        
+        # Get the best model
+        best_model = grid_search.best_estimator_
