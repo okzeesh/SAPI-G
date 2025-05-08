@@ -107,3 +107,5 @@ def train_model(X_train, y_train, X_test, y_test):
         3: 1.2,  # BruteForce
         4: 1.2   # PortScan - reduced from 2.0 to 1.2 to prevent bias
     }
+    
+    
