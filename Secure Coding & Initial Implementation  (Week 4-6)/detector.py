@@ -211,4 +211,8 @@ class HTTPAttackDetector:
                 'ip': request_data.get('ip'),
                 'endpoint': request_data.get('endpoint'),
                 'method': request_data.get('method'),
+                'prediction': prediction,
+                'probability': max(probability) if probability is not None else 0,
+                'request_data': request_data
+            }
 
