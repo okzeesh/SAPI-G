@@ -184,3 +184,7 @@ const Threats = () => {
               borderRadius: '8px',
               background: 'linear-gradient(90deg, #6c5ce7, #a29bfe)',
               color: '#fff',
+              border: 'none',
+              fontWeight: 600,
+              fontSize: '1rem',
+              cursor: 'pointer',
