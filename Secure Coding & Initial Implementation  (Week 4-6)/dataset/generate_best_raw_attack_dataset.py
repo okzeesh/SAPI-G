@@ -61,5 +61,7 @@ def generate_random_ip():
      return f"{range_choice[0]}.{range_choice[1]}.{range_choice[2]}.{random.randint(range_choice[3], range_choice[4])}"
 
 # More diverse endpoints
+endpoints = [
+        '/api/login', '/api/register', '/api/data', '/api/admin', '/api/user', 
 
      
