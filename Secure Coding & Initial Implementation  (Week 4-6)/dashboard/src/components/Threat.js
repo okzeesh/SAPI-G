@@ -72,3 +72,7 @@ const Threats = () => {
     const startIdx = (page - 1) * THREATS_PER_PAGE;
     const endIdx = startIdx + THREATS_PER_PAGE;
     const threatsToShow = threats.slice(startIdx, endIdx);
+
+    const getThreatColor = (threatType) => {
+        switch(threatType) {
+          case 'SQL Injection':
