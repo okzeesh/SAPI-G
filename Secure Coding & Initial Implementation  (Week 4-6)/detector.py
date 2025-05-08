@@ -100,3 +100,6 @@ class HTTPAttackDetector:
                     'ip_octet_4': int(request_data.get('ip', '0.0.0.0').split('.')[3]),
                     'time_since_last': request_data.get('time_since_last', 0),
                     'body_field_count': len(request_data.get('body', {})),
+                    'has_sql': 1 if any(kw in request_data.get('password', '').lower() 
+                                      for kw in ['select', 'union', 'where', 'from', 'or', 'and', 
+                                               'exec', 'execute', 'insert', 'update', 'delete', 
