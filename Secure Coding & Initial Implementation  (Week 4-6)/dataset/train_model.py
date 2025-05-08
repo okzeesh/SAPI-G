@@ -43,3 +43,5 @@ def extract_features(df):
     
     # 4. Request features
     df['body_field_count'] = 2  # email and password fields
+    
+    
