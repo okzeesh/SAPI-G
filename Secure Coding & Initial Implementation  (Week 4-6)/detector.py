@@ -286,3 +286,7 @@ def get_threats():
             query['attack_type'] = attack_type
         if ip:
             query['ip'] = ip
+
+        # Get threats from MongoDB
+        threats = list(detector.threats_collection
+                      .find(query)
