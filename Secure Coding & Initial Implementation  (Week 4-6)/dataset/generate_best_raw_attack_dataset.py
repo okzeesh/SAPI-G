@@ -48,3 +48,4 @@ user_agents = [
 def generate_random_ip():
     # Generate IPs from different ranges
      ranges = [
+         (192, 168, 1, 1, 254),  # Private network
