@@ -17,3 +17,6 @@ warnings.filterwarnings('ignore', category=UserWarning, module='joblib')
 
 def extract_features(df):
     """Extract and engineer features from raw data"""
+    
+     # Copy the dataframe to avoid modifying the original
+    df = df.copy()
