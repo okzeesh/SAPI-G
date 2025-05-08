@@ -170,3 +170,8 @@ class HTTPAttackDetector:
             logging.debug(f"Model classes: {self.label_encoder.classes_}")
             logging.debug(f"Selected confidence: {confidence}")
 
+            # If confidence is too low, default to BENIGN
+            if confidence < 0.5:
+                threat_type = 'BENIGN'
+                confidence = 1.0 - confidence
+
