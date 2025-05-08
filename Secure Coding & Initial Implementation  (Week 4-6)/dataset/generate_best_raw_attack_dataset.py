@@ -77,3 +77,4 @@ def random_timestamp():
     hour = random.randint(0, 23)
     if 9 <= hour <= 17:  # Business hours
         time_range = random.randint(0, 60)  # More frequent
+        else:
