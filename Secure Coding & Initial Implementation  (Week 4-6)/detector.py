@@ -166,4 +166,7 @@ class HTTPAttackDetector:
             # Log the raw model output
             logging.debug(f"Raw model prediction: {prediction}")
             logging.debug(f"Raw prediction label: {prediction_label}")
+            logging.debug(f"Raw probabilities: {dict(zip(self.label_encoder.classes_, probabilities))}")
+            logging.debug(f"Model classes: {self.label_encoder.classes_}")
+            logging.debug(f"Selected confidence: {confidence}")
 
