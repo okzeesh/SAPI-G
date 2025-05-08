@@ -145,3 +145,4 @@ for _ in range(bruteforce_count):
     rows.append({'email': email, 'password': password, 'user_agent': user_agent, 'ip': ip, 'timestamp': timestamp, 'endpoint': endpoint, 'label': 'BruteForce'})
 
 # Port Scan
+for _ in range(portscan_count):
