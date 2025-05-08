@@ -89,3 +89,4 @@ def random_timestamp():
     
 def generate_random_email():
     # More diverse email generation
+    username_length = random.randint(5, 15)
