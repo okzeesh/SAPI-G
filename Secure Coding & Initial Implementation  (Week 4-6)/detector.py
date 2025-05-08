@@ -98,3 +98,5 @@ class HTTPAttackDetector:
                     'ip_octet_2': int(request_data.get('ip', '0.0.0.0').split('.')[1]),
                     'ip_octet_3': int(request_data.get('ip', '0.0.0.0').split('.')[2]),
                     'ip_octet_4': int(request_data.get('ip', '0.0.0.0').split('.')[3]),
+                    'time_since_last': request_data.get('time_since_last', 0),
+                    'body_field_count': len(request_data.get('body', {})),
