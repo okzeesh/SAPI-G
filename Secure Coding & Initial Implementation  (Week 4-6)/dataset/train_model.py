@@ -184,3 +184,5 @@ def evaluate_model(model, X_test, y_test, label_encoder):
     plt.figure(figsize=(10, 8))
     cm = confusion_matrix(y_test, y_pred)
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
+                xticklabels=label_encoder.classes_,
+                yticklabels=label_encoder.classes_)
