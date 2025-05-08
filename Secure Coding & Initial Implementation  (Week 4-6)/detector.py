@@ -51,3 +51,5 @@ class HTTPAttackDetector:
         
         # Sort by timestamp and get the latest
         latest_model = sorted(model_files)[-1]
+        # Extract the full timestamp from the filename (e.g., '20250502_205949')
+        timestamp = '_'.join(latest_model.split('_')[2:]).split('.')[0]
