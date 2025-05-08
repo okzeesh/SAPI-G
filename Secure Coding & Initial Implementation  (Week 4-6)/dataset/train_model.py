@@ -134,3 +134,6 @@ def train_model(X_train, y_train, X_test, y_test):
         grid_search = GridSearchCV(
             estimator=model,
             param_grid=param_grid,
+            scoring='f1_weighted',
+            cv=3,
+            
