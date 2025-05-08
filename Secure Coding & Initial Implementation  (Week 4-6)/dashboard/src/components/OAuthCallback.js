@@ -13,3 +13,9 @@ function OAuthCallback({ setIsLoggedIn }) {
         if (token) {
             localStorage.setItem('token', token);
             if (setIsLoggedIn) {
+                console.log("Calling setIsLoggedIn(true)");
+                setIsLoggedIn(true);
+        }
+        console.log("Navigating to /dashboard");
+            navigate('/dashboard', { replace: true });
+        } else {
