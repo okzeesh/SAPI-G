@@ -221,3 +221,5 @@ def main():
     df = pd.read_csv('best_raw_attack_dataset.csv')  # Fixed path since we're already in dataset directory
     
     # Preprocess the data
+    print("Preprocessing data...")
+    X_train, X_test, y_train, y_test, label_encoder, scaler = preprocess_data(df)
