@@ -101,3 +101,5 @@ sqli_count = 100_000      # 20% - Common attack
 xss_count = 100_000       # 20% - Common attack
 bruteforce_count = 90_000 # 18% - Less common
 portscan_count = 60_000   # 12% - Least common
+
+rows = []
