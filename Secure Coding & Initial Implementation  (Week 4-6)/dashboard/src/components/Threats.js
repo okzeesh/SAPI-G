@@ -104,3 +104,7 @@ const Threats = () => {
     autoTable(doc, {
       head: [tableColumn],
       body: tableRows,
+      startY: 25,
+      theme: 'grid',
+      styles: { fontSize: 8 },
+      headStyles: { fillColor: [108, 92, 231] }
