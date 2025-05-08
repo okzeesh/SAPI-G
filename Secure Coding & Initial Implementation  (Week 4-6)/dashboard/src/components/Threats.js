@@ -172,3 +172,4 @@ const Threats = () => {
         {totalPages > 1 && (
           <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '1.5rem', gap: '1.2rem'}}>
             <button onClick={() => setPage(page - 1)} disabled={page === 1} style={{padding: '0.5rem 1.2rem', borderRadius: '6px', border: 'none', background: '#6c5ce7', color: '#fff', cursor: page === 1 ? 'not-allowed' : 'pointer', opacity: page === 1 ? 0.5 : 1}}>Previous</button>
+            <span style={{color: '#00f2c3', fontWeight: 600}}>Page {page} of {totalPages}</span>
