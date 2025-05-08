@@ -26,3 +26,5 @@ function OAuthCallback({ setIsLoggedIn }) {
 
     return <div>Logging you in with Google...</div>;
   }
+
+export default OAuthCallback; 
