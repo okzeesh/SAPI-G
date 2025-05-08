@@ -74,3 +74,4 @@ def random_timestamp():
     end = datetime.datetime(2024, 12, 31)
     
     # Add time patterns (more activity during business hours)
+    hour = random.randint(0, 23)
