@@ -20,3 +20,5 @@ def extract_features(df):
     
      # Copy the dataframe to avoid modifying the original
     df = df.copy()
+    
+    
