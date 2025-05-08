@@ -297,3 +297,6 @@ def get_threats():
     except Exception as e:
         logging.error(f"Error getting threats: {str(e)}")
         return jsonify({"error": str(e)}), 500
+    
+@app.route('/predict', methods=['POST'])
+def predict():
