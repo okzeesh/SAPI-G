@@ -216,3 +216,7 @@ class HTTPAttackDetector:
                 'request_data': request_data
             }
 
+            alert_file = os.path.join('alerts', f"alerts_{datetime.now().strftime('%Y%m%d')}.csv")
+            pd.DataFrame([alert_data]).to_csv(alert_file, mode='a', header=not os.path.exists(alert_file), index=False)
+            
+
