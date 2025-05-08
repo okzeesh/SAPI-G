@@ -19,3 +19,10 @@ function OAuthCallback({ setIsLoggedIn }) {
         console.log("Navigating to /dashboard");
             navigate('/dashboard', { replace: true });
         } else {
+            console.log("No token found, navigating to /login");
+            navigate('/login');
+        }
+    }, [location, setIsLoggedIn, navigate]);
+
+    return <div>Logging you in with Google...</div>;
+  }
