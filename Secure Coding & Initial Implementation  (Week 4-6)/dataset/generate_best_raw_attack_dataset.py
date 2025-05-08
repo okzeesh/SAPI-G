@@ -130,4 +130,5 @@ for _ in range(xss_count):
     password = random.choice(xss_payloads)
     user_agent = random.choice(user_agents)
     ip = generate_random_ip()
-    
+        timestamp = random_timestamp()
+
