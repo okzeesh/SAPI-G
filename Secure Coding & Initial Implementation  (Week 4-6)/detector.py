@@ -247,3 +247,8 @@ class HTTPAttackDetector:
         self.detection_thread.start()
         logging.info("Attack detection system started")
 
+    def stop(self):
+        """Stop the detection system"""
+        self.is_running = False
+
+
