@@ -166,4 +166,6 @@ def train_model(X_train, y_train, X_test, y_test):
     os.makedirs('results', exist_ok=True)
     # Make predictions
     y_pred = model.predict(X_test)
+    # Print classification report
+    print("\nClassification Report:")
     
