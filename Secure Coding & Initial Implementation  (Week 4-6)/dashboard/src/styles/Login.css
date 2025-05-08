@@ -309,3 +309,6 @@ html, body, #root {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background: linear-gradient(120deg, #232526 0%, #414345 50%, #00f2c3 100%);
+ background-repeat: no-repeat;
+
