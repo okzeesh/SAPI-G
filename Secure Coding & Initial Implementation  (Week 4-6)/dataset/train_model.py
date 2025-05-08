@@ -90,4 +90,5 @@ def preprocess_data(df):
         X, y_encoded, test_size=0.2, random_state=42, stratify=y_encoded
     )
     
-    
+     # Scale numerical features
+    scaler = StandardScaler()
