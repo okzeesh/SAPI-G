@@ -165,3 +165,7 @@ const Threats = () => {
                     {(threat.confidence * 100).toFixed(1)}%
                   </span>
                 </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
