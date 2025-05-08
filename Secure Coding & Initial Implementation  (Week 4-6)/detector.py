@@ -102,4 +102,7 @@ class HTTPAttackDetector:
                     'body_field_count': len(request_data.get('body', {})),
                     'has_sql': 1 if any(kw in request_data.get('password', '').lower() 
                                       for kw in ['select', 'union', 'where', 'from', 'or', 'and', 
-                                               'exec', 'execute', 'insert', 'update', 'delete', 
+                                               'exec', 'execute', 'insert', 'update', 'delete',
+                                               'drop', 'table', 'database']) else 0,
+                    'has_script': 1 if any(pattern in request_data.get('password', '').lower() 
+                                         for pattern in ['<script', 'javascript:', 'onerror=', 'onload=', 
