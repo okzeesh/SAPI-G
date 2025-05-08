@@ -345,3 +345,5 @@ body::before {
   position: relative;
   overflow: hidden;
   background: none;
+z-index: 10;
+}
