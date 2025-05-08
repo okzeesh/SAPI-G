@@ -336,3 +336,6 @@ body::before {
   pointer-events: none;
   opacity: 0.45;
 }
+
+.page-border-wrapper {
+  min-height: 100vh;
