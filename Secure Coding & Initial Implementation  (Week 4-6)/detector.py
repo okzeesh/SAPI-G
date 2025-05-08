@@ -303,3 +303,8 @@ def predict():
     try:
         request_data = request.json
         threat_type, confidence = detector.detect_attack(request_data)
+
+        return jsonify({
+            "threatType": threat_type if threat_type else "BENIGN",
+            "confidence": confidence if confidence is not None else 0.0
+        })
