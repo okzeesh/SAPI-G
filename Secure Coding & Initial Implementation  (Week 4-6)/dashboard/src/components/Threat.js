@@ -32,3 +32,8 @@ const Threats = () => {
         axios.get(`${API_URL}/api/threats`, {
           headers: { Authorization: `Bearer ${token}` }
         })
+        .then(res => {
+          setThreats(res.data);
+          setLoading(false);
+        })
+        
