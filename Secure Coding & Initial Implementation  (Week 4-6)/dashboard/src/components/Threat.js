@@ -55,4 +55,8 @@ const Threats = () => {
         console.log('Connected to WebSocket server');
       });
 
+      socket.on('newThreat', (newThreat) => {
+        setThreats(prevThreats => [newThreat, ...prevThreats]);
+      });
+
 
