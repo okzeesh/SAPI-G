@@ -191,3 +191,6 @@ const Threats = () => {
               transition: 'transform 0.2s, box-shadow 0.2s',
               boxShadow: '0 4px 8px rgba(108, 92, 231, 0.3)',
             }}
+            onMouseEnter={(e) => {
+              e.target.style.transform = 'scale(1.05)';
+              e.target.style.boxShadow = '0 6px 12px rgba(108, 92, 231, 0.5)';
