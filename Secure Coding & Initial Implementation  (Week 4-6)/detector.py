@@ -157,3 +157,6 @@ class HTTPAttackDetector:
             # Convert prediction back to original label
             prediction_label = self.label_encoder.inverse_transform([prediction])[0]
 
+            # Map to threat type
+            threat_type = self.map_label_to_threat_type(prediction_label)
+
