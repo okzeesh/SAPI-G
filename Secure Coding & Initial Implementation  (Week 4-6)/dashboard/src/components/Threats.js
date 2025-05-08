@@ -202,3 +202,6 @@ const Threats = () => {
           >
             Export as PDF
           </button>
+          <button
+            onClick={exportToExcel}
+            style={{
