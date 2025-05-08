@@ -35,3 +35,6 @@ def extract_features(df):
     df['ip_octet_2'] = ip_parts[1].astype(float).fillna(0).astype(int)
     df['ip_octet_3'] = ip_parts[2].astype(float).fillna(0).astype(int)
     df['ip_octet_4'] = ip_parts[3].astype(float).fillna(0).astype(int)
+    
+     # 3. Time-based features
+    df['timestamp'] = pd.to_datetime(df['timestamp'])
