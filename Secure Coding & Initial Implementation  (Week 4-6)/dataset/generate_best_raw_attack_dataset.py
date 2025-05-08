@@ -15,3 +15,4 @@ sqli_payloads = [
         "' OR 1=1 --", 'admin" --', 'password123 OR 1=1', "' UNION SELECT * FROM users --",
         "; DROP TABLE users; --", "' OR 'a'='a", 'admin\' --', "1' or '1' = '1", "admin' #"
 ]
+xss_payloads = [
