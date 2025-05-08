@@ -102,3 +102,5 @@ const Threats = () => {
     ]);
 
     autoTable(doc, {
+      head: [tableColumn],
+      body: tableRows,
