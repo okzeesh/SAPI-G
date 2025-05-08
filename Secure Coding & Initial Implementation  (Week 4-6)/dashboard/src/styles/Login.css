@@ -324,3 +324,4 @@ body::before {
   background: rgba(20, 24, 31, 0.45);
   z-index: 0;
   pointer-events: none;
+}
