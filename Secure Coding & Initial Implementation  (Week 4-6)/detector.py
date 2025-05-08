@@ -77,3 +77,5 @@ class HTTPAttackDetector:
             # If features are already provided in the request, use them
             if 'features' in request_data:
                 features = request_data['features']
+                # Convert to DataFrame with exact same column order as training
+                feature_order = [
