@@ -60,4 +60,7 @@ def extract_features(df):
     df['is_yahoo'] = df['email'].str.endswith('@yahoo.com').astype(int)
     df['is_outlook'] = df['email'].str.endswith('@outlook.com').astype(int)
     
+    # 8. Dummy feature
+    df['dummy'] = 0
     
+    return df
