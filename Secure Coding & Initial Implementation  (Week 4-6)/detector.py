@@ -154,3 +154,6 @@ class HTTPAttackDetector:
             prediction = self.model.predict(features)[0]
             probabilities = self.model.predict_proba(features)[0]
 
+            # Convert prediction back to original label
+            prediction_label = self.label_encoder.inverse_transform([prediction])[0]
+
