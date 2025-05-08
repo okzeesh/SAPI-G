@@ -128,3 +128,8 @@ const Threats = () => {
     XLSX.utils.book_append_sheet(workbook, worksheet, 'Threats');
     XLSX.writeFile(workbook, 'threats-report.xlsx');
   };
+
+  if (loading) return <div className="profile-page"><h2>Threats</h2><p>Loading...</p></div>;
+  if (error) return <div className="profile-page"><h2>Threats</h2><p>{error}</p></div>;
+
+  return (
