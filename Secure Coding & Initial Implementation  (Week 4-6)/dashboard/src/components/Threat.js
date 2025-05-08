@@ -18,3 +18,8 @@ const Threats = () => {
   const [page, setPage] = useState(1);
   const [showExportOptions, setShowExportOptions] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      setError('Not authenticated');
