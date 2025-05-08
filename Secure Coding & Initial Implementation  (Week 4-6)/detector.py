@@ -263,3 +263,6 @@ detector = HTTPAttackDetector()
 @app.route('/analyze', methods=['POST'])
 def analyze_request():
     """API endpoint to analyze HTTP requests"""
+    try:
+        request_data = request.json
+        detector.request_queue.put(request_data)
