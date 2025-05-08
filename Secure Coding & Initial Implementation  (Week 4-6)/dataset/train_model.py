@@ -67,5 +67,6 @@ def extract_features(df):
 
 def preprocess_data(df):
     """Preprocess the data for model training"""
-    
+    # Extract features
+    df = extract_features(df)
     
