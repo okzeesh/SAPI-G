@@ -190,3 +190,5 @@ def evaluate_model(model, X_test, y_test, label_encoder):
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
     plt.tight_layout()
+    plt.savefig('results/confusion_matrix.png')
+    plt.close()
