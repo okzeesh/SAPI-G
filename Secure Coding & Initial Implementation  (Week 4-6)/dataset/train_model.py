@@ -136,4 +136,5 @@ def train_model(X_train, y_train, X_test, y_test):
             param_grid=param_grid,
             scoring='f1_weighted',
             cv=3,
-            
+            n_jobs=1,
+            verbose=2,
