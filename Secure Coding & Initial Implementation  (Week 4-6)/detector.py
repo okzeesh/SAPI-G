@@ -28,3 +28,7 @@ class HTTPAttackDetector:
         self.mongo_client = MongoClient('mongodb://localhost:27017/')
         self.db = self.mongo_client['threat_detection']
         self.threats_collection = self.db['threats']
+
+        # Create indexes for faster queries
+        self.threats_collection.create_index([('timestamp', -1)])
+        self.threats_collection.create_index([('ip', 1)])
