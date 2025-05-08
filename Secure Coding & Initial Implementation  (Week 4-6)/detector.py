@@ -193,4 +193,8 @@ class HTTPAttackDetector:
                 'email': request_data.get('email'),
                 'user_agent': request_data.get('user_agent'),
                 'request_data': request_data
+            }
+            
+            # Insert into MongoDB
+            self.threats_collection.insert_one(threat_document)
 
