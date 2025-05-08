@@ -250,5 +250,9 @@ class HTTPAttackDetector:
     def stop(self):
         """Stop the detection system"""
         self.is_running = False
+        if self.detection_thread:
+            self.detection_thread.join()
+        # Close MongoDB connection
+        self.mongo_client.close()
 
 
