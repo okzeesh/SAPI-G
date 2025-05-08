@@ -129,3 +129,6 @@ def train_model(X_train, y_train, X_test, y_test):
     # Perform grid search with cross-validation
     try:
         print("Starting model training...")
+        print(f"Total parameter combinations to try: {len(param_grid['n_estimators']) * len(param_grid['max_depth']) * len(param_grid['min_samples_split']) * len(param_grid['min_samples_leaf']) * len(param_grid['max_features'])}")
+        
+        grid_search = GridSearchCV(
