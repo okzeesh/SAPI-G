@@ -111,3 +111,6 @@ const Threats = () => {
     });
 
     doc.save('threats-report.pdf');
+  };
+
+  const exportToExcel = () => {
