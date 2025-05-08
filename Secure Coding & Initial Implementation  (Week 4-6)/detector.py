@@ -222,3 +222,6 @@ class HTTPAttackDetector:
             # Log to MongoDB
             self.log_to_mongodb(request_data, prediction, probability)
 
+            logging.warning(f"Attack detected: {prediction} from IP {request_data.get('ip')}")
+        except Exception as e:
+
