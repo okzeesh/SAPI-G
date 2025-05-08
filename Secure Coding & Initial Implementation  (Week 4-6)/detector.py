@@ -315,3 +315,7 @@ def predict():
 if __name__ == '__main__':
     # Start the detector
     detector.start()
+
+    try:
+        # Start the Flask app
+        app.run(host='0.0.0.0', port=5002, debug=False)
