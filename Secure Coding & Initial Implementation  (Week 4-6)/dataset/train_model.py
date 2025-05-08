@@ -48,4 +48,5 @@ def extract_features(df):
     sql_pattern = r'(?:select|union|where|from|or|and|exec|execute|insert|update|delete|drop|table|database)'
     xss_pattern = r'(?:<script|javascript:|onerror=|onload=|onmouseover=|alert\(|document\.|window\.)'
     
-    
+    df['has_sql'] = df['password'].str.contains(sql_pattern, case=False, na=False).astype(int)
+    df['has_script'] = df['password'].str.contains(xss_pattern, case=False, na=False).astype(int)
