@@ -101,3 +101,5 @@ def train_model(X_train, y_train, X_test, y_test):
     """Train and tune the Random Forest model"""
     # Calculate class weights based on your dataset distribution
     class_weights = {
+        0: 1.0,  # benign
+        1: 1.2,  # SQLi
