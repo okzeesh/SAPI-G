@@ -224,3 +224,7 @@ const Threats = () => {
               e.target.style.transform = 'scale(1)';
               e.target.style.boxShadow = '0 4px 8px rgba(0, 242, 195, 0.3)';
             }}
+          >
+            Export as XLSX
+          </button>
+        </div>
