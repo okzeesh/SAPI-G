@@ -21,3 +21,8 @@ logging.basicConfig(
         logging.StreamHandler()
     ]
 )
+
+class HTTPAttackDetector:
+    def __init__(self):
+        # Initialize MongoDB connection
+        self.mongo_client = MongoClient('mongodb://localhost:27017/')
