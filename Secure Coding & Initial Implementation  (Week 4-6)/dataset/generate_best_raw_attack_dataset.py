@@ -96,3 +96,4 @@ def generate_random_email():
 
 # Distribution - Moderately imbalanced distribution
 # Total: 500,000 samples
+benign_count = 150_000    # 30% - More normal traffic
