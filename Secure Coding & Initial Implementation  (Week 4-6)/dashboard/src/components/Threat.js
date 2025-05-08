@@ -36,4 +36,8 @@ const Threats = () => {
           setThreats(res.data);
           setLoading(false);
         })
-        
+        .catch(() => {
+            setError('Failed to fetch threats');
+            setLoading(false);
+          });
+      };
