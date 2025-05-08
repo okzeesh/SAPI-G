@@ -58,4 +58,6 @@ def generate_random_ip():
          (185, 199, 108, 1, 254) # Public network
      ]
      range_choice = random.choice(ranges)
+         return f"{range_choice[0]}.{range_choice[1]}.{range_choice[2]}.{random.randint(range_choice[3], range_choice[4])}"
+
      
