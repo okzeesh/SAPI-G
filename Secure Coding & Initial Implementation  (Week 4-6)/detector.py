@@ -308,3 +308,6 @@ def predict():
             "threatType": threat_type if threat_type else "BENIGN",
             "confidence": confidence if confidence is not None else 0.0
         })
+    except Exception as e:
+        logging.error(f"Error in /predict: {str(e)}")
+        return jsonify({"error": str(e)}), 500
