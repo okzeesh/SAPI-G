@@ -93,3 +93,6 @@ def generate_random_email():
     username = ''.join(random.choices(string.ascii_lowercase + string.digits, k=username_length))
     domain = random.choice(email_domains)
     return f"{username}@{domain}"
+
+# Distribution - Moderately imbalanced distribution
+# Total: 500,000 samples
