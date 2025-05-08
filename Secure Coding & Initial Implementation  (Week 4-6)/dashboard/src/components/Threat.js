@@ -41,3 +41,5 @@ const Threats = () => {
             setLoading(false);
           });
       };
+
+      fetchThreats();
