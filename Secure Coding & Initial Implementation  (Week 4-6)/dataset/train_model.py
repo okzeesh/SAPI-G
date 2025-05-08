@@ -76,3 +76,8 @@ def preprocess_data(df):
         'time_since_last', 'body_field_count', 'has_sql', 'has_script', 'hour', 'day',
         'is_gmail', 'is_yahoo', 'is_outlook', 'dummy'
     ]
+    
+     # Separate features and target
+    X = df[feature_order]
+    y = df['label']
+    
