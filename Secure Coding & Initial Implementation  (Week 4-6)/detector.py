@@ -73,3 +73,7 @@ class HTTPAttackDetector:
         try:
             # Log the raw request data
             logging.debug(f"Raw request data: {request_data}")
+
+            # If features are already provided in the request, use them
+            if 'features' in request_data:
+                features = request_data['features']
