@@ -134,4 +134,5 @@ for _ in range(xss_count):
     endpoint = random.choice(endpoints)
     rows.append({'email': email, 'password': password, 'user_agent': user_agent, 'ip': ip, 'timestamp': timestamp, 'endpoint': endpoint, 'label': 'XSS'})
 
-
+# Brute Force
+for _ in range(bruteforce_count):
