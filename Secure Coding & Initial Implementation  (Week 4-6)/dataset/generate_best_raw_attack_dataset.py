@@ -138,3 +138,4 @@ for _ in range(xss_count):
 for _ in range(bruteforce_count):
     email = generate_random_email()
     password = random.choice(bruteforce_passwords)
+    user_agent = random.choice(user_agents)
