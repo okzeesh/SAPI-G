@@ -81,3 +81,4 @@ def random_timestamp():
         time_range = random.randint(0, 120)  # Less frequent
         
     return (start + datetime.timedelta(
+        days=random.randint(0, 364),
