@@ -316,4 +316,5 @@ html, body, #root {
   position: relative;
 }
 
-
+body::before {
+  content: '';
