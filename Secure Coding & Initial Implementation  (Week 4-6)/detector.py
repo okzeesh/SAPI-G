@@ -141,4 +141,8 @@ class HTTPAttackDetector:
     def map_label_to_threat_type(self, label):
         """Map model labels to backend threat types"""
         return self.label_mapping.get(label, 'UNKNOWN')
+    
+    def detect_attack(self, request_data):
+        """Detect if the request is an attack using the trained model"""
+        try:
 
