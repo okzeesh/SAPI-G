@@ -105,4 +105,7 @@ class HTTPAttackDetector:
                                                'exec', 'execute', 'insert', 'update', 'delete',
                                                'drop', 'table', 'database']) else 0,
                     'has_script': 1 if any(pattern in request_data.get('password', '').lower() 
-                                         for pattern in ['<script', 'javascript:', 'onerror=', 'onload=', 
+                                         for pattern in ['<script', 'javascript:', 'onerror=', 'onload=',
+                                                        'onmouseover=', 'alert(', 'document.', 'window.']) else 0,
+                    'hour': datetime.now().hour,
+                    'day': datetime.now().weekday(), 
