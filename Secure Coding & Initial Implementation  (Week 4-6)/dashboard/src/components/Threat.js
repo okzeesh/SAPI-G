@@ -26,3 +26,9 @@ const Threats = () => {
       setLoading(false);
       return;
     }
+
+    // Initial fetch of threats
+    const fetchThreats = () => {
+        axios.get(`${API_URL}/api/threats`, {
+          headers: { Authorization: `Bearer ${token}` }
+        })
