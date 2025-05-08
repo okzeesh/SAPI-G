@@ -11,3 +11,4 @@ benign_passwords = [
         'PianoKeys#1', 'StarlightNight', 'GreenTeaLover', 'CodeMaster2024', 'RubyOnRails!',
         'Pythonista_99', 'QuantumLeap42', 'SpaceOdyssey', 'RedVelvetCake', 'PixelPainter'
 ]
+sqli_payloads = [
