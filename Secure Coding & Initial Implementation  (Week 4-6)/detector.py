@@ -292,3 +292,6 @@ def get_threats():
                       .find(query)
                       .sort('timestamp', -1)
                       .limit(limit))
+        
+        return dumps(threats)
+    except Exception as e:
