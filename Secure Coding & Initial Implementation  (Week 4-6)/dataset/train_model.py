@@ -21,4 +21,5 @@ def extract_features(df):
      # Copy the dataframe to avoid modifying the original
     df = df.copy()
     
-    
+   # 1. Basic text features
+    df['email_length'] = df['email'].str.len() 
