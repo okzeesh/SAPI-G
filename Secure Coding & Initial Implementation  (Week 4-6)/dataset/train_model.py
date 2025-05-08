@@ -110,3 +110,5 @@ def train_model(X_train, y_train, X_test, y_test):
     
     # Create sample weights based on class weights
     sample_weights = np.array([class_weights[label] for label in y_train])
+     # Create base model
+    model = RandomForestClassifier(
