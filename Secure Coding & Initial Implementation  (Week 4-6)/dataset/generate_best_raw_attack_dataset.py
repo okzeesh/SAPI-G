@@ -151,4 +151,4 @@ for _ in range(portscan_count):
     user_agent = random.choice(['nmap/7.80', 'curl/7.68.0', 'python-requests/2.25.1'])
     ip = generate_random_ip()
     timestamp = random_timestamp()
-    ndpoint = random.choice(endpoints)
+    endpoint = random.choice(endpoints)
