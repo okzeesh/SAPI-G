@@ -57,3 +57,4 @@ def extract_features(df):
     
      # 7. Email domain features
     df['is_gmail'] = df['email'].str.endswith('@gmail.com').astype(int)
+    
