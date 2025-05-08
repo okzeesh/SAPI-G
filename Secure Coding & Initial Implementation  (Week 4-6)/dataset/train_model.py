@@ -96,3 +96,6 @@ def preprocess_data(df):
     X_test_scaled = scaler.transform(X_test)
     
     return X_train_scaled, X_test_scaled, y_train, y_test, label_encoder, scaler
+
+def train_model(X_train, y_train, X_test, y_test):
+    """Train and tune the Random Forest model"""
