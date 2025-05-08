@@ -47,3 +47,5 @@ def extract_features(df):
      # 5. Attack pattern features
     sql_pattern = r'(?:select|union|where|from|or|and|exec|execute|insert|update|delete|drop|table|database)'
     xss_pattern = r'(?:<script|javascript:|onerror=|onload=|onmouseover=|alert\(|document\.|window\.)'
+    
+    
