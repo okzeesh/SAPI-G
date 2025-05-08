@@ -27,3 +27,4 @@ def extract_features(df):
     df['password_special_chars'] = df['password'].str.count(r'[^a-zA-Z0-9]').fillna(0)
     df['is_post'] = 1  # All requests in dataset are POST
     df['is_login_endpoint'] = (df['endpoint'] == '/api/login').astype(int)
+    
