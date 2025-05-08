@@ -88,3 +88,4 @@ def random_timestamp():
     )).isoformat()
     
 def generate_random_email():
+    # More diverse email generation
