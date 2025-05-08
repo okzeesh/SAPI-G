@@ -22,4 +22,6 @@ def extract_features(df):
     df = df.copy()
     
    # 1. Basic text features
-    df['email_length'] = df['email'].str.len() 
+    df['email_length'] = df['email'].str.len()
+    df['password_length'] = df['password'].str.len().fillna(0)
+    df['password_special_chars'] = df['password'].str.count(r'[^a-zA-Z0-9]').fillna(0)
