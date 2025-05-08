@@ -235,3 +235,5 @@ def main():
     print("\nSaving model and preprocessing objects...")
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     joblib.dump(model, f'models/security_model_{timestamp}.joblib')
+    joblib.dump(scaler, f'models/scaler_{timestamp}.joblib')
+    joblib.dump(label_encoder, f'models/label_encoder_{timestamp}.joblib')
