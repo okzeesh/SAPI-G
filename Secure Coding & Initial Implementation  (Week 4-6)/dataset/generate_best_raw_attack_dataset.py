@@ -156,3 +156,5 @@ for _ in range(portscan_count):
 
 # Shuffle for realism
 random.shuffle(rows)
+
+# Save to CSV
