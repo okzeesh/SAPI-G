@@ -153,3 +153,7 @@ const Threats = () => {
                 <td style={{padding: '0.6rem 0.5rem', color: getThreatColor(threat.threatType)}}>{threat.threatType}</td>
                 <td style={{padding: '0.6rem 0.5rem'}}>{threat.ip}</td>
                 <td style={{padding: '0.6rem 0.5rem'}}>
+                  <span className={`status-badge ${threat.status}`}>
+                    {threat.status}
+                  </span>
+                </td>
