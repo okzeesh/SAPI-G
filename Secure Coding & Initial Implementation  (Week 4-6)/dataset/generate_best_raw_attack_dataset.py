@@ -28,3 +28,5 @@ bruteforce_passwords = [
 portscan_endpoints = [
         '/api/login', '/api/register', '/api/data', '/api/admin', '/api/user', '/api/secret', '/api/config'
 ]
+# More diverse email domains
+
