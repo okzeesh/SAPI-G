@@ -23,3 +23,6 @@ const Threats = () => {
     const token = localStorage.getItem('token');
     if (!token) {
       setError('Not authenticated');
+      setLoading(false);
+      return;
+    }
