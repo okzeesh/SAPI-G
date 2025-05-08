@@ -69,4 +69,5 @@ def preprocess_data(df):
     """Preprocess the data for model training"""
     # Extract features
     df = extract_features(df)
-    
+    # Define feature order to match backend
+    feature_order = [
