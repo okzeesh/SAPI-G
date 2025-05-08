@@ -108,3 +108,6 @@ const Threats = () => {
       theme: 'grid',
       styles: { fontSize: 8 },
       headStyles: { fillColor: [108, 92, 231] }
+    });
+
+    doc.save('threats-report.pdf');
