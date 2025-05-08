@@ -8,3 +8,9 @@ import { jsPDF } from 'jspdf';
 import autoTable from 'jspdf-autotable';
 import * as XLSX from 'xlsx';
 import { API_URL, SOCKET_URL } from '../config';
+
+const THREATS_PER_PAGE = 15;
+
+const Threats = () => {
+  const [threats, setThreats] = useState([]);
+  const [loading, setLoading] = useState(true);
