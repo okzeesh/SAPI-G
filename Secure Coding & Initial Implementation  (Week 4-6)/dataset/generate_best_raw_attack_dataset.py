@@ -86,3 +86,5 @@ def random_timestamp():
         minutes=random.randint(0, 59),
         seconds=time_range
     )).isoformat()
+    
+def generate_random_email():
