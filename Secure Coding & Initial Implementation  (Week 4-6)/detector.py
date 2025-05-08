@@ -16,3 +16,8 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('detection.log'),
+        logging.StreamHandler()
+    ]
+)
