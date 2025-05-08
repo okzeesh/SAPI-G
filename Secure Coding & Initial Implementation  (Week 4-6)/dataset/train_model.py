@@ -33,3 +33,5 @@ def extract_features(df):
     ip_parts = df['ip'].str.split('.', expand=True)
     df['ip_octet_1'] = ip_parts[0].astype(float).fillna(0).astype(int)
     df['ip_octet_2'] = ip_parts[1].astype(float).fillna(0).astype(int)
+    df['ip_octet_3'] = ip_parts[2].astype(float).fillna(0).astype(int)
+    df['ip_octet_4'] = ip_parts[3].astype(float).fillna(0).astype(int)
