@@ -70,3 +70,4 @@ endpoints = [
 
 def random_timestamp():
     # Generate more realistic timestamps with patterns
+        start = datetime.datetime(2024, 1, 1)
