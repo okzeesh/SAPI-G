@@ -45,3 +45,5 @@ user_agents = [
 ]
 
 # More diverse IP ranges
+def generate_random_ip():
+    # Generate IPs from different ranges
