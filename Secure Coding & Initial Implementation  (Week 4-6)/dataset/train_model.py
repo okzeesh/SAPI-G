@@ -160,7 +160,7 @@ def train_model(X_train, y_train, X_test, y_test):
         print(f"Error during model training: {str(e)}")
         raise
     
-    def evaluate_model(model, X_test, y_test, label_encoder):
+def evaluate_model(model, X_test, y_test, label_encoder):
     """Evaluate the model performance and save plots"""
     # Create results directory if it doesn't exist
     os.makedirs('results', exist_ok=True)
