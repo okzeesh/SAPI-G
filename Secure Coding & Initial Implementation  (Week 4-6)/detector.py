@@ -67,3 +67,6 @@ class HTTPAttackDetector:
         os.makedirs('alerts', exist_ok=True)
 
         logging.info("Security Attack Detector initialized")
+
+    def extract_features(self, request_data):
+        """Extract features from HTTP request data"""
