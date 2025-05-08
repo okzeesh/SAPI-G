@@ -137,4 +137,8 @@ class HTTPAttackDetector:
         except Exception as e:
             logging.error(f"Error extracting features: {str(e)}")
             return None
+        
+    def map_label_to_threat_type(self, label):
+        """Map model labels to backend threat types"""
+        return self.label_mapping.get(label, 'UNKNOWN')
 
