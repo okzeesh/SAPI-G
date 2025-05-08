@@ -38,3 +38,7 @@ class HTTPAttackDetector:
         self.label_mapping = {
             'PortScan': 'Port scan',
             'SQLi': 'SQL Injection',
+            'XSS': 'XSS Attack',
+            'BruteForce': 'Brute Force',
+            'benign': 'BENIGN'
+        }
