@@ -156,5 +156,7 @@ def train_model(X_train, y_train, X_test, y_test):
         best_model.fit(X_train, y_train, sample_weight=sample_weights)
         
         return best_model
-    
+    except Exception as e:
+        print(f"Error during model training: {str(e)}")
+        raise
     
