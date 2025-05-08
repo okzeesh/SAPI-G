@@ -43,3 +43,5 @@ user_agents = [
     'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
     'Mozilla/5.0 (compatible; Bingbot/2.0; +http://www.bing.com/bingbot.htm)'
 ]
+
+# More diverse IP ranges
