@@ -182,3 +182,5 @@ def evaluate_model(model, X_test, y_test, label_encoder):
         
         # Create and save confusion matrix plot
     plt.figure(figsize=(10, 8))
+    cm = confusion_matrix(y_test, y_pred)
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
