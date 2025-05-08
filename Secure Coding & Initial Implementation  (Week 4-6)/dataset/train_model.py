@@ -226,3 +226,6 @@ def main():
     
     # Train the model
     model = train_model(X_train, y_train, X_test, y_test)
+    
+    # Evaluate the model and save plots
+    evaluate_model(model, X_test, y_test, label_encoder)
