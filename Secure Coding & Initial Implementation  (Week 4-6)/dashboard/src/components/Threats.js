@@ -188,3 +188,6 @@ const Threats = () => {
               fontWeight: 600,
               fontSize: '1rem',
               cursor: 'pointer',
+              transition: 'transform 0.2s, box-shadow 0.2s',
+              boxShadow: '0 4px 8px rgba(108, 92, 231, 0.3)',
+            }}
