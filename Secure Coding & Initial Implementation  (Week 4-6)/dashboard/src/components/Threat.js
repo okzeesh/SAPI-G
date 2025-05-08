@@ -6,3 +6,5 @@ import '../styles/Profile.css';
 import '../styles/Responsive.css';
 import { jsPDF } from 'jspdf';
 import autoTable from 'jspdf-autotable';
+import * as XLSX from 'xlsx';
+import { API_URL, SOCKET_URL } from '../config';
