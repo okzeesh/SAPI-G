@@ -94,3 +94,6 @@ const Threats = () => {
     
     const tableColumn = ['Detected At', 'Threat Type', 'IP Address', 'Status', 'Confidence'];
     const tableRows = threats.map(threat => [
+      new Date(threat.detectedAt).toLocaleString(),
+      threat.threatType,
+      threat.ip,
