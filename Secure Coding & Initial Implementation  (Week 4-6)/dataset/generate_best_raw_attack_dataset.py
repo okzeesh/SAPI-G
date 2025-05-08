@@ -29,4 +29,5 @@ portscan_endpoints = [
         '/api/login', '/api/register', '/api/data', '/api/admin', '/api/user', '/api/secret', '/api/config'
 ]
 # More diverse email domains
+email_domains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'protonmail.com', 
 
