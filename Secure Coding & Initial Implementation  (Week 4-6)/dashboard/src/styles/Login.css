@@ -347,3 +347,6 @@ body::before {
   background: none;
   z-index: 10;
 }
+
+.welcome-message {
+  text-align: center;
