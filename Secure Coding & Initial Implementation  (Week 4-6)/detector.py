@@ -283,3 +283,6 @@ def get_threats():
         # Build query
         query = {}
         if attack_type:
+            query['attack_type'] = attack_type
+        if ip:
+            query['ip'] = ip
