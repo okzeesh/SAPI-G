@@ -233,3 +233,7 @@ class HTTPAttackDetector:
                 request_data = self.request_queue.get(timeout=1)
                 prediction, probability = self.detect_attack(request_data)
 
+                if prediction and prediction != 'benign':
+                    self.log_alert(request_data, prediction, probability)
+            except queue.Empty:
+
