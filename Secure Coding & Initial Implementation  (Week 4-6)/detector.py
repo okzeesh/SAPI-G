@@ -227,4 +227,9 @@ class HTTPAttackDetector:
             logging.error(f"Error logging alert: {str(e)}")
 
     def process_queue(self):
+        """Process the request queue"""
+        while self.is_running:
+            try:
+                request_data = self.request_queue.get(timeout=1)
+                prediction, probability = self.detect_attack(request_data)
 
