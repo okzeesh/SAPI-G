@@ -17,3 +17,4 @@ sqli_payloads = [
 ]
 xss_payloads = [
         '<script>alert(1)</script>', '<img src=x onerror=alert(1)>', '<svg/onload=alert(1)>',
+    '<body onload=alert(1)>', '<iframe src=javascript:alert(1)>', '<a href=javascript:alert(1)>Click</a>',
