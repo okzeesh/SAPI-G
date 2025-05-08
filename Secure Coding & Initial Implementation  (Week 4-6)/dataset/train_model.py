@@ -218,3 +218,6 @@ def main():
     
     # Load the dataset
     print("Loading dataset...")
+    df = pd.read_csv('best_raw_attack_dataset.csv')  # Fixed path since we're already in dataset directory
+    
+    # Preprocess the data
