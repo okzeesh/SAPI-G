@@ -85,3 +85,4 @@ def random_timestamp():
         hours=hour,
         minutes=random.randint(0, 59),
         seconds=time_range
+    )).isoformat()
