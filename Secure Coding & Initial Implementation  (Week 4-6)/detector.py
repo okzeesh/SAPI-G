@@ -295,3 +295,5 @@ def get_threats():
         
         return dumps(threats)
     except Exception as e:
+        logging.error(f"Error getting threats: {str(e)}")
+        return jsonify({"error": str(e)}), 500
