@@ -342,4 +342,4 @@ body::before {
   min-width: 100vw;
   box-sizing: border-box;
   padding: 0;
-position: relative;
+  position: relative;
