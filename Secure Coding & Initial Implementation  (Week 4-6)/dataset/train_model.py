@@ -114,4 +114,5 @@ def train_model(X_train, y_train, X_test, y_test):
     model = RandomForestClassifier(
         random_state=42,
         class_weight='balanced',
-        
+        n_jobs=-1
+    )
