@@ -59,4 +59,8 @@ const Threats = () => {
         setThreats(prevThreats => [newThreat, ...prevThreats]);
       });
 
+      socket.on('error', (error) => {
+        console.error('WebSocket error:', error);
+      });
+
 
