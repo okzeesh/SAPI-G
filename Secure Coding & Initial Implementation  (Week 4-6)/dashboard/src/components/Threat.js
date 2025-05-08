@@ -63,4 +63,9 @@ const Threats = () => {
         console.error('WebSocket error:', error);
       });
 
+      return () => {
+        socket.disconnect();
+      };
+    }, []);
+
 
