@@ -204,4 +204,8 @@ class HTTPAttackDetector:
     def log_alert(self, request_data, prediction, probability):
         """Log detected attacks"""
         try:
+            # Log to CSV file
+            timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            alert_data = {
+                'timestamp': timestamp,
 
