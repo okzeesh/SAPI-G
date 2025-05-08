@@ -160,3 +160,6 @@ class HTTPAttackDetector:
             # Map to threat type
             threat_type = self.map_label_to_threat_type(prediction_label)
 
+            # Get the confidence for the predicted class
+            confidence = float(probabilities[prediction])
+
