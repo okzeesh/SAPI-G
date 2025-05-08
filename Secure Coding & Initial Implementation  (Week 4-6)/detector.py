@@ -61,3 +61,7 @@ class HTTPAttackDetector:
 
         self.request_queue = queue.Queue()
         self.detection_thread = None
+        self.is_running = False
+        
+        # Create alerts directory if it doesn't exist
+        os.makedirs('alerts', exist_ok=True)
