@@ -270,3 +270,7 @@ def analyze_request():
     except Exception as e:
         logging.error(f"Error in analyze_request: {str(e)}")
         return jsonify({"error": str(e)}), 500
+    
+@app.route('/threats', methods=['GET'])
+def get_threats():
+    """API endpoint to get recent threats from MongoDB"""
