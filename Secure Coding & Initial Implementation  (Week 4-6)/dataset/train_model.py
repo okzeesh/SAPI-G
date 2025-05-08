@@ -215,3 +215,6 @@ def main():
     # Create models and results directories if they don't exist
     os.makedirs('models', exist_ok=True)
     os.makedirs('results', exist_ok=True)
+    
+    # Load the dataset
+    print("Loading dataset...")
