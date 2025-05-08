@@ -25,3 +25,4 @@ bruteforce_passwords = [
         '888888', '999999', '121212', '112233', '789456', '147258', '258369', '369258', 'password1', 'qwerty1'
 ]
 # Port scan: simulate by using many different endpoints/ports from same IP
+portscan_endpoints = [
