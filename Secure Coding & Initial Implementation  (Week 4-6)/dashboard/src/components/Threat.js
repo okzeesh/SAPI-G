@@ -81,3 +81,9 @@ const Threats = () => {
             return '#f9ca24';
           case 'Brute Force':
             return '#6c5ce7';
+          case 'Port scan':
+            return '#00f2c3';
+          default:
+            return '#fff';
+        }
+    };
