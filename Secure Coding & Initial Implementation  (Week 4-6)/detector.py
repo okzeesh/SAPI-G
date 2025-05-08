@@ -109,3 +109,5 @@ class HTTPAttackDetector:
                                                         'onmouseover=', 'alert(', 'document.', 'window.']) else 0,
                     'hour': datetime.now().hour,
                     'day': datetime.now().weekday(), 
+                    'is_gmail': 1 if request_data.get('email', '').endswith('@gmail.com') else 0,
+                    'is_yahoo': 1 if request_data.get('email', '').endswith('@yahoo.com') else 0,
