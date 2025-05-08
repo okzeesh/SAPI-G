@@ -76,3 +76,8 @@ const Threats = () => {
     const getThreatColor = (threatType) => {
         switch(threatType) {
           case 'SQL Injection':
+            return '#ff467e';
+          case 'XSS Attack':
+            return '#f9ca24';
+          case 'Brute Force':
+            return '#6c5ce7';
