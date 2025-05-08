@@ -186,4 +186,7 @@ class HTTPAttackDetector:
             threat_document = {
                 'timestamp': datetime.now(),
                 'ip': request_data.get('ip'),
+                'endpoint': request_data.get('endpoint'),
+                'method': request_data.get('method'),
+                'threatType': prediction,  # Changed from attack_type to threatType
 
