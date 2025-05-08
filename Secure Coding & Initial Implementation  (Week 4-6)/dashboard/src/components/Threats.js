@@ -135,3 +135,6 @@ const Threats = () => {
   return (
     <div className="profile-page" style={{maxWidth: '1100px'}}>
       <h2 style={{marginBottom: '2rem'}}>Threat Monitoring</h2>
+      <div className="logs-table-container" style={{overflowX: 'auto', background: 'rgba(30,41,59,0.92)', borderRadius: '16px', boxShadow: '0 2px 12px rgba(0,0,0,0.15)', padding: '2rem 1.5rem'}}>
+        <table className="logs-table" style={{width: '100%', color: '#fff', borderCollapse: 'collapse', fontSize: '1.05rem'}}>
+          <thead>
