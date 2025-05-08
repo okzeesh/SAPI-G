@@ -229,3 +229,7 @@ def main():
     
     # Evaluate the model and save plots
     evaluate_model(model, X_test, y_test, label_encoder)
+    
+    
+    # Save the model and preprocessing objects
+    print("\nSaving model and preprocessing objects...")
