@@ -254,5 +254,6 @@ class HTTPAttackDetector:
             self.detection_thread.join()
         # Close MongoDB connection
         self.mongo_client.close()
+        logging.info("Attack detection system stopped")
 
 
