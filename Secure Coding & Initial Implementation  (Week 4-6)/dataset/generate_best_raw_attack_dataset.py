@@ -42,4 +42,4 @@ user_agents = [
     'curl/7.68.0', 'python-requests/2.25.1', 'nmap/7.80', 'sqlmap/1.4.6',
     'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
     'Mozilla/5.0 (compatible; Bingbot/2.0; +http://www.bing.com/bingbot.htm)'
-
+]
