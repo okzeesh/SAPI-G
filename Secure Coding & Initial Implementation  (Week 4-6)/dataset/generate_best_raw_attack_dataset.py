@@ -153,3 +153,5 @@ for _ in range(portscan_count):
     timestamp = random_timestamp()
     endpoint = random.choice(endpoints)
     rows.append({'email': email, 'password': password, 'user_agent': user_agent, 'ip': ip, 'timestamp': timestamp, 'endpoint': endpoint, 'label': 'PortScan'})
+
+# Shuffle for realism
