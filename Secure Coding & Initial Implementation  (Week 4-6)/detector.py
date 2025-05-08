@@ -135,3 +135,6 @@ class HTTPAttackDetector:
 
             return features_scaled
         except Exception as e:
+            logging.error(f"Error extracting features: {str(e)}")
+            return None
+
