@@ -145,3 +145,6 @@ const Threats = () => {
               <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>Status</th>
               <th style={{color: '#00f2c3', position: 'sticky', top: 0, background: 'rgba(30,41,59,0.98)', zIndex: 2, padding: '0.7rem'}}>Confidence</th>
             </tr>
+          </thead>
+          <tbody>
+            {threatsToShow.map((threat, idx) => (
