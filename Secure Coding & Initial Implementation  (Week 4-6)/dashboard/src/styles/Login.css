@@ -343,3 +343,5 @@ body::before {
   box-sizing: border-box;
   padding: 0;
   position: relative;
+  overflow: hidden;
+background: none;
