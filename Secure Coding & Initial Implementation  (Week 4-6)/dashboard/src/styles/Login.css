@@ -301,3 +301,4 @@ body {
   margin-left: 0 !important;
 }
 
+html, body, #root {  height: 100%;
