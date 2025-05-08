@@ -132,3 +132,6 @@ class HTTPAttackDetector:
 
             # Log the scaled features for debugging
             logging.debug(f"Scaled features: {features_scaled}")
+
+            return features_scaled
+        except Exception as e:
