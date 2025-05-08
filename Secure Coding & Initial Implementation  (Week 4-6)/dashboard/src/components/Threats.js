@@ -157,3 +157,7 @@ const Threats = () => {
                     {threat.status}
                   </span>
                 </td>
+                <td style={{padding: '0.6rem 0.5rem'}}>
+                  <span className="status-badge" style={{
+                    background: 'rgba(108,92,231,0.15)',
+                    color: 'var(--primary-color)'
