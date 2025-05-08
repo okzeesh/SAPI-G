@@ -65,3 +65,5 @@ class HTTPAttackDetector:
         
         # Create alerts directory if it doesn't exist
         os.makedirs('alerts', exist_ok=True)
+
+        logging.info("Security Attack Detector initialized")
